@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/icons/fevicon.png"
+    />
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
@@ -141,59 +146,105 @@
                   </div>
                 </div>
               </div>
+
               <div class="row">
                 <div class="col-xl-4">
-                  <div class="banner-nav">
-                    <div class="banner-nav-items">
-                      <div class="visa-items">
-                        <a href="#">
-                          <i class="fa-solid fa-square-user"></i>
-                          <p>Visa</p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="banner-nav-items">
-                      <div class="flights-items">
-                        <a href="#">
-                          <i class="fa-light fa-plane-departure"></i>
-                          <p>Flights</p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+                  <ul class="nav nav-tabs banner-nav" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="home-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#home-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="home-tab-pane"
+                        aria-selected="true"
+                      >
+                        <div class="banner-nav-items">
+                          <div class="visa-items">
+                            <a href="#">
+                              <i class="fa-solid fa-square-user"></i>
+                              <p>Visa</p>
+                            </a>
+                          </div>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="profile-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#profile-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="profile-tab-pane"
+                        aria-selected="false"
+                      >
+                        <div class="banner-nav-items">
+                          <div class="flights-items">
+                            <a href="#">
+                              <i class="fa-light fa-plane-departure"></i>
+                              <p>Flights</p>
+                            </a>
+                          </div>
+                        </div>
+                      </button>
+                    </li>
+                  </ul>
                 </div>
               </div>
               <div class="row">
                 <div class="col-12">
-                  <div class="content-box">
-                    <div class="select-box">
-                      <i class="fa-solid fa-id-badge"></i>
-                      <div class="citizen-text">
-                        <span>I am a citizen of</span>
-                        <select class="selected" id="asdfa" name="locality">
-                          <option value="asd">asdf</option>
-                          <option value="asd">asdf</option>
-                          <option value="asd">asdf</option>
-                          <option value="asd">asdf</option>
-                        </select>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="home-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="home-tab"
+                      tabindex="0"
+                    >
+                      <div class="content-box">
+                        <div class="select-box">
+                          <i class="fa-solid fa-id-badge"></i>
+                          <div class="citizen-text">
+                            <span>I am a citizen of</span>
+                            <select class="selected" id="asdfa" name="locality">
+                              <option value="asd">asdf</option>
+                              <option value="asd">asdf</option>
+                              <option value="asd">asdf</option>
+                              <option value="asd">asdf</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="select-box">
+                          <i class="fa-light fa-plane-departure"></i>
+                          <div class="citizen-text">
+                            <span>Planning to visit</span>
+                            <select class="selected" id="asdfa" name="locality">
+                              <option value="asd">asdf</option>
+                              <option value="asd">asdf</option>
+                              <option value="asd">asdf</option>
+                              <option value="asd">asdf</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button class="apply-btn" type="submit">
+                          <i class="fa-regular fa-magnifying-glass"></i>
+                          <span>Apply Now</span>
+                        </button>
                       </div>
                     </div>
-                    <div class="select-box">
-                      <i class="fa-light fa-plane-departure"></i>
-                      <div class="citizen-text">
-                        <span>Planning to visit</span>
-                        <select class="selected" id="asdfa" name="locality">
-                          <option value="asd">asdf</option>
-                          <option value="asd">asdf</option>
-                          <option value="asd">asdf</option>
-                          <option value="asd">asdf</option>
-                        </select>
-                      </div>
+                    <div
+                      class="tab-pane fade"
+                      id="profile-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="profile-tab"
+                      tabindex="0"
+                    >
+                      ...
                     </div>
-                    <button class="apply-btn" type="submit">
-                      <i class="fa-regular fa-magnifying-glass"></i>
-                      <span>Apply Now</span>
-                    </button>
                   </div>
                 </div>
               </div>
@@ -345,7 +396,7 @@
 
             <div class="row text-center">
               <div class="col-12">
-                <div class="timeline-slider-active">
+                <div class="destination-slider-active">
                   <div class="swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">

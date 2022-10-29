@@ -398,12 +398,12 @@
   //         animated_swiper(sliderActive1, sliderInit1);
   //     }
       /*------------------------------------
-            timeline  Slider
+            Destination  Slider
           --------------------------------------*/
 
       // Slider With Thumbs
-      if (jQuery(".timeline-slider-active .swiper-container").length > 0) {
-          let timeLineSlider = new Swiper('.timeline-slider-active .swiper-container', {
+      if (jQuery(".destination-slider-active .swiper-container").length > 0) {
+          let destinationSlider = new Swiper('.destination-slider-active .swiper-container', {
               // Optional parameters
               slidesPerView: 5,
               slidesPerColumn: 1,
