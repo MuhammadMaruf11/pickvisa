@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <title>Pick Visa</title>
   </head>
@@ -41,12 +42,47 @@
                       ></a>
                       <ul class="sub-menu">
                         <li>
-                          <a href="#">Visa Application Form Generator</a>
+                          <a href="#">
+                            <img src="assets/img/icons/icon-1.png" alt="icon" />
+                            Visa Application Form Generator
+                          </a>
                         </li>
-                        <li><a href="#">Visa Chance Calculator</a></li>
-                        <li><a href="#">Visa Map</a></li>
-                        <li><a href="#">Embassies</a></li>
-                        <li><a href="#">COVID-19 Test Centers</a></li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="assets/img/icons/icon-2.png"
+                              alt="icon"
+                            />Visa Chance Calculator</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="assets/img/icons/icon-3.png"
+                              alt="icon"
+                            />Visa Map</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="assets/img/icons/icon-4.png"
+                              alt="icon"
+                            />Embassies</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="assets/img/icons/icon-5.png"
+                              alt="icon"
+                            />COVID-19 Test Centers</a
+                          >
+                        </li>
+                        <img
+                          src="assets/img//icons/tooltip_arrow.svg"
+                          alt="icon"
+                        />
                       </ul>
                     </li>
                     <li><a href="/blog">Blog</a></li>
@@ -64,14 +100,18 @@
             <div class="col-xl-3 text-end">
               <div class="header-right">
                 <div class="icon-items">
-                  <a href="#">
+                  <span>
                     <i class="fa-light fa-globe"></i>
                     <ul>
                       <li><a href="#">Azərbaycanca</a></li>
                       <li><a href="#">English</a></li>
                       <li><a href="#">Русский</a></li>
+                      <img
+                        src="assets/img//icons/tooltip_arrow.svg"
+                        alt="icon"
+                      />
                     </ul>
-                  </a>
+                  </span>
                 </div>
                 <div class="login-btn">
                   <a href="#">Log In</a>
@@ -88,12 +128,12 @@
 
     <!-- Header End -->
 
-    <!-- Hero Start -->
     <main>
+      <!-- Hero Start -->
       <section>
         <div class="hero-area">
           <div class="banner-overlay">
-            <div class="container pt-200">
+            <div class="container pt-125">
               <div class="row">
                 <div class="col-xl-6 col-lg-8">
                   <div class="hero-title">
@@ -126,11 +166,34 @@
               <div class="row">
                 <div class="col-12">
                   <div class="content-box">
-                    <div class="col-xl-5">
-                      <select id="locality-dropdown" name="locality"></select>
+                    <div class="select-box">
+                      <i class="fa-solid fa-id-badge"></i>
+                      <div class="citizen-text">
+                        <span>I am a citizen of</span>
+                        <select class="selected" id="asdfa" name="locality">
+                          <option value="asd">asdf</option>
+                          <option value="asd">asdf</option>
+                          <option value="asd">asdf</option>
+                          <option value="asd">asdf</option>
+                        </select>
+                      </div>
                     </div>
-                    <div class="col-xl-5"></div>
-                    <div class="col-xl-2"></div>
+                    <div class="select-box">
+                      <i class="fa-light fa-plane-departure"></i>
+                      <div class="citizen-text">
+                        <span>Planning to visit</span>
+                        <select class="selected" id="asdfa" name="locality">
+                          <option value="asd">asdf</option>
+                          <option value="asd">asdf</option>
+                          <option value="asd">asdf</option>
+                          <option value="asd">asdf</option>
+                        </select>
+                      </div>
+                    </div>
+                    <button class="apply-btn" type="submit">
+                      <i class="fa-regular fa-magnifying-glass"></i>
+                      <span>Apply Now</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -141,7 +204,617 @@
       </div> -->
         </div>
       </section>
+
+      <!-- Hero End -->
+
+      <!-- trusted travelers start  -->
+
+      <section>
+        <div class="trusted-travelers-area">
+          <div class="container">
+            <!-- travelers first row start  -->
+
+            <div class="row justify-content-center">
+              <div class="col text-center">
+                <div class="section-items">
+                  <div class="section-icons">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="section-title">
+                    <p>Trusted by 50,000+ travelers.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- travelers first row end  -->
+
+            <!-- travelers second row start  -->
+
+            <div class="row align-content-center">
+              <div class="col-xl-2">
+                <div class="rating-wrap">
+                  <div class="medal-img">
+                    <img src="assets/img/icons/medal.svg" alt="icon" />
+                  </div>
+                  <div class="rating-items">
+                    <div class="rating-text">
+                      <span>Rated 5/5</span>
+                    </div>
+                    <div class="rating-logo">
+                      <img src="assets/img/travelers/google.svg" alt="logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2">
+                <div class="rating-wrap justify-content-center">
+                  <div class="medal-img">
+                    <img src="assets/img/icons/medal.svg" alt="icon" />
+                  </div>
+                  <div class="rating-items">
+                    <div class="rating-text">
+                      <span>Rated 5/5</span>
+                    </div>
+                    <div class="rating-logo">
+                      <img src="assets/img/travelers/facebook.svg" alt="logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4">
+                <div class="rating-wrap justify-content-center">
+                  <div class="left-wreath-img">
+                    <img src="assets/img/icons/left_wreath.svg" alt="icon" />
+                  </div>
+                  <div class="rating-items mx-1 text-center">
+                    <div class="rating-logo">
+                      <img
+                        src="assets/img/travelers/entrepreneur.svg"
+                        alt="logo"
+                      />
+                    </div>
+                    <div class="rating-text">
+                      <p>E-travel Company of the Year</p>
+                      <span>E-Business Awards | 2021</span>
+                    </div>
+                  </div>
+                  <div class="right-wreath-img">
+                    <img src="assets/img/icons/right_wreath.svg" alt="icon" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2">
+                <div
+                  class="rating-wrap justify-content-center"
+                  style="padding: 0"
+                >
+                  <a href="#">
+                    <img src="assets/img/travelers/stars.png" alt="logo" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-2">
+                <div class="rating-wrap justify-content-end">
+                  <div class="left-feather-img">
+                    <img src="assets/img/icons/feather.svg" alt="icon" />
+                  </div>
+                  <div class="rating-items">
+                    <div class="rating-text">
+                      <span>Featured in</span>
+                    </div>
+                    <div class="rating-logo">
+                      <img src="assets/img/travelers/benzinga.svg" alt="logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- travelers second row end  -->
+          </div>
+        </div>
+      </section>
+
+      <!-- trusted travelers end -->
+
+      <!-- Destination start  -->
+
+      <section>
+        <div class="destination-area">
+          <div class="container">
+            <!-- destination title start  -->
+            <div class="row justify-content-center">
+              <div class="col text-center">
+                <div class="section-title">
+                  <h2>The most popular destinations</h2>
+                  <p>
+                    Our customers use visa services mostly for these countries
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- destination title end  -->
+
+            <!-- destination slider start  -->
+
+            <div class="row text-center">
+              <div class="col-12">
+                <div class="timeline-slider-active">
+                  <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="destination-img">
+                            <a href="#"
+                              ><img
+                                src="assets/img/slider/slider-1.png"
+                                alt="destination-img"
+                            /></a>
+                          </div>
+                          <div class="destination-items">
+                            <div class="destination-title">
+                              <h4>Unites States of America</h4>
+                              <i class="fa-regular fa-flag-usa"></i>
+                            </div>
+                            <div class="working-time">
+                              <i class="fa-regular fa-clock"></i>
+                              <span>2-3 weeks</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="destination-img">
+                            <a href="#"
+                              ><img
+                                src="assets/img/slider/slider-2.png"
+                                alt="destination-img"
+                            /></a>
+                          </div>
+                          <div class="destination-items">
+                            <div class="destination-title">
+                              <h4>Unites Kingdom</h4>
+                              <i class="fa-regular fa-flag-usa"></i>
+                            </div>
+                            <div class="working-time">
+                              <i class="fa-regular fa-clock"></i>
+                              <span>2-3 weeks</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="destination-img">
+                            <a href="#"
+                              ><img
+                                src="assets/img/slider/slider-3.png"
+                                alt="destination-img"
+                            /></a>
+                          </div>
+                          <div class="destination-items">
+                            <div class="destination-title">
+                              <h4>Canada</h4>
+                              <i class="fa-regular fa-flag-usa"></i>
+                            </div>
+                            <div class="working-time">
+                              <i class="fa-regular fa-clock"></i>
+                              <span>2-4 weeks</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="destination-img">
+                            <a href="#"
+                              ><img
+                                src="assets/img/slider/slider-4.png"
+                                alt="destination-img"
+                            /></a>
+                          </div>
+                          <div class="destination-items">
+                            <div class="destination-title">
+                              <h4>Unites Arab Emirates</h4>
+                              <i class="fa-regular fa-flag-usa"></i>
+                            </div>
+                            <div class="working-time">
+                              <i class="fa-regular fa-clock"></i>
+                              <span>2-3 working days</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="destination-img">
+                            <a href="#"
+                              ><img
+                                src="assets/img/slider/slider-5.png"
+                                alt="destination-img"
+                            /></a>
+                          </div>
+                          <div class="destination-items">
+                            <div class="destination-title">
+                              <h4>Turkey</h4>
+                              <i class="fa-regular fa-flag-usa"></i>
+                            </div>
+                            <div class="working-time">
+                              <i class="fa-regular fa-clock"></i>
+                              <span>2-5 working days</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="destination-img">
+                            <a href="#"
+                              ><img
+                                src="assets/img/slider/slider-6.png"
+                                alt="destination-img"
+                            /></a>
+                          </div>
+                          <div class="destination-items">
+                            <div class="destination-title">
+                              <h4>France</h4>
+                              <i class="fa-regular fa-flag-usa"></i>
+                            </div>
+                            <div class="working-time">
+                              <i class="fa-regular fa-clock"></i>
+                              <span>1-2 weeks</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="destination-img">
+                            <a href="#"
+                              ><img
+                                src="assets/img/slider/slider-7.png"
+                                alt="destination-img"
+                            /></a>
+                          </div>
+                          <div class="destination-items">
+                            <div class="destination-title">
+                              <h4>Mexico</h4>
+                              <i class="fa-regular fa-flag-usa"></i>
+                            </div>
+                            <div class="working-time">
+                              <i class="fa-regular fa-clock"></i>
+                              <span>1-2 weeks</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="destination-img">
+                            <a href="#"
+                              ><img
+                                src="assets/img/slider/slider-8.png"
+                                alt="destination-img"
+                            /></a>
+                          </div>
+                          <div class="destination-items">
+                            <div class="destination-title">
+                              <h4>Germany</h4>
+                              <i class="fa-regular fa-flag-usa"></i>
+                            </div>
+                            <div class="working-time">
+                              <i class="fa-regular fa-clock"></i>
+                              <span>1-2 weeks</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="destination-img">
+                            <a href="#"
+                              ><img
+                                src="assets/img/slider/slider-9.png"
+                                alt="destination-img"
+                            /></a>
+                          </div>
+                          <div class="destination-items">
+                            <div class="destination-title">
+                              <h4>Thailand</h4>
+                              <i class="fa-regular fa-flag-usa"></i>
+                            </div>
+                            <div class="working-time">
+                              <i class="fa-regular fa-clock"></i>
+                              <span>1-2 weeks</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="destination-img">
+                            <a href="#"
+                              ><img
+                                src="assets/img/slider/slider-10.png"
+                                alt="destination-img"
+                            /></a>
+                          </div>
+                          <div class="destination-items">
+                            <div class="destination-title">
+                              <h4>Egypt</h4>
+                              <i class="fa-regular fa-flag-usa"></i>
+                            </div>
+                            <div class="working-time">
+                              <i class="fa-regular fa-clock"></i>
+                              <span>1-2 weeks</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- destination slider end  -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Destination end -->
+
+      <!-- Travel and Blogs start  -->
+
+      <section>
+        <div class="travel-blog-area">
+          <div class="container">
+            <!-- Travels and Blogs title start  -->
+            <div class="row">
+              <div class="col text-center">
+                <div class="section-title mb-40">
+                  <h2>Travel and Visa Blogs</h2>
+                  <p>
+                    Here you can read blogs about visa requirements, the best
+                    destinations, travel tips and many more.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Travels and Blogs title end -->
+
+            <!-- Blogs wrapper start  -->
+
+            <div class="row">
+              <div class="col-xl-4">
+                <div class="blog-wrap">
+                  <div class="blog-img">
+                    <img src="assets/img/blogs/blog-1.jpg" alt="blog-img" />
+                  </div>
+                  <div class="blog-content">
+                    <div class="blog-title">
+                      <a href="#">5 best boutique hotels in Kenya</a>
+                    </div>
+                    <p class="blog-description">
+                      Who can resist the passion of discovering the endless
+                      Safari and rich biodiversity of Kenya? Probably, everyone
+                      who is interested in nature has a desire to Lorem ipsum
+                      dolor sit amet consectetur adipisicing elit. Cupiditate a
+                      dicta, ipsa hic nihil numquam non? Tempore ut eaque
+                      adipisci cum quia doloremque maiores optio!
+                    </p>
+                    <div class="blog-footer">
+                      <a href="#">Kanan Isazade</a>
+                      <div class="blog-date">
+                        <span>24 December 2021 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="blog-wrap">
+                  <div class="blog-img">
+                    <img src="assets/img/blogs/blog-2.jpg" alt="blog-img" />
+                  </div>
+                  <div class="blog-content">
+                    <div class="blog-title">
+                      <a href="#">How to get Egypt long-term visa?</a>
+                    </div>
+                    <p class="blog-description">
+                      Egypt has always been at the top spot on the list of
+                      countries to visit among international travelers. Egypt is
+                      a Mediterranean country bordered on the northeast Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit. Autem
+                      fugiat, eum dolorem architecto in omnis sed consequuntur
+                      qui inventore id, sequi animi facere est.
+                    </p>
+                    <div class="blog-footer">
+                      <a href="#">Tural Abbasov</a>
+                      <div class="blog-date">
+                        <span>27 August 2021</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="blog-wrap">
+                  <div class="blog-img">
+                    <img src="assets/img/blogs/blog-3.jpg" alt="blog-img" />
+                  </div>
+                  <div class="blog-content">
+                    <div class="blog-title">
+                      <a href="#"
+                        >What is the difference between Vietnam short and long
+                        term visa?</a
+                      >
+                    </div>
+                    <p class="blog-description">
+                      Situated in south-east Asia, Vietnam is a great tourist
+                      destination. Vietnam is an interesting choice for travel
+                      seekers with its history, culture, cuisine, landscapes,
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Illo nulla itaque incidunt qui accusantium tenetur
+                      molestiae voluptatem, quos dolor minima consequuntur,
+                      fugit porro modi.
+                    </p>
+                    <div class="blog-footer">
+                      <a href="#">Tamerlan Mehdiyev</a>
+                      <div class="blog-date">
+                        <span>27 August 2021 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="blog-wrap">
+                  <div class="blog-img">
+                    <img src="assets/img/blogs/blog-4.jpg" alt="blog-img" />
+                  </div>
+                  <div class="blog-content">
+                    <div class="blog-title">
+                      <a href="#">Djibouti Visa Types</a>
+                    </div>
+                    <p class="blog-description">
+                      Our readers already know that we always try to cover as
+                      many countries as possible in our articles and today it
+                      will not be an exception as we are travelling to one Lorem
+                      ipsum dolor sit amet consectetur, adipisicing elit.
+                      Deleniti et vitae eaque quo? Porro explicabo sit
+                      blanditiis perferendis libero natus aperiam expedita esse
+                      animi?
+                    </p>
+                    <div class="blog-footer">
+                      <a href="#">Tural Abbasov</a>
+                      <div class="blog-date">
+                        <span>25 August 2021</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="blog-wrap">
+                  <div class="blog-img">
+                    <img src="assets/img/blogs/blog-5.jpg" alt="blog-img" />
+                  </div>
+                  <div class="blog-content">
+                    <div class="blog-title">
+                      <a href="#">Pakistan tourist visa details</a>
+                    </div>
+                    <p class="blog-description">
+                      Pakistan isn’t a country of dangerous people. It is a
+                      country of delicious cuisine, diverse nature, and
+                      colourful culture. That is why millions of tourists travel
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magni autem sint molestiae ipsa eum maiores qui minima.
+                      Laudantium sint facere rerum id atque provident!
+                    </p>
+                    <div class="blog-footer">
+                      <a href="#">Kanan Isazade</a>
+                      <div class="blog-date">
+                        <span>20 August 2021</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="blog-wrap">
+                  <div class="blog-img">
+                    <img src="assets/img/blogs/blog-6.jpg" alt="blog-img" />
+                  </div>
+                  <div class="blog-content">
+                    <div class="blog-title">
+                      <a href="#"
+                        >What is the difference between Cote d’Ivoire short and
+                        Long-term Visa?</a
+                      >
+                    </div>
+                    <p class="blog-description">
+                      What is the difference between Cote d’Ivoire visas:
+                      short-term and long-term? It’s a stunner – Cote d’Ivoire,
+                      that is. Lined with palm-tree forests and starfish- Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit. Optio
+                      praesentium saepe ea quam, cumque rem voluptatibus at?
+                      Nesciunt nam, debitis quas architecto quidem eum.
+                    </p>
+                    <div class="blog-footer">
+                      <a href="#">Priyam Lahon </a>
+                      <div class="blog-date">
+                        <span>19 August 2021</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Blogs wrapper end -->
+
+            <!-- all blogs button start -->
+
+            <div class="row justify-content-center">
+              <div class="col text-center">
+                <div class="blog-btn">
+                  <a href="#" class="">Read all blogs</a>
+                </div>
+              </div>
+            </div>
+            <!-- all blogs button end -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Travel and Blogs end -->
+
+      <!-- info section start  -->
+
+      <section>
+        <div class="info-section-area">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-5">
+                <div class="info-wrap">
+                  <div class="info-text">
+                    <h2>Ready to get a visa without wasting time?</h2>
+                  </div>
+                  <div class="info-apply-btn">
+                    <a href="#"> Apply now </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 d-none d-lg-block">
+                <div class="arrow-svg">
+                  <img src="assets/img/logo/arrow_vector.svg" alt="svg" />
+                </div>
+              </div>
+              <div class="col-5 text-end">
+                <div class="cta-img">
+                  <img src="assets/img/info/cta.png" alt="cta-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- info section end -->
     </main>
+
+    <!-- Footer Start  -->
+
     <footer class="footer-area">
       <div class="footer-top">
         <div class="container">
@@ -231,7 +904,7 @@
       </div>
       <div class="footer-bottom">
         <div class="container">
-          <hr />
+          <!-- <hr /> -->
           <div class="row justify-content-between align-items-center">
             <div class="col-xl-3">
               <div class="language-selction">
@@ -256,14 +929,14 @@
       </div>
     </footer>
 
-    <!-- Hero End -->
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- <script src="assets/js/jquery-1.9.1.js"></script> -->
+    <script src="assets/js/country-name.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

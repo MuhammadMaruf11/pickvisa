@@ -1,5 +1,5 @@
 
-export default countryName = [ 
+ const countryName = [ 
     {"name": "Afghanistan", "code": "AF"}, 
     {"name": "land Islands", "code": "AX"}, 
     {"name": "Albania", "code": "AL"}, 
@@ -245,3 +245,5 @@ export default countryName = [
     {"name": "Zambia", "code": "ZM"}, 
     {"name": "Zimbabwe", "code": "ZW"} 
     ]
+
+    
