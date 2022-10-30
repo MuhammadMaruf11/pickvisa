@@ -12,9 +12,44 @@
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/daterangepicker.css" />
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/jsuites.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <style>
+      .dropbtn {
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #ddd;
+      }
+    </style>
     <title>Pick Visa</title>
   </head>
   <body>
@@ -140,9 +175,11 @@
           <div class="banner-overlay">
             <div class="container pt-125">
               <div class="row">
-                <div class="col-xl-6 col-lg-8">
+                <div class="col-xl-5 col-lg-8">
                   <div class="hero-title">
-                    <h1>Apply for a visa online in a few clicks.</h1>
+                    <h1 class="hero-text">
+                      Apply for a visa online in a few clicks.
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -153,12 +190,12 @@
                     <li class="nav-item" role="presentation">
                       <button
                         class="nav-link active"
-                        id="home-tab"
+                        id="visa-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#home-tab-pane"
+                        data-bs-target="#visa-tab-pane"
                         type="button"
                         role="tab"
-                        aria-controls="home-tab-pane"
+                        aria-controls="visa-tab-pane"
                         aria-selected="true"
                       >
                         <div class="banner-nav-items">
@@ -174,12 +211,12 @@
                     <li class="nav-item" role="presentation">
                       <button
                         class="nav-link"
-                        id="profile-tab"
+                        id="flight-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#profile-tab-pane"
+                        data-bs-target="#flight-tab-pane"
                         type="button"
                         role="tab"
-                        aria-controls="profile-tab-pane"
+                        aria-controls="flight-tab-pane"
                         aria-selected="false"
                       >
                         <div class="banner-nav-items">
@@ -195,39 +232,30 @@
                   </ul>
                 </div>
               </div>
+
               <div class="row">
                 <div class="col-12">
                   <div class="tab-content" id="myTabContent">
                     <div
                       class="tab-pane fade show active"
-                      id="home-tab-pane"
+                      id="visa-tab-pane"
                       role="tabpanel"
-                      aria-labelledby="home-tab"
+                      aria-labelledby="visa-tab"
                       tabindex="0"
                     >
                       <div class="content-box">
                         <div class="select-box">
                           <i class="fa-solid fa-id-badge"></i>
-                          <div class="citizen-text">
-                            <span>I am a citizen of</span>
-                            <select class="selected" id="asdfa" name="locality">
-                              <option value="asd">asdf</option>
-                              <option value="asd">asdf</option>
-                              <option value="asd">asdf</option>
-                              <option value="asd">asdf</option>
-                            </select>
+                          <div class="citizen-text" id="dropdown" placeholder="Try">
+                            <label class="drrr" for="drrr"
+                              >I am a citizen of</label
+                            >
                           </div>
                         </div>
                         <div class="select-box">
                           <i class="fa-light fa-plane-departure"></i>
-                          <div class="citizen-text">
+                          <div class="citizen-text" id="dropdown-2" placeholder="Try">
                             <span>Planning to visit</span>
-                            <select class="selected" id="asdfa" name="locality">
-                              <option value="asd">asdf</option>
-                              <option value="asd">asdf</option>
-                              <option value="asd">asdf</option>
-                              <option value="asd">asdf</option>
-                            </select>
                           </div>
                         </div>
                         <button class="apply-btn" type="submit">
@@ -238,12 +266,170 @@
                     </div>
                     <div
                       class="tab-pane fade"
-                      id="profile-tab-pane"
+                      id="flight-tab-pane"
                       role="tabpanel"
-                      aria-labelledby="profile-tab"
+                      aria-labelledby="flight-tab"
                       tabindex="0"
                     >
-                      ...
+                      <div class="content-box">
+                        <div class="select-option">
+                          <div class="category-select">
+                            <select
+                              class="select-show"
+                              id="asdfa"
+                              name="locality"
+                            >
+                              <option value="asd">Return</option>
+                              <option value="asd">One-way</option>
+                            </select>
+                          </div>
+                          <div class="category-select">
+                            <div class="select-show">
+                              <button id="myDropdown" class="dropbtn">
+                                <span></span>
+                                Passengers
+                                <i class="fa-solid fa-chevron-down"></i>
+                              </button>
+                              <div class="dropdown-content">
+                                <div class="passengers-category">
+                                  <p class="category-name">
+                                    <span>Adults</span> <span>Over 11</span>
+                                  </p>
+                                  <div class="category-counts">
+                                    <span class="counting minus"
+                                      ><i class="fa-regular fa-minus"></i
+                                    ></span>
+                                    <input
+                                      id="adult"
+                                      type="text"
+                                      class="qty"
+                                      value="0"
+                                      max="9"
+                                      min="0"
+                                    />
+                                    <span class="counting plus"
+                                      ><i class="fa-regular fa-plus"></i
+                                    ></span>
+                                  </div>
+                                </div>
+                                <div class="passengers-category">
+                                  <p class="category-name">
+                                    <span>Children</span> <span>2-11</span>
+                                  </p>
+                                  <div class="category-counts">
+                                    <span class="counting minus"
+                                      ><i class="fa-regular fa-minus"></i
+                                    ></span>
+                                    <div class="input-wrap">
+                                      <input
+                                        id="children"
+                                        type="text"
+                                        class="qty"
+                                        value="0"
+                                        max="9"
+                                        min="0"
+                                      />
+                                    </div>
+                                    <span class="counting plus"
+                                      ><i class="fa-regular fa-plus"></i
+                                    ></span>
+                                  </div>
+                                </div>
+                                <div class="passengers-category">
+                                  <p class="category-name">
+                                    <span>Infants</span> <span>Under 2</span>
+                                  </p>
+                                  <div class="category-counts">
+                                    <span class="counting minus"
+                                      ><i class="fa-regular fa-minus"></i
+                                    ></span>
+                                    <div class="input-wrap">
+                                      <input
+                                        id="infants"
+                                        type="text"
+                                        class="qty"
+                                        value="0"
+                                        max="9"
+                                        min="0"
+                                      />
+                                    </div>
+                                    <span class="counting plus"
+                                      ><i class="fa-regular fa-plus"></i
+                                    ></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="category-select">
+                            <select
+                              class="select-show"
+                              id="asdfa"
+                              name="locality"
+                            >
+                              <option value="asd">Classes</option>
+                              <option value="asd">Economy</option>
+                              <option value="asd">Premium Economy</option>
+                              <option value="asd">Business</option>
+                              <option value="asd">First Class</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="sub-content-box">
+                          <div class="select-box">
+                            <i class="fa-light fa-plane-departure"></i>
+                            <div class="citizen-text">
+                              <span>From</span>
+                              <select
+                                class="selected"
+                                id="asdfa"
+                                name="locality"
+                              >
+                                <option value="asd">asdf</option>
+                                <option value="asd">asdf</option>
+                                <option value="asd">asdf</option>
+                                <option value="asd">asdf</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="select-box">
+                            <i class="fa-light fa-plane-arrival"></i>
+                            <div class="citizen-text">
+                              <span>To</span>
+                              <select
+                                class="selected"
+                                id="asdfa"
+                                name="locality"
+                              >
+                                <option value="asd">asdf</option>
+                                <option value="asd">asdf</option>
+                                <option value="asd">asdf</option>
+                                <option value="asd">asdf</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="select-box">
+                            <i class="fa-light fa-calendar"></i>
+                            <div class="citizen-text">
+                              <label for="datepicker">Departure</label>
+                              <div class="input-group input-daterange">
+                                <input
+                                  id="datepicker"
+                                  class="selected"
+                                  type="text"
+                                  name="datetimes"
+                                  placeholder="Anytime"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <button class="apply-btn" type="submit">
+                            <i class="fa-regular fa-magnifying-glass"></i>
+                            <span>Explore</span>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -980,14 +1166,22 @@
       </div>
     </footer>
 
+    <!-- <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script> -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- <script src="assets/js/jquery-1.9.1.js"></script> -->
+
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
     <script src="assets/js/country-name.js"></script>
     <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jsuites.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
