@@ -452,6 +452,7 @@ label {
 .main-menu ul li a {
   color: #fff;
   text-transform: capitalize;
+  font-weight: 600;
 }
 .main-menu ul li a i {
   margin-left: 5px;
