@@ -612,6 +612,12 @@ label {
 
 /* header End  */
 
+/*
+
+Home Page Start
+
+*/
+
 /* Hero Start  */
 
 .hero-area {
@@ -1246,6 +1252,44 @@ button.nav-link {
 }
 
 /* info section end */
+
+/*
+
+Home Page End
+
+*/
+
+/*
+
+Services Page start
+
+*/
+
+/* services hero area start  */
+
+.service-hero-area {
+  background-image: url(../img/banner/banner-3.png);
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: 132%;
+}
+
+.services-hero-title {
+  margin-bottom: 28px;
+}
+
+.services-hero-text {
+  font-size: 30px;
+}
+
+/* services hero area end */
+
+/*
+
+Services Page End
+
+*/
 
 /* footer Start  */
 
