@@ -6,7 +6,7 @@
 
     var countries = [
         { "text": "Afghanistan", "value": "AF" },
-        { "text": "Åland Islands", "value": "AX" },
+        { "text": "Aland Islands", "value": "AX" },
         { "text": "Albania", "value": "AL" },
         { "text": "Algeria", "value": "DZ" },
         { "text": "American Samoa", "value": "AS" },
@@ -250,17 +250,19 @@
         { "text": "Zimbabwe", "value": "ZW" }
     ];
 
-    /*------------------------------------
- country select dropdown
---------------------------------------*/
+
+    // country flag loop start 
 
     for (var i = 0; i < countries.length; i++) {
         countries[i].image = 'https://cdn.jsdelivr.net/npm/svg-country-flags@1.2.10/svg/' + countries[i].value.toLowerCase() + '.svg';
     }
 
+    // country flag loop end
 
 
-
+    /*------------------------------------
+ country select dropdown
+--------------------------------------*/
 
 
 
@@ -277,6 +279,59 @@
         multiple: false,
         width: '280px',
     });
+
+
+    /*------------------------------------
+      Country name show
+    --------------------------------------*/
+
+
+    document.getElementById('test1').innerHTML = countries.map(user => {
+        return (
+            `<div class='col-xl-3 country-name'>
+                 <a href=${user.value.toLowerCase()}.html class='country-flag'>
+                    <img src=${`https://cdn.jsdelivr.net/npm/svg-country-flags@1.2.10/svg/${user.value.toLowerCase()}.svg`} alt='icon' />
+                    <h6 class='cName'> ${user.text}</h6>
+                </a>
+            </div>`)
+    }
+
+    ).join('')
+
+
+    /*------------------------------------
+      Country name search
+    --------------------------------------*/
+
+
+    // SEARCH FUNCTION
+var btsearch = {
+	init: function(search_field, searchable_elements, searchable_text_class) {
+		$(search_field).keyup(function(e){
+			e.preventDefault();
+			var query = $(this).val().toLowerCase();
+			if(query){
+				// loop through all elements to find match
+				$.each($(searchable_elements), function(){
+					var title = $(this).find(searchable_text_class).text().toLowerCase();
+					if(title.indexOf(query) == -1){
+						$(this).hide();
+					} else {
+						$(this).show();
+					}
+				});
+			} else {
+				// empty query so show everything
+				$(searchable_elements).show();
+			}
+		});
+	}
+}
+// INIT
+$(function(){
+  // USAGE: btsearch.init(('search field element', 'searchable children elements', 'searchable text class');
+  btsearch.init('#searchInput', '.country-name', '.cName');
+});
 
 
     // 'use strict';
@@ -506,7 +561,7 @@
     });
 
     var trackLi = $('.track-content li');
-   
+
 
     trackLi.click(function () {
         var liText = $(this).text();
@@ -514,7 +569,7 @@
         console.log(liText);
     })
 
- 
+
     /*------------------------------------
     passengers category dropdown
      --------------------------------------*/
@@ -531,9 +586,9 @@
     });
 
 
-       /*------------------------------------
-            Classes dropdown
-    --------------------------------------*/
+    /*------------------------------------
+         Classes dropdown
+ --------------------------------------*/
 
     $(".classes-btn").click(function () {
         $(".classes-content").show();
@@ -547,7 +602,7 @@
     });
 
     var classesLi = $('.classes-content li');
-   
+
 
     classesLi.click(function () {
         var liText = $(this).text();
@@ -580,7 +635,7 @@
 
     /*------------------------------------
       counts plus minus
-  --------------------------------------*/
+    --------------------------------------*/
 
     $(".category-counts").on("click", ".plus, .minus",
         function () {
@@ -619,10 +674,6 @@
     );
 
 
-
-    /*------------------------------------
-      Country select dropdown
-  --------------------------------------*/
 
 
 

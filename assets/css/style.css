@@ -1285,6 +1285,30 @@ Services Page start
 
 /* services hero area end */
 
+/* services destination area start  */
+
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd2d9;
+  margin-bottom: 30px;
+}
+
+.search-input-wrap i {
+  margin-right: 8px;
+  padding-left: 16px;
+  color: rgb(92, 95, 98);
+}
+
+.search-input-wrap input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  margin: 12px;
+}
+
+/* services destination area end */
+
 /*
 
 Services Page End
