@@ -258,7 +258,7 @@
         countries[i].image = 'https://cdn.jsdelivr.net/npm/svg-country-flags@1.2.10/svg/' + countries[i].value.toLowerCase() + '.svg';
     }
 
- 
+
 
 
 
@@ -491,8 +491,33 @@
 
 
     /*------------------------------------
+            track dropdown
+    --------------------------------------*/
+
+    $(".track-btn").click(function () {
+        $(".track-content").show();
+    });
+
+    $(document).click(function (e) {
+        if (!$(e.target).hasClass("track-btn")
+            && $(e.target).parents(".track-content").length === 0) {
+            $(".track-content").hide();
+        }
+    });
+
+    var trackLi = $('.track-content li');
+   
+
+    trackLi.click(function () {
+        var liText = $(this).text();
+        $('.track-btn span').text(liText)
+        console.log(liText);
+    })
+
+ 
+    /*------------------------------------
     passengers category dropdown
- --------------------------------------*/
+     --------------------------------------*/
 
     $(".dropbtn").click(function () {
         $(".dropdown-content").show();
@@ -504,6 +529,30 @@
             $(".dropdown-content").hide();
         }
     });
+
+
+       /*------------------------------------
+            Classes dropdown
+    --------------------------------------*/
+
+    $(".classes-btn").click(function () {
+        $(".classes-content").show();
+    });
+
+    $(document).click(function (e) {
+        if (!$(e.target).hasClass("classes-btn")
+            && $(e.target).parents(".classes-content").length === 0) {
+            $(".classes-content").hide();
+        }
+    });
+
+    var classesLi = $('.classes-content li');
+   
+
+    classesLi.click(function () {
+        var liText = $(this).text();
+        $('.classes-btn span').text(liText)
+    })
 
 
 

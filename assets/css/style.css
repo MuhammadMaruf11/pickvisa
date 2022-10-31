@@ -748,13 +748,35 @@ button.nav-link {
   margin-bottom: 8px;
 }
 
-.dropbtn{
+.dropbtn {
   background: #fff;
 }
 
-.dropbtn i{
+.dropbtn i {
   font-size: 12px;
   margin-left: 8px;
+}
+
+.jdropdown-container-header {
+  width: 470px;
+}
+
+.jdropdown-default .jdropdown-container {
+  width: 470px;
+}
+
+.jdropdown-default.jdropdown-focus .jdropdown-header {
+  outline: none;
+}
+
+.jdropdown-default .jdropdown-container {
+  width: 470px;
+}
+
+.jdropdown-default .jdropdown-header {
+  background: #f1f2f6;
+  border: 0;
+  outline: 0;
 }
 
 .dropdown-content {
@@ -774,18 +796,17 @@ button.nav-link {
   margin-right: 15px;
 }
 
-.category-counts  {
+.category-counts {
   display: flex;
   align-items: center;
 }
-.category-counts input{
+.category-counts input {
   width: 32px;
   height: 32px;
   border: 0;
   outline: 0;
   text-align: center;
 }
-
 
 .category-counts .counting {
   display: inline-block;
@@ -856,12 +877,116 @@ button.nav-link {
   padding-right: 8px;
   outline: none;
   border: none;
+  position: relative;
 }
 
 .citizen-text {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+.citizen-text p {
+  padding-left: 12px;
+}
+
+.track-btn {
+  outline: 0;
+  border: 0;
+  background: #fff;
+}
+
+.track-btn span {
+  pointer-events: none;
+}
+
+.track-btn i {
+  margin-left: 8px;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.track-content {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 90px;
+  z-index: 10;
+  padding: 10px 0;
+  margin: 12px 0;
+  background-color: #fff;
+  border: 1px solid #ebeef5;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.track-content li {
+  padding: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.track-content li:hover {
+  padding: 8px;
+  color: #319aaf;
+  cursor: pointer;
+}
+
+.classes-btn {
+  outline: 0;
+  border: 0;
+  background: #fff;
+}
+
+.classes-btn span {
+  pointer-events: none;
+}
+
+.classes-btn i {
+  margin-left: 8px;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.classes-content {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 190px;
+  z-index: 10;
+  padding: 10px 0;
+  margin: 12px 0;
+  background-color: #fff;
+  border: 1px solid #ebeef5;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.classes-content li {
+  font-weight: 600;
+  cursor: pointer;
+}
+.classes-content li input {
+  cursor: pointer;
+  margin-right: 4px;
+  margin-left: 8px;
+}
+
+.classes-content li label {
+  padding: 8px 8px 8px 0;
+  width: 84%;
+}
+
+.classes-content li input[type="radio"]:checked + label {
+  color: #319aaf;
+}
+
+.classes-content li:hover {
+  color: #319aaf;
+  cursor: pointer;
 }
 
 .apply-btn {

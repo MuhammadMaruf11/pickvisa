@@ -246,16 +246,20 @@
                       <div class="content-box">
                         <div class="select-box">
                           <i class="fa-solid fa-id-badge"></i>
-                          <div class="citizen-text" id="dropdown" placeholder="Try">
-                            <label class="drrr" for="drrr"
-                              >I am a citizen of</label
-                            >
+                          <div class="citizen-text">
+                            <p>I am a citizen of</p>
+                            <div id="dropdown" placeholder="Try"></div>
                           </div>
                         </div>
                         <div class="select-box">
                           <i class="fa-light fa-plane-departure"></i>
-                          <div class="citizen-text" id="dropdown-2" placeholder="Try">
-                            <span>Planning to visit</span>
+                          <div class="citizen-text">
+                            <p>Planning to visit</p>
+                            <div
+                              id="dropdown-2"
+                              style="width: 100%"
+                              placeholder="Try"
+                            ></div>
                           </div>
                         </div>
                         <button class="apply-btn" type="submit">
@@ -274,14 +278,16 @@
                       <div class="content-box">
                         <div class="select-option">
                           <div class="category-select">
-                            <select
-                              class="select-show"
-                              id="asdfa"
-                              name="locality"
-                            >
-                              <option value="asd">Return</option>
-                              <option value="asd">One-way</option>
-                            </select>
+                            <div class="select-show">
+                              <button class="track-btn">
+                                <span> Return</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                              </button>
+                              <ul class="track-content">
+                                <li>Return</li>
+                                <li>One-way</li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="category-select">
                             <div class="select-show">
@@ -362,17 +368,50 @@
                             </div>
                           </div>
                           <div class="category-select">
-                            <select
-                              class="select-show"
-                              id="asdfa"
-                              name="locality"
-                            >
-                              <option value="asd">Classes</option>
-                              <option value="asd">Economy</option>
-                              <option value="asd">Premium Economy</option>
-                              <option value="asd">Business</option>
-                              <option value="asd">First Class</option>
-                            </select>
+                            <div class="select-show">
+                              <button class="classes-btn">
+                                <span> Classes</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                              </button>
+                              <fieldset id="group2">
+                                <ul class="classes-content">
+                                  <li>
+                                    <input
+                                      id="Economy"
+                                      type="radio"
+                                      name="group2"
+                                    />
+                                    <label for="Economy"> Economy</label>
+                                  </li>
+                                  <li>
+                                    <input
+                                      type="radio"
+                                      id="Premium"
+                                      name="group2"
+                                    />
+                                    <label for="Premium">
+                                      Premium Economy</label
+                                    >
+                                  </li>
+                                  <li>
+                                    <input
+                                      id="Business"
+                                      type="radio"
+                                      name="group2"
+                                    />
+                                    <label for="Business"> Business</label>
+                                  </li>
+                                  <li>
+                                    <input
+                                      id="first"
+                                      type="radio"
+                                      name="group2"
+                                    />
+                                    <label for="first">First Class</label>
+                                  </li>
+                                </ul>
+                              </fieldset>
+                            </div>
                           </div>
                         </div>
                         <div class="sub-content-box">
