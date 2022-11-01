@@ -1316,6 +1316,263 @@ Services Page End
 
 */
 
+/*
+
+Blog Page Start
+
+*/
+
+/* search blog area start  */
+
+.search-blog-area {
+  padding: 80px 0;
+}
+
+.search-content-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0;
+}
+
+.search-blog-category {
+  display: flex;
+}
+.search-blog-category button {
+  border: 0;
+  outline: 0;
+  position: relative;
+  margin-right: 48px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.search-blog-category button i {
+  margin-left: 8px;
+}
+
+.search-blog-category button.rotate i {
+  rotate: 180deg;
+}
+
+.search-blog-category a {
+  font-weight: 600;
+  color: inherit;
+  font-size: 16px;
+}
+.search-blog-category ul {
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  margin: 0;
+  padding: 13px 7px;
+  background-color: #fff;
+  max-width: 350px;
+  box-shadow: 0 2px 6px rgb(109 133 158 / 8%), 0 24px 48px rgb(71 96 116 / 25%);
+  border-radius: 8px;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  z-index: 5;
+}
+
+.search-blog-category ul li {
+  display: block;
+  text-align: left;
+}
+
+.search-blog-category ul li a {
+  width: 100%;
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: -0.08px;
+  color: #1f2933;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.2px;
+  display: inline-block;
+}
+
+.search-blog-input {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 24px;
+}
+.search-blog-input i {
+  font-size: 24px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-input-blog-box {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 22px 0;
+}
+
+.search-input-blog-wrap {
+  width: 92%;
+}
+.search-input-blog-wrap input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  height: 24px;
+  background: transparent;
+}
+
+.search-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+.search-input-icon i {
+  font-size: 24px;
+}
+.search-cancel-icon {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}
+.search-cancel-icon i {
+  font-size: 24px;
+}
+
+/* search blog area end */
+
+/* banner blog area start */
+
+.blog-banner-area {
+  margin-bottom: 96px;
+}
+
+.blog-banner-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.blog-banner-title {
+  margin-bottom: 11px;
+}
+.blog-banner-title a {
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -0.004em;
+  color: #1f2933;
+}
+.blog-banner-title a:hover {
+  text-decoration: underline;
+}
+
+.blog-banner-description p {
+  line-height: 160%;
+  letter-spacing: -0.08px;
+  color: #616e7c;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blog-banner-bottom-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog-banner-bottom-text a {
+  color: #9aa5b1;
+}
+.blog-banner-bottom-text a:hover {
+  text-decoration: underline;
+  color: initial;
+}
+.blog-banner-bottom-text span {
+  color: #9aa5b1;
+}
+
+/* banner blog area end */
+
+/* All blogs category start  */
+
+.section-title h3 {
+  font-size: 30px;
+}
+
+.view-all-blogs a {
+  font-size: 16px;
+  color: #1f2933;
+  transition: all 0.3s linear;
+}
+
+.view-all-blogs a span {
+  margin-right: 4px;
+}
+
+.view-all-blogs i {
+  transition: all 0.3s linear;
+}
+
+.view-all-blogs a:hover i {
+  transform: translateX(4px);
+}
+
+.blog-img {
+  height: 205px;
+  overflow: hidden;
+}
+
+/* All blogs category end */
+
+/*
+
+blog Page End
+
+*/
+
+/*
+
+FAQ Page start
+
+*/
+
+/* faq area start  */
+
+.faq-area {
+  padding: 80px 0;
+}
+
+.faq-section-title {
+  margin: 50px 0;
+}
+
+.faq-section-title h2 {
+  color: #1e3340cc;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+/* faq area end */
+
+/*
+
+FAQ Page End
+
+*/
+
 /* footer Start  */
 
 .footer-area {
