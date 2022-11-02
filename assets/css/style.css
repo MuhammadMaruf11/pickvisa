@@ -2012,6 +2012,21 @@ Visa chance calculator  Page start
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+.visa-chance-select-wrap label {
+  border-radius: 2px;
+  background-color: #40c7e0;
+  padding: 2px 6px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 13px;
+  position: absolute;
+  top: -7px;
+  left: 7px;
+  z-index: 10;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
 .visa-chance-input-wrap input {
   width: 100%;
   display: block;
@@ -2057,11 +2072,11 @@ Visa chance calculator  Page start
   content: url(../img/icons/arrrowup.svg);
   color: #393750;
   position: absolute;
-  top: 58%;
+  top: 30%;
   right: 15px;
-  -webkit-transform: translateY(-58%);
-  -ms-transform: translateY(-58%);
-  transform: translateY(-58%);
+  -webkit-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  transform: translateY(-30%);
   font-size: 14px;
   pointer-events: none;
   z-index: 5;
@@ -2070,11 +2085,11 @@ Visa chance calculator  Page start
   content: url(../img/icons/arrowdown.svg);
   color: #393750;
   position: absolute;
-  bottom: 25%;
+  bottom: 15%;
   right: 15px;
-  -webkit-transform: translateY(25%);
-  -ms-transform: translateY(25%);
-  transform: translateY(25%);
+  -webkit-transform: translateY(-15%);
+  -ms-transform: translateY(-15%);
+  transform: translateY(-15%);
   display: unset;
   width: unset;
   height: unset;
