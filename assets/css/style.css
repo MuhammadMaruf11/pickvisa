@@ -87,7 +87,7 @@ h4,
 h5,
 h6 {
   font-family: "Mulish", sans-serif;
-  color: #191919;
+  color: #1f2933;
   font-weight: 600;
   margin: 0;
 }
@@ -1570,6 +1570,310 @@ FAQ Page start
 /*
 
 FAQ Page End
+
+*/
+
+/*
+
+contact Page start
+
+*/
+
+/* contact form start  */
+
+.contact-form-area {
+  padding-top: 80px;
+  margin-bottom: 130px;
+  position: relative;
+}
+
+.contact-form-img {
+  position: absolute;
+  bottom: 52px;
+  left: 0;
+}
+
+.contact-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.contact-form-texts {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.contact-form-texts h2 {
+  color: #1f2933;
+}
+.contact-form-texts p {
+  color: #616e7c;
+  font-size: 16px;
+}
+
+.contact-form-wrap {
+  padding: 56px;
+  background: #fff;
+  -webkit-box-shadow: 0 20px 25px rgb(32 35 45 / 10%);
+  box-shadow: 0 20px 25px rgb(32 35 45 / 10%);
+  border-radius: 10px;
+}
+
+.form-input-wrap {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.form-input-wrap label {
+  margin-bottom: 6px;
+  line-height: 160%;
+  letter-spacing: -0.08px;
+}
+
+.form-input-wrap input {
+  border: 1px solid #cbd2d9;
+  display: block;
+  width: 100%;
+  height: 46px;
+  line-height: 160%;
+  letter-spacing: -0.08px;
+  color: #1f2933;
+  padding: 12px 14px;
+  line-height: 160%;
+  letter-spacing: -0.08px;
+  -webkit-box-shadow: inset 0 0.5px 1px rgba(102, 113, 123, 0.21);
+  box-shadow: inset 0 0.5px 1px rgba(102, 113, 123, 0.21);
+  border-radius: 4px;
+}
+
+.form-input-wrap input:focus {
+  border-color: #1f2933;
+}
+
+.captcha-wrap {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  border: 1px solid #d3d3d3;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.captcha-input-wrap {
+  display: flex;
+  align-items: center;
+}
+.captcha-input-wrap input {
+  margin: 0 12px;
+  width: 28px;
+  height: 28px;
+}
+
+.captcha-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.captcha-items img {
+  max-width: 50%;
+}
+.captcha-items p {
+  color: #555;
+  cursor: default;
+  font-family: Roboto, helvetica, arial, sans-serif;
+  font-size: 10px;
+  line-height: 10px;
+  margin-top: 5px;
+}
+
+.captcha-rules {
+  display: inline;
+  text-decoration: none;
+  font-size: 12px;
+  color: #555;
+}
+
+.captcha-rules a {
+  display: inline;
+  text-decoration: none;
+  font-size: 8px;
+  color: #555;
+}
+
+.captcha-rules a:hover {
+  text-decoration: underline;
+}
+
+.form-btn button {
+  background: #319aaf;
+  color: #fff;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 14px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form-btn button:hover {
+  background-color: #226d7c;
+}
+
+/* contact form end  */
+
+/* Our office and contact  start  */
+
+.our-office-contact-area {
+  position: relative;
+}
+
+.our-office-contact-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.our-office-contact-title {
+  margin-bottom: 64px;
+}
+
+.our-office-contact-title h2 {
+  font-size: 48px;
+}
+
+.office-address-items {
+  margin-bottom: 30px;
+}
+
+.address-title {
+  margin-bottom: 16px;
+}
+.address-title h6 {
+  font-size: 18px;
+}
+
+.address-location {
+  margin-bottom: 12px;
+}
+
+.address-location p {
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.2px;
+  color: #52606d;
+}
+
+.find-us-map {
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.find-us-map a {
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.2px;
+  color: #319aaf;
+}
+.find-us-map i {
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.find-us-map a:hover i {
+  transform: translateX(4px);
+}
+
+.office-number {
+  margin-bottom: 16px;
+  padding-left: 16px;
+}
+.office-number a {
+  display: flex;
+  color: inherit;
+  font-size: 16px;
+}
+.office-number a i {
+  rotate: -45deg;
+}
+
+.office-email,
+.office-hour {
+  margin-bottom: 16px;
+}
+
+.office-email a {
+  display: flex;
+  color: inherit;
+  font-size: 16px;
+}
+
+.office-email i {
+  margin-right: 8px;
+  margin-top: 4px;
+}
+
+.office-hour {
+  display: flex;
+}
+.office-hour i {
+  margin-top: 4px;
+  margin-right: 8px;
+}
+
+.offic-hour-title {
+  margin-bottom: 8px;
+}
+.offic-hour-title h6 {
+  font-size: 16px;
+}
+
+.office-hour-time {
+  margin-bottom: 10px;
+}
+
+.office-hour-time p {
+  color: #52606d;
+  font-size: 16px;
+}
+
+/* Our office and contact  end  */
+
+/*  contact faq start  */
+
+.contact-faq-area {
+  padding: 120px 0;
+  background: #e9f9fb;
+}
+
+.contact-faq-section-title {
+  margin-bottom: 30px;
+}
+
+.contact-faq-section-title h2 {
+  font-size: 48px;
+}
+
+.contact-faq-items{
+  margin-top: 90px;
+}
+
+/*  contact faq end  */
+
+/*
+
+contact Page End
 
 */
 

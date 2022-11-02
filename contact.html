@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/icons/fevicon.png"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/daterangepicker.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/jsuites.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <title>Pick Visa</title>
+  </head>
+
+  <style>
+    .header-area {
+      background: transparent;
+    }
+    .main-menu ul li a {
+      color: #1f2933;
+    }
+    .icon-items span {
+      color: #1f2933;
+    }
+    .header-right a {
+      color: #1f2933;
+    }
+    .signup-btn {
+      border-color: #1f2933;
+    }
+
+    .content-box {
+      background: rgba(31, 41, 51, 0.1);
+      padding: 10px;
+    }
+
+    .select-box {
+      flex-grow: 0;
+    }
+    .jdropdown-container-header {
+      width: 280px;
+    }
+
+    .jdropdown-container-header input {
+      font-size: 14px;
+    }
+    .jdropdown-container-header input::placeholder {
+      font-size: 14px;
+    }
+
+    .select-box i {
+      font-size: 24px;
+    }
+
+    .apply-btn {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    .services-destination-area {
+      padding: 90px 0;
+    }
+
+    .services-section-title {
+      text-align: left;
+    }
+    .services-section-title h3 {
+      font-size: 24px;
+    }
+
+    .destination-slider-active {
+      margin-top: 30px;
+    }
+
+    .destination-title {
+      margin-top: 16px;
+    }
+
+    .destination-title h4 {
+      font-size: 16px;
+    }
+    .destination-title i {
+      font-size: 16px;
+    }
+
+    .jdropdown-default .jdropdown-container {
+      width: 120px !important;
+    }
+
+    .country-flag {
+      display: flex;
+      margin-bottom: 30px;
+      align-items: center;
+    }
+    .country-flag img {
+      width: 27px;
+      height: 17px;
+      margin-right: 18px;
+    }
+
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+      box-shadow: none;
+    }
+
+    body {
+      background-position-x: right;
+      background-size: 112%;
+      background-image: url("assets/img/banner/contact_us_texture.svg");
+      background-repeat: no-repeat;
+    }
+
+    .form-select {
+      -webkit-box-shadow: 0 1px 0 rgba(22, 29, 37, 0.05);
+      box-shadow: 0 1px 0 rgba(22, 29, 37, 0.05);
+      background-color: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#fff),
+        to(#f9fafb)
+      );
+      background-color: linear-gradient(180deg, #fff 0, #f9fafb 100%);
+      appearance: none;
+      background-image: url(assets/img/contact/select-arrow.svg);
+    }
+
+    .info-section-area {
+      margin-top: 0;
+    }
+
+    button.accordion-button.collapsed {
+      border-bottom: 1px solid rgba(4, 19, 22, 0.1);
+      padding: 32px 0;
+      margin-right: 20px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 140%;
+      letter-spacing: -0.3px;
+      color: #1f2933;
+      margin-bottom: 0;
+      background: #e9f9fb;
+    }
+
+    .accordion-body {
+      padding: 20px 0;
+      font-size: 18px;
+      line-height: 170%;
+      letter-spacing: -0.2px;
+      color: #52606d;
+      background: #e9f9fb;
+    }
+
+    .accordion-button:not(.collapsed) {
+      border-bottom: 1px solid rgba(4, 19, 22, 0.1);
+      padding: 32px 0;
+      margin-right: 20px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 140%;
+      letter-spacing: -0.3px;
+      color: #1f2933;
+      margin-bottom: 0;
+      background: #e9f9fb;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+      background-image: var(--bs-accordion-btn-icon);
+    }
+  </style>
+
+  <body>
+    <!-- Header Start -->
+
+    <header>
+      <div class="header-area">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-3">
+              <div class="header-logo">
+                <a href="index.html">
+                  <img
+                    src="assets/img/logo/logo_black.svg"
+                    alt="logo"
+                    class="logo-img"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="main-menu d-lg-block d-none">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="visapolicy.html">Visa Policy</a></li>
+                    <li>
+                      <a href="/solution"
+                        >Solution <i class="fa-light fa-chevron-down"></i
+                      ></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="#">
+                            <img src="assets/img/icons/icon-1.png" alt="icon" />
+                            Visa Application Form Generator
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="assets/img/icons/icon-2.png"
+                              alt="icon"
+                            />Visa Chance Calculator</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="assets/img/icons/icon-3.png"
+                              alt="icon"
+                            />Visa Map</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="assets/img/icons/icon-4.png"
+                              alt="icon"
+                            />Embassies</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="assets/img/icons/icon-5.png"
+                              alt="icon"
+                            />COVID-19 Test Centers</a
+                          >
+                        </li>
+                        <img
+                          src="assets/img//icons/tooltip_arrow.svg"
+                          alt="icon"
+                        />
+                      </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="menu-open d-lg-none text-end">
+                <div class="side-icon">
+                  <a href="#"><i class="far fa-bars"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 text-end">
+              <div class="header-right">
+                <div class="icon-items">
+                  <span>
+                    <i class="fa-light fa-globe"></i>
+                    <ul>
+                      <li><a href="#">Azərbaycanca</a></li>
+                      <li><a href="#">English</a></li>
+                      <li><a href="#">Русский</a></li>
+                      <img
+                        src="assets/img//icons/tooltip_arrow.svg"
+                        alt="icon"
+                      />
+                    </ul>
+                  </span>
+                </div>
+                <div class="login-btn">
+                  <a href="#">Log In</a>
+                </div>
+                <div class="signup-btn">
+                  <a href="#">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header End -->
+
+    <main>
+      <!-- Contact form area start  -->
+
+      <section>
+        <div class="contact-form-area">
+          <div class="container pt-80">
+            <div class="row justify-content-center">
+              <div class="col-xl-5">
+                <div class="contact-wrap">
+                  <div class="contact-form-texts">
+                    <h1 class="contact-form-title">How can we help?</h1>
+                    <p class="contact-form-description">
+                      Unsure who to talk to? You can contact Pickvisa via
+                      info@pickvisa.com. We are ready to respond to any
+                      inquiries regarding the website.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5">
+                <div class="contact-form-wrap">
+                  <form action="#" class="contact-form">
+                    <div class="form-input-wrap">
+                      <label for="name">Full Name</label>
+                      <input type="text" id="name" />
+                    </div>
+                    <div class="form-input-wrap">
+                      <label for="mail">Your e-mail</label>
+                      <input type="email" id="mail" />
+                    </div>
+                    <div class="form-input-wrap">
+                      <label for="type">Inquiry type</label>
+                      <select class="form-select" name="" id="type">
+                        <option value="">Visa questions</option>
+                        <option value="">Order issues</option>
+                        <option value="">Advertisement</option>
+                        <option value="">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-input-wrap">
+                      <label for="textarea">Full Name</label>
+                      <textarea
+                        class="form-control"
+                        name=""
+                        id="textarea"
+                        rows="4"
+                      ></textarea>
+                    </div>
+                    <div class="captcha-wrap">
+                      <div class="captcha-input-wrap">
+                        <div class="captcha-checkbox">
+                          <input type="checkbox" id="captcha" />
+                        </div>
+                        <div class="captcha-title">
+                          <label for="captcha">I'm not a robot</label>
+                        </div>
+                      </div>
+                      <div class="captcha-items">
+                        <div class="captcha-img">
+                          <img
+                            src="assets/img/contact/captcha_logo.png"
+                            alt="captcha"
+                          />
+                          <p>reCAPTCHA</p>
+                        </div>
+                        <div class="captcha-rules">
+                          <a href="#" class="captcha-privacy"> Privacy </a>-
+                          <a href="#" class="captcha-terms">Terms</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-btn">
+                      <button type="submit">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-img">
+            <img src="assets/img/contact/letter_send.png" alt="letter_send" />
+          </div>
+        </div>
+      </section>
+
+      <!-- contact form area end  -->
+
+      <!-- our office and contact  area start  -->
+
+      <section>
+        <div class="our-office-contact-area">
+          <div class="our-office-contact-img">
+            <img src="assets/img/contact/teamwork_img.png" alt="teamwork_img" />
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6" style="margin-left: auto">
+                <div class="our-office-contact-wrap">
+                  <div class="our-office-contact-title">
+                    <h2>Our offices & contacts</h2>
+                  </div>
+                  <div class="our-office-contacts-address">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="office-address-items">
+                          <div class="address-title">
+                            <h6>USA Office</h6>
+                          </div>
+                          <div class="address-location">
+                            <p>651 N Broad St, Middletown, DE 19709, USA</p>
+                          </div>
+                          <div class="find-us-map">
+                            <a href="#"
+                              >Find us on google maps
+                              <i class="fa-regular fa-chevron-right"></i>
+                            </a>
+                          </div>
+                          <div class="office-number">
+                            <a href="tel:+18888514131">
+                              <i class="fa-duotone fa-phone-volume"></i>
+                              +1 (888) 851-4131 Whatsapp available
+                            </a>
+                          </div>
+                          <div class="office-email">
+                            <a href="mailto:info@pickvisa.com">
+                              <i class="fa-duotone fa-paper-plane"></i>
+                              info@pickvisa.com
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="office-address-items">
+                          <div class="address-title">
+                            <h6>USA Office</h6>
+                          </div>
+                          <div class="address-location">
+                            <p>651 N Broad St, Middletown, DE 19709, USA</p>
+                          </div>
+                          <div class="find-us-map">
+                            <a href="#"
+                              >Find us on google maps
+                              <i class="fa-regular fa-chevron-right"></i>
+                            </a>
+                          </div>
+                          <div class="office-number">
+                            <a href="tel:+18888514131">
+                              <i class="fa-duotone fa-phone-volume"></i>
+                              +1 (888) 851-4131 Whatsapp available
+                            </a>
+                          </div>
+                          <div class="office-email">
+                            <a href="mailto:info@pickvisa.com">
+                              <i class="fa-duotone fa-paper-plane"></i>
+                              info@pickvisa.com
+                            </a>
+                          </div>
+                          <div class="office-hour">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <div class="office-hour-texts">
+                              <div class="offic-hour-title">
+                                <h6>Office hours</h6>
+                              </div>
+                              <div class="office-hour-time">
+                                <p>Sunday — Friday 9AM - 6PM</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="office-address-items">
+                          <div class="address-title">
+                            <h6>USA Office</h6>
+                          </div>
+                          <div class="address-location">
+                            <p>651 N Broad St, Middletown, DE 19709, USA</p>
+                          </div>
+                          <div class="find-us-map">
+                            <a href="#"
+                              >Find us on google maps
+                              <i class="fa-regular fa-chevron-right"></i>
+                            </a>
+                          </div>
+                          <div class="office-number">
+                            <a href="tel:+18888514131">
+                              <i class="fa-duotone fa-phone-volume"></i>
+                              +1 (888) 851-4131 Whatsapp available
+                            </a>
+                          </div>
+                          <div class="office-email">
+                            <a href="mailto:info@pickvisa.com">
+                              <i class="fa-duotone fa-paper-plane"></i>
+                              info@pickvisa.com
+                            </a>
+                          </div>
+                          <div class="office-hour">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <div class="office-hour-texts">
+                              <div class="offic-hour-title">
+                                <h6>Office hours</h6>
+                              </div>
+                              <div class="office-hour-time">
+                                <p>Sunday — Friday 9AM - 6PM</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="office-hour">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <div class="office-hour-texts">
+                              <div class="office-hour-title">
+                                <h6>Consultation hours</h6>
+                              </div>
+                              <div class="office-hour-time">
+                                <p>Monday-Friday 9 AM - 4:30 PM</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- our office and contact  area end  -->
+
+      <!-- Contact FAQ area start  -->
+
+      <section>
+        <div class="contact-faq-area">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-5">
+                <div class="contact-faq-section-title">
+                  <h2>FAQ</h2>
+                </div>
+              </div>
+              <div class="col-xl-5 text-end">
+                <div class="contact-faq-img">
+                  <img src="assets/img/contact/faq.png" alt="faq" />
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-xl-10 col-12">
+                <div class="contact-faq-items">
+                  <div
+                    class="accordion accordion-flush"
+                    id="accordionFlushExample"
+                  >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseOne"
+                        >
+                          What Is Pickvisa?
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">
+                          Pickvisa.com is an online platform that provides
+                          services in obtaining travel, education, and business
+                          trip visas to any country worldwide for any nationals.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTwo"
+                        >
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">
+                          Placeholder content for this accordion, which is
+                          intended to demonstrate the
+                          <code>.accordion-flush</code> class. This is the
+                          second item's accordion body. Let's imagine this being
+                          filled with some actual content.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseThree"
+                        >
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">
+                          Placeholder content for this accordion, which is
+                          intended to demonstrate the
+                          <code>.accordion-flush</code> class. This is the third
+                          item's accordion body. Nothing more exciting happening
+                          here in terms of content, but just filling up the
+                          space to make it look, at least at first glance, a bit
+                          more representative of how this would look in a
+                          real-world application.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact FAQ area end  -->
+
+      <!-- info section start  -->
+
+      <section>
+        <div class="info-section-area">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-5">
+                <div class="info-wrap">
+                  <div class="info-text">
+                    <h2>Ready to get a visa without wasting time?</h2>
+                  </div>
+                  <div class="info-apply-btn">
+                    <a href="#"> Apply now </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 d-none d-lg-block">
+                <div class="arrow-svg">
+                  <img src="assets/img/logo/arrow_vector.svg" alt="svg" />
+                </div>
+              </div>
+              <div class="col-5 text-end">
+                <div class="cta-img">
+                  <img src="assets/img/info/cta.png" alt="cta-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- info section end -->
+    </main>
+
+    <!-- Footer Start  -->
+
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <div class="footer-logo">
+                <a href="index.html">
+                  <i class="fa-light fa-globe"></i><span>pickvisa</span>
+                </a>
+              </div>
+              <div class="footer-description">
+                <p>
+                  We support our customers in travel, education and business
+                  visit visas to any country worldwide.
+                </p>
+              </div>
+              <div class="footer-social">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col">
+              <div class="footer-widget">
+                <div class="widget-title">
+                  <h5>OUR SERVICES</h5>
+                </div>
+                <ul>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#"> Visa Policy </a></li>
+                  <li><a href="#">Visa Application Form Generator</a></li>
+                  <li><a href="#">Visa Chance Calculator</a></li>
+                  <li><a href="#">Visa Map</a></li>
+                  <li><a href="#">Embassies</a></li>
+                  <li><a href="#">COVID-19 Test Centers</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-widget">
+                <div class="widget-title">
+                  <h5>ABOUT US</h5>
+                </div>
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our Bloggers</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Contact </a></li>
+                  <li><a href="#">Vacancies</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-widget">
+                <div class="widget-title">
+                  <h5>LEGAL</h5>
+                </div>
+                <ul>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">Cookies</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-widget">
+                <div class="widget-title">
+                  <h5>USA Office</h5>
+                </div>
+                <ul>
+                  <li>
+                    <a href="mailto:info@pickvisa.com">info@pickvisa.com</a>
+                  </li>
+                  <li>
+                    <a href="tel:+18888514131"
+                      >+1 (888) 851-4131 Whatsapp available</a
+                    >
+                  </li>
+                  <li>651 N Broad St, Middletown, DE 19709, USA</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <!-- <hr /> -->
+          <div class="row justify-content-between align-items-center">
+            <div class="col-xl-3">
+              <div class="language-selction">
+                <div class="dropdown-grop">
+                  <i class="fa-light fa-globe"></i>
+                  <span>English</span>
+                </div>
+                <div class="dropdown-menu">
+                  <a href="#">Azərbaycanca</a>
+                  <a href="index.html">English</a>
+                  <a href="#"> Русский</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-9 text-end">
+              <div class="copyright-description">
+                <span>Copyright © pickvisa.com. 2016-2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jsuites.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script></script>
+  </body>
+</html>
