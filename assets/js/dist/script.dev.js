@@ -1081,9 +1081,16 @@ for (var i = 0; i < countries.length; i++) {
 } // country flag loop end
 
 /*------------------------------------
-country select dropdown
+visa application form dropdown
 --------------------------------------*/
 
+
+document.getElementById('from').innerHTML = countries.map(function (index) {
+  return "<option value=''>\n        ".concat(index.text, "\n        </option>");
+}).join('');
+/*------------------------------------
+country select dropdown
+--------------------------------------*/
 
 jSuites.dropdown(document.getElementById('dropdown'), {
   data: countries,
@@ -1103,4 +1110,11 @@ jSuites.dropdown(document.getElementById('dropdown-2'), {
 
 document.getElementById('test1').innerHTML = countries.map(function (index) {
   return "<div class='col-xl-3 country-name'>\n             <a href=".concat(index.value.toLowerCase(), ".html class='country-flag'>\n                <img src=", "https://cdn.jsdelivr.net/npm/svg-country-flags@1.2.10/svg/".concat(index.value.toLowerCase(), ".svg"), " alt='icon' />\n                <h6 class='cName'> ").concat(index.text, "</h6>\n            </a>\n        </div>");
+}).join('');
+/*------------------------------------
+visa application form dropdown
+--------------------------------------*/
+
+document.getElementById('from').innerHTML = countries.map(function (index) {
+  return "<option value=''>\n        ".concat(index.text, "\n        </option>");
 }).join('');

@@ -8,10 +8,14 @@
 }
 
 body {
-  color: #442a2a;
+  color: #616e7c;
   font-size: 14px;
   font-family: "Mulish", sans-serif;
   font-weight: 400;
+}
+
+p {
+  font-size: 16px;
 }
 
 .container {
@@ -61,13 +65,6 @@ input:focus,
 textarea,
 textarea:focus,
 .btn:focus {
-  outline: 0;
-  box-shadow: none;
-}
-
-.form-control:focus {
-  color: #191919;
-  background-color: transparent;
   outline: 0;
   box-shadow: none;
 }
@@ -1865,7 +1862,7 @@ contact Page start
   font-size: 48px;
 }
 
-.contact-faq-items{
+.contact-faq-items {
   margin-top: 90px;
 }
 
@@ -1874,6 +1871,245 @@ contact Page start
 /*
 
 contact Page End
+
+*/
+/*
+
+Visa application form Page start
+
+*/
+
+/* visa application form area start */
+
+.visa-application-form-area {
+  padding: 80px;
+}
+
+.visa-application-form-wrap {
+  margin-top: 48px;
+}
+.vaf-items {
+  border-radius: 6px;
+  padding: 20px 45px;
+  background-color: #fff;
+  -webkit-box-shadow: -10px 10px 30px rgba(60, 125, 196, 0.15);
+  box-shadow: -10px 10px 30px rgba(60, 125, 196, 0.15);
+}
+
+.vaf-input-wrap {
+  margin-bottom: 16px;
+}
+.vaf-input-wrap label {
+  color: #4b5c66;
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 15px;
+  margin-bottom: 8px;
+}
+.vaf-input-wrap select {
+  appearance: auto;
+}
+
+.vaf-btn {
+  padding: 16px 0;
+}
+
+.vaf-btn button {
+  background-color: #40c7e0 !important;
+  border-color: #40c7e0 !important;
+  width: 100%;
+  border-radius: 3px;
+  padding: 11px 30px;
+  height: 100%;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  border: 0;
+  outline: 0;
+}
+
+#planningTo {
+  display: none;
+}
+
+#purposeOf {
+  display: none;
+}
+
+/* visa application form area end */
+
+/*
+
+Visa application form Page End
+
+*/
+
+/*
+
+Visa chance calculator  Page start
+
+*/
+
+/* Visa chance calculator area start */
+
+.visa-chance-area {
+  padding: 80px 0 48px;
+}
+
+.visa-chance-wrap {
+  margin-top: 48px;
+  position: relative;
+}
+.visa-chance-items {
+  border-radius: 6px;
+  padding: 50px 45px;
+  background-color: #fff;
+  -webkit-box-shadow: -10px 10px 30px rgba(60, 125, 196, 0.15);
+  box-shadow: -10px 10px 30px rgba(60, 125, 196, 0.15);
+}
+
+.visa-chance-border-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(91deg, #40c7e0 0, #45a8ff 100%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 0 0 6px 6px;
+}
+
+.visa-chance-items form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.visa-chance-input-wrap {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.visa-chance-select-wrap {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.visa-chance-input-wrap label {
+  border-radius: 2px;
+  background-color: #40c7e0;
+  padding: 2px 6px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 13px;
+  position: absolute;
+  top: -7px;
+  left: 7px;
+  z-index: 10;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.visa-chance-input-wrap input {
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid rgba(30, 51, 64, 0.05);
+  background-color: #fff;
+  padding: 13px 15px;
+  color: #1e3340cc;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+  outline: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.visa-chance-input-wrap input::placeholder {
+  color: #bbc1c5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.visa-chance-input-wrap input:focus {
+  border: 1px solid #40c7e0;
+}
+
+.visa-chance-select-wrap select {
+  width: 100%;
+  padding: 15px;
+  opacity: 0.3;
+  color: #1e3340;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+  position: relative;
+  appearance: none;
+  border: 1px solid rgba(30, 51, 64, 0.05);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: 0;
+}
+.visa-chance-select-wrap:before {
+  content: url(../img/icons/arrrowup.svg);
+  color: #393750;
+  position: absolute;
+  top: 58%;
+  right: 15px;
+  -webkit-transform: translateY(-58%);
+  -ms-transform: translateY(-58%);
+  transform: translateY(-58%);
+  font-size: 14px;
+  pointer-events: none;
+  z-index: 5;
+}
+.visa-chance-select-wrap:after {
+  content: url(../img/icons/arrowdown.svg);
+  color: #393750;
+  position: absolute;
+  bottom: 25%;
+  right: 15px;
+  -webkit-transform: translateY(25%);
+  -ms-transform: translateY(25%);
+  transform: translateY(25%);
+  display: unset;
+  width: unset;
+  height: unset;
+  margin: 0;
+  vertical-align: unset;
+  border: none;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.visa-chance-select-wrap select:focus,
+.visa-chance-select-wrap select:hover {
+  border: 1px solid #40c7e0;
+  opacity: 1;
+}
+
+.visa-chance-btn button {
+  background-color: #40c7e0 !important;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  padding: 11px 30px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  outline: none;
+}
+
+/* Visa chance calculator area end */
+
+/*
+
+Visa chance calculator  Page End
 
 */
 

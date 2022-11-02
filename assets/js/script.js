@@ -434,7 +434,49 @@
     );
 
 
+    /*------------------------------------
+    visa application dropdown show hide
+    --------------------------------------*/
 
+
+
+    $("#from").change(function () {
+        if ($(this).val() == '1') {
+            $("#planningTo").hide();
+            $("#purposeOf").hide();
+            $("#startBtn").attr('disabled');
+            $("#startBtn").addClass('disabled');
+        } else {
+            $("#planningTo").show();
+            $("#purposeOf").hide();
+            $("#startBtn").attr('disabled');
+            $("#startBtn").addClass('disabled');
+            $('#to').val('1');
+        }
+    });
+
+    $("#to").change(function () {
+        if ($(this).val() == '1') {
+            $("#purposeOf").hide();
+            $("#startBtn").attr('disabled');
+            $("#startBtn").addClass('disabled');
+        } else {
+            $("#purposeOf").show();
+            $('#purpose').val('1');
+            $("#startBtn").attr('disabled');
+            $("#startBtn").addClass('disabled');
+        }
+    });
+
+    $("#purpose").change(function () {
+        if ($(this).val() == '1') {
+            $("#startBtn").attr('disabled');
+            $("#startBtn").addClass('disabled');
+        } else {
+            $("#startBtn").removeAttr('disabled');
+            $("#startBtn").removeClass('disabled');
+        }
+    });
 
 
 
@@ -699,6 +741,9 @@ for (var i = 0; i < countries.length; i++) {
 
 // country flag loop end
 
+
+
+
 /*------------------------------------
 country select dropdown
 --------------------------------------*/
@@ -733,6 +778,18 @@ document.getElementById('test1').innerHTML = countries.map(index => {
                 <h6 class='cName'> ${index.text}</h6>
             </a>
         </div>`)
-}
+}).join('')
 
-).join('')
+
+/*------------------------------------
+visa application form dropdown
+--------------------------------------*/
+
+
+document.getElementById('from').innerHTML = countries.map(index => {
+    return (
+        `<option value=${index.value}>
+            ${index.text}
+        </option>`)
+}).join('')
+
