@@ -123,6 +123,20 @@
       border-radius: 4px;
       background-color: rgba(255, 255, 255, 0.05);
     }
+
+    .visa-chance-select-wrap {
+      margin-bottom: 0;
+    }
+    .visa-chance-select-wrap select {
+      opacity: 1;
+    }
+    .visa-chance-select-wrap label {
+      background-color: #a3abb4;
+    }
+    .visa-chance-select-wrap:hover label {
+      background-color: #56d9ba;
+      transform: scale(1.5) translateX(12px);
+    }
   </style>
 
   <body>
@@ -251,57 +265,56 @@
             <div class="row justify-content-center">
               <div class="col-xl-8 text-center">
                 <div class="faq-section-title">
-                  <h2>Visa Chance Calculator</h2>
+                  <h2>COVID-19 Test Centers</h2>
                 </div>
               </div>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="visa-chance-wrap">
-                  <div class="visa-chance-items">
-                    <form action="#">
-                      <div class="visa-chance-input-wrap">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Name" />
-                      </div>
-                      <div class="visa-chance-select-wrap">
-                        <label for="citizen">Citizenship</label>
-                        <select name="country" id="citizen">
-                          <option value="1">Select Country</option>
-                          <option value="">afganistan</option>
-                          <option value="">australia</option>
-                        </select>
-                      </div>
-                      <div class="visa-chance-select-wrap">
-                        <label for="citizen">Residency</label>
-                        <select name="country" id="citizen">
-                          <option value="1">Select Country</option>
-                          <option value="">afganistan</option>
-                          <option value="">australia</option>
-                        </select>
-                      </div>
-                      <div class="visa-chance-select-wrap">
-                        <label for="citizen">Destination</label>
-                        <select name="country" id="citizen">
-                          <option value="1">Select Country</option>
-                          <option value="">afganistan</option>
-                          <option value="">australia</option>
-                        </select>
-                      </div>
-                      <div class="visa-chance-select-wrap">
-                        <label for="citizen">Visa Type</label>
-                        <select name="country" id="citizen">
-                          <option value="1">Select Visa Type</option>
-                          <option value="">afganistan</option>
-                          <option value="">australia</option>
-                        </select>
-                      </div>
-                      <div class="visa-chance-btn">
-                        <button type="submit">Start</button>
-                      </div>
-                    </form>
+            <div class="covid19-wrap">
+              <div class="row">
+                <div class="col-xl-4">
+                  <div class="covid19-items">
+                    <div class="country-flag-name">
+                      <img src="assets/img/country-icons/af.svg" alt="flag" />
+                      <h3><a href="#">Afganistan</a></h3>
+                    </div>
+                    <div class="country-states-name">
+                      <ul>
+                        <li><a href="#">Kabul</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="visa-chance-border-bottom"></div>
+                </div>
+                <div class="col-xl-4">
+                  <div class="covid19-items">
+                    <div class="country-flag-name">
+                      <img src="assets/img/country-icons/bd.svg" alt="flag" />
+                      <h3><a href="#">Bangladesh</a></h3>
+                    </div>
+                    <div class="country-states-name">
+                      <ul>
+                        <li><a href="#">Dhaka</a></li>
+                        <li><a href="#">Chittagong</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4">
+                  <div class="covid19-items">
+                    <div class="country-flag-name">
+                      <img src="assets/img/country-icons/in.svg" alt="flag" />
+                      <h3><a href="#">India</a></h3>
+                    </div>
+                    <div class="country-states-name">
+                      <ul>
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Chennai</a></li>
+                        <li><a href="#">Kolkata</a></li>
+                        <li><a href="#">Gujrat</a></li>
+                        <li><a href="#">Punjab</a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

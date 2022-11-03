@@ -2000,7 +2000,7 @@ Visa chance calculator  Page start
 .visa-chance-input-wrap label {
   border-radius: 2px;
   background-color: #40c7e0;
-  padding: 2px 6px;
+  padding: 0 6px 2px;
   color: #fff;
   font-size: 10px;
   font-weight: 500;
@@ -2015,7 +2015,7 @@ Visa chance calculator  Page start
 .visa-chance-select-wrap label {
   border-radius: 2px;
   background-color: #40c7e0;
-  padding: 2px 6px;
+  padding: 0 6px 2px;
   color: #fff;
   font-size: 10px;
   font-weight: 500;
@@ -2048,8 +2048,13 @@ Visa chance calculator  Page start
   font-weight: 400;
 }
 
-.visa-chance-input-wrap input:focus {
+.visa-chance-input-wrap input:focus,
+.visa-chance-input-wrap input:hover {
   border: 1px solid #40c7e0;
+}
+.visa-chance-input-wrap input:focus,
+.visa-chance-input-wrap:hover input::placeholder {
+  color: #1f2933;
 }
 
 .visa-chance-select-wrap select {
@@ -2105,6 +2110,16 @@ Visa chance calculator  Page start
   border: 1px solid #40c7e0;
   opacity: 1;
 }
+.visa-chance-select-wrap:focus label,
+.visa-chance-select-wrap:hover label {
+  background-color: #56d9ba;
+  transform: scale(1.5) translateX(12px);
+}
+.visa-chance-input-wrap:focus label,
+.visa-chance-input-wrap:hover label {
+  background-color: #56d9ba;
+  transform: scale(1.5) translateX(12px);
+}
 
 .visa-chance-btn button {
   background-color: #40c7e0 !important;
@@ -2125,6 +2140,310 @@ Visa chance calculator  Page start
 /*
 
 Visa chance calculator  Page End
+
+*/
+
+/*
+
+Embassy  Page start
+
+*/
+
+/* Embassy information and location area start  */
+
+.embassy-wrap {
+  width: 100%;
+  padding: 60px;
+  border-radius: 6px;
+  background-image: linear-gradient(99deg, #40c7e0 0, #45a8ff 100%);
+  margin-bottom: 60px;
+}
+
+.embassy-select-wrap {
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 10px 0;
+}
+
+/* Embassy information and location area start  */
+
+/*
+
+Embassy Page End
+
+*/
+
+/*
+
+Covid19 test Page start
+
+*/
+
+/* covid 19 test area start  */
+
+.covid19-items {
+  margin-bottom: 8px;
+  -webkit-box-shadow: 0 0 25px 0 rgba(213, 213, 213, 0.5);
+  box-shadow: 0 0 25px 0 rgba(213, 213, 213, 0.5);
+  margin-top: 23px;
+  position: relative;
+  padding: 30px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.country-flag-name {
+  display: flex;
+  align-items: center;
+}
+.country-flag-name img {
+  margin-right: 20px;
+  width: 10%;
+}
+.country-flag-name h3 {
+  font-size: 24px;
+}
+.country-flag-name h3 a {
+  color: #1e3340;
+}
+.country-flag-name h3 a:hover {
+  color: #40c7e0;
+}
+
+.country-states-name {
+  margin-top: 10px;
+}
+.country-states-name ul {
+  margin: 0;
+  padding: 0;
+}
+.country-states-name ul li {
+  display: block;
+  padding: 6px 0 6px 10px;
+  font-size: 15px;
+  text-transform: none;
+  line-height: 20px;
+  border-bottom: 1px dotted #bababa;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.country-states-name ul li:hover {
+  background: #f8f8f8;
+}
+.country-states-name ul li a {
+  color: #1e3340cc;
+}
+.country-states-name ul li a:hover {
+  color: #40c7e0;
+}
+
+/* covid 19 test area end */
+
+/*
+
+Covid19 test Page End
+
+*/
+
+/*
+
+Login Page start
+
+*/
+
+/* login page area start  */
+
+.login-area {
+  padding: 80px 0;
+}
+
+.login-form-wrap {
+  margin-top: 44px;
+}
+
+.login-title {
+  margin-bottom: 50px;
+}
+.login-title h1 {
+  font-size: 30px;
+}
+
+.login-form-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.login-form-group label {
+  margin-bottom: 6px;
+  line-height: 160%;
+  letter-spacing: -0.08px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-form-group label a {
+  color: #7b8794;
+}
+
+.login-form-group label a:hover {
+  color: initial;
+}
+
+.login-form-group input {
+  border: 1px solid #cbd2d9;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 46px;
+  line-height: 160%;
+  letter-spacing: -0.08px;
+  color: #1f2933;
+  padding: 12px 14px;
+  line-height: 160%;
+  letter-spacing: -0.08px;
+  -webkit-box-shadow: inset 0 0.5px 1px rgba(102, 113, 123, 0.21);
+  box-shadow: inset 0 0.5px 1px rgba(102, 113, 123, 0.21);
+  border-radius: 4px;
+}
+
+.login-form-group i {
+  position: absolute;
+  right: 16px;
+  top: 60%;
+  cursor: pointer;
+}
+
+.login-submit-btn {
+  margin-bottom: 30px;
+}
+
+.login-submit-btn button {
+  padding: 14px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #319aaf;
+  color: #fff;
+  width: 100%;
+  outline: 0;
+  border: 0;
+}
+
+.login-submit-btn button:hover {
+  background-color: #226d7c;
+  color: #fff;
+}
+
+.form-bottom-text {
+  text-align: center;
+}
+.form-bottom-text a:hover {
+  color: initial;
+}
+
+.image-holder {
+  top: 0;
+  position: absolute;
+  right: 0;
+  width: 515px;
+  height: 100vh;
+  z-index: 999;
+}
+
+.image-holder .image-bg-holder {
+  padding: 80px 75px 32px 75px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background: #e9f9fb;
+}
+
+.imgae-holder-title {
+  margin-bottom: 8px;
+  text-align: center;
+}
+.imgae-holder-title h2 {
+  font-size: 36px;
+}
+
+.image-holder-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.items-title {
+  margin-bottom: 16px;
+}
+
+.items-title h6 {
+  font-size: 12px;
+}
+
+/* login page area end */
+
+/* signin page start  */
+
+.checker-box {
+  margin-bottom: 30px;
+}
+.checker-box span {
+  font-size: 14px;
+  color: initial;
+}
+
+.password-checker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.password-checker ul {
+  list-style: none;
+}
+
+.password-checker ul li {
+  font-size: 12px;
+  padding-left: 8px;
+  line-height: 160%;
+  letter-spacing: -0.08px;
+  color: #1f2933;
+}
+
+.password-checker ul li:before {
+  position: relative;
+  left: -8px;
+  top: 3px;
+  content: url(../img/login/password_point.svg);
+}
+
+.terms-checkbox {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.terms-checkbox input {
+  margin-right: 8px;
+}
+
+.g-recaptcha{
+  margin-bottom: 30px;
+}
+
+/* signin page end */
+
+/*
+
+Login Page End
 
 */
 

@@ -230,7 +230,7 @@
 
 
     /*------------------------------------
-     change background image & Hero text
+     change background image & Hero text - index.html
  --------------------------------------*/
 
     $('#flight-tab').on('click', function (event) {
@@ -252,7 +252,7 @@
 
 
     /*------------------------------------
-           FAQ title change
+           FAQ title change - faq.html
     --------------------------------------*/
 
 
@@ -276,7 +276,7 @@
 
 
     /*------------------------------------
-            search blog dropdown
+            search blog dropdown - blog.html
     --------------------------------------*/
 
 
@@ -288,7 +288,7 @@
     });
 
     /*------------------------------------
-            search input button 
+            search input button  - blog.html
     --------------------------------------*/
 
 
@@ -306,7 +306,7 @@
 
 
     /*------------------------------------
-            track dropdown
+            track dropdown - index.html
     --------------------------------------*/
 
     $(".track-btn").click(function () {
@@ -331,7 +331,7 @@
 
 
     /*------------------------------------
-    passengers category dropdown
+    passengers category dropdown - index.html
      --------------------------------------*/
 
     $(".dropbtn").click(function () {
@@ -347,7 +347,7 @@
 
 
     /*------------------------------------
-         Classes dropdown
+         Classes dropdown - index.html
  --------------------------------------*/
 
     $(".classes-btn").click(function () {
@@ -373,7 +373,7 @@
 
 
     /*------------------------------------
-    select datepicker calender
+    select datepicker calender - index.html
  --------------------------------------*/
 
 
@@ -394,7 +394,7 @@
     });
 
     /*------------------------------------
-      counts plus minus
+      counts plus minus - index.html
     --------------------------------------*/
 
     $(".category-counts").on("click", ".plus, .minus",
@@ -435,7 +435,7 @@
 
 
     /*------------------------------------
-    visa application dropdown show hide
+    visa application dropdown show hide - visa-application.html
     --------------------------------------*/
 
 
@@ -483,7 +483,13 @@
 })(jQuery);
 
 /*------------------------------------
-country names
+login form submit - login.html
+--------------------------------------*/
+
+
+
+/*------------------------------------
+country names - global 
 --------------------------------------*/
 
 var countries = [
@@ -733,6 +739,15 @@ var countries = [
 ];
 
 
+
+
+
+
+
+/*------------------------------------
+country select dropdown index.html and services.html
+--------------------------------------*/
+
 // country flag loop start 
 
 for (var i = 0; i < countries.length; i++) {
@@ -740,15 +755,6 @@ for (var i = 0; i < countries.length; i++) {
 }
 
 // country flag loop end
-
-
-
-
-/*------------------------------------
-country select dropdown
---------------------------------------*/
-
-
 
 jSuites.dropdown(document.getElementById('dropdown'), {
     data: countries,
@@ -766,7 +772,7 @@ jSuites.dropdown(document.getElementById('dropdown-2'), {
 
 
 /*------------------------------------
-  Country name show
+  Country name show service.html
 --------------------------------------*/
 
 
@@ -782,7 +788,7 @@ document.getElementById('test1').innerHTML = countries.map(index => {
 
 
 /*------------------------------------
-visa application form dropdown
+visa application form dropdown - visa-application.html
 --------------------------------------*/
 
 
