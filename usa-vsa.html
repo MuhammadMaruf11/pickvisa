@@ -22,10 +22,22 @@
         background-position-y: 40%;
         padding-bottom: 52px;
         background-size: cover;
-        height: 45%;
+        height: 250px;
         width: 100%;
+        position: relative;
         background-image: url(assets/img/banner/banner-4.png);
+      }
+
+      .banner-colorizer {
+        background: rgba(0, 0, 0, 0.6);
         position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
       }
 
       .dropbtn {
@@ -60,7 +72,46 @@
         background-color: #ddd;
       }
       .trusted-travelers-area {
-        padding-top: 180px;
+        padding-top: 80px;
+        background: #effcf6;
+        -webkit-box-shadow: 0 1px 0 #e7e7e7;
+        box-shadow: 0 1px 0 #e7e7e7;
+      }
+      .jdropdown-default .jdropdown-container {
+        width: 350px;
+      }
+      .jdropdown-container-header {
+        width: 352px;
+        border-radius: 8px;
+      }
+      .content-box {
+        padding: 10px;
+      }
+      .select-box {
+        padding: 0;
+      }
+      .citizen-text p {
+        margin-bottom: 0;
+        font-size: 13px;
+      }
+
+      .select-box i {
+        color: #6f7a88;
+        font-size: 22px;
+      }
+      .country-flag {
+        display: flex;
+        margin-bottom: 30px;
+        align-items: center;
+      }
+      .country-flag img {
+        width: 27px;
+        height: 17px;
+        margin-right: 18px;
+      }
+      .accordion-flush .accordion-item .accordion-button,
+      .accordion-flush .accordion-item .accordion-button.collapsed {
+        font-size: 24px;
       }
     </style>
     <title>Pick Visa</title>
@@ -70,6 +121,7 @@
 
     <header>
       <div class="header-area">
+        <div class="banner-colorizer"></div>
         <div class="container">
           <div class="row align-items-center">
             <div class="col-xl-3">
@@ -176,16 +228,59 @@
             </div>
           </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="banner-content">
+                <div class="banner-title">
+                  <h1>
+                    <span> United States of America </span>
+                    Visa
+                  </h1>
+                </div>
+                <div class="banner-contentbox">
+                  <div class="content-box">
+                    <div class="select-box">
+                      <i class="fa-solid fa-id-badge"></i>
+                      <div class="citizen-text">
+                        <p>I am a citizen of</p>
+                        <div id="dropdown" placeholder=""></div>
+                      </div>
+                    </div>
+                    <div class="select-box">
+                      <i class="fa-regular fa-location-dot"></i>
+                      <div class="citizen-text">
+                        <p>Resided in</p>
+                        <div
+                          id="dropdown-2"
+                          style="width: 100%"
+                          placeholder=""
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="select-box">
+                      <i class="fa-light fa-plane-departure"></i>
+                      <div class="citizen-text">
+                        <p>Planning to visit</p>
+                        <div
+                          id="dropdown-3"
+                          style="width: 100%"
+                          placeholder=""
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
     <!-- Header End -->
 
     <main>
-      <!-- Hero Start -->
-
-      <!-- Hero End -->
-
       <!-- trusted travelers start  -->
 
       <section>
@@ -280,495 +375,462 @@
 
       <!-- trusted travelers end -->
 
-      <!-- Destination start  -->
+      <!-- Service List start  -->
 
       <section>
-        <div class="destination-area">
+        <div class="service-list-area">
           <div class="container">
-            <!-- destination title start  -->
-            <div class="row justify-content-center">
-              <div class="col text-center">
-                <div class="section-title">
-                  <h2>The most popular destinations</h2>
-                  <p>
-                    Our customers use visa services mostly for these countries
-                  </p>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="service-card">
+                  <div class="service-card-top">
+                    <div class="visa-logo-category">
+                      <div class="visa-log">
+                        <img src="assets/img/logo/Green_card.svg" alt="card" />
+                      </div>
+                      <div class="visa-category">
+                        <p>E-VISA</p>
+                      </div>
+                    </div>
+                    <div class="visa-title">
+                      <h4>Green Card</h4>
+                    </div>
+                    <div class="visa-card-select">
+                      <select name="" id="">
+                        <option value="">Green card Application</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="service-card-bottom">
+                    <div class="bottom-top">
+                      <div class="application-fee">
+                        <h4>$24</h4>
+                        <span>Total fee</span>
+                      </div>
+                      <p>* Includes Our processing fee</p>
+                    </div>
+                    <hr />
+                    <div class="bottom-down">
+                      <h6>Processing details</h6>
+                      <div class="processing-duration">
+                        <div class="as-fast-as-items">
+                          <div class="as-fast-as-img">
+                            <img
+                              src="assets/img/icons/as_fast_as.svg"
+                              alt="icons"
+                            />
+                          </div>
+                          <span>As fast as</span>
+                        </div>
+                        <span>2-3 Business days</span>
+                      </div>
+                      <div class="processing-duration">
+                        <div class="as-fast-as-items">
+                          <div class="as-fast-as-img">
+                            <img
+                              src="assets/img/icons/duration_of_stay.svg"
+                              alt="icons"
+                            />
+                          </div>
+                          <span>Duration of stay</span>
+                        </div>
+                        <span>Indefinitely</span>
+                      </div>
+                      <div class="apply-visa-btn">
+                        <a href="application-form.html"> Apply for visa </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- destination title end  -->
+      <!-- Service List end -->
 
-            <!-- destination slider start  -->
+      <!-- Visa Slider start  -->
 
-            <div class="row text-center">
-              <div class="col-12">
-                <div class="destination-slider-active">
+      <section>
+        <div class="visa-slider-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="visa-slider-left">
+                  <div class="slider-left-title">
+                    <h4>Excellent</h4>
+                  </div>
+                  <div class="slider-left-star">
+                    <div class="slider-star-icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="slider-star-icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="slider-star-icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="slider-star-icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="slider-star-icon">
+                      <i class="fa-solid fa-star half"></i>
+                    </div>
+                  </div>
+                  <div class="slider-left-reviews">
+                    <span>Based on</span>
+                    <a href="#">571 reviews </a>
+                  </div>
+                  <div class="slider-left-trustpilot">
+                    <a href="#">
+                      <i class="fa-solid fa-star"></i>
+                      <span>Trustpilot</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="visa-slider-active">
                   <div class="swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                       <div class="swiper-slide single-slide">
                         <div class="slider-content-1">
-                          <div class="destination-img">
-                            <a href="#"
-                              ><img
-                                src="assets/img/slider/slider-1.png"
-                                alt="destination-img"
-                            /></a>
-                          </div>
-                          <div class="destination-items">
-                            <div class="destination-title">
-                              <h4>Unites States of America</h4>
-                              <i class="fa-regular fa-flag-usa"></i>
+                          <div class="slider-top">
+                            <div class="slider-star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
                             </div>
-                            <div class="working-time">
-                              <i class="fa-regular fa-clock"></i>
-                              <span>2-3 weeks</span>
+                            <div class="slider-verified">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <span> Verified </span>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide single-slide">
-                        <div class="slider-content-1">
-                          <div class="destination-img">
-                            <a href="#"
-                              ><img
-                                src="assets/img/slider/slider-2.png"
-                                alt="destination-img"
-                            /></a>
-                          </div>
-                          <div class="destination-items">
-                            <div class="destination-title">
-                              <h4>Unites Kingdom</h4>
-                              <i class="fa-regular fa-flag-usa"></i>
-                            </div>
-                            <div class="working-time">
-                              <i class="fa-regular fa-clock"></i>
-                              <span>2-3 weeks</span>
-                            </div>
+                          <div class="slider-middle">
+                            <a class="title" href="#"
+                              >Very Quick action for visa processing</a
+                            >
+                            <a class="description" href="#"
+                              >Thanks for pick visa team, They got my transit
+                              visa processed within 2 days. Gre...</a
+                            >
+                            <a class="person" href="#"
+                              >Anar Pirazi,
+                              <span>7 hours ago</span>
+                            </a>
                           </div>
                         </div>
                       </div>
                       <div class="swiper-slide single-slide">
                         <div class="slider-content-1">
-                          <div class="destination-img">
-                            <a href="#"
-                              ><img
-                                src="assets/img/slider/slider-3.png"
-                                alt="destination-img"
-                            /></a>
-                          </div>
-                          <div class="destination-items">
-                            <div class="destination-title">
-                              <h4>Canada</h4>
-                              <i class="fa-regular fa-flag-usa"></i>
+                          <div class="slider-top">
+                            <div class="slider-star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
                             </div>
-                            <div class="working-time">
-                              <i class="fa-regular fa-clock"></i>
-                              <span>2-4 weeks</span>
+                            <div class="slider-verified">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <span> Verified </span>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide single-slide">
-                        <div class="slider-content-1">
-                          <div class="destination-img">
-                            <a href="#"
-                              ><img
-                                src="assets/img/slider/slider-4.png"
-                                alt="destination-img"
-                            /></a>
-                          </div>
-                          <div class="destination-items">
-                            <div class="destination-title">
-                              <h4>Unites Arab Emirates</h4>
-                              <i class="fa-regular fa-flag-usa"></i>
-                            </div>
-                            <div class="working-time">
-                              <i class="fa-regular fa-clock"></i>
-                              <span>2-3 working days</span>
-                            </div>
+                          <div class="slider-middle">
+                            <a class="title" href="#"
+                              >Very Quick action for visa processing</a
+                            >
+                            <a class="description" href="#"
+                              >Thanks for pick visa team, They got my transit
+                              visa processed within 2 days. Gre...</a
+                            >
+                            <a class="person" href="#"
+                              >Anar Pirazi,
+                              <span>7 hours ago</span>
+                            </a>
                           </div>
                         </div>
                       </div>
                       <div class="swiper-slide single-slide">
                         <div class="slider-content-1">
-                          <div class="destination-img">
-                            <a href="#"
-                              ><img
-                                src="assets/img/slider/slider-5.png"
-                                alt="destination-img"
-                            /></a>
-                          </div>
-                          <div class="destination-items">
-                            <div class="destination-title">
-                              <h4>Turkey</h4>
-                              <i class="fa-regular fa-flag-usa"></i>
+                          <div class="slider-top">
+                            <div class="slider-star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
                             </div>
-                            <div class="working-time">
-                              <i class="fa-regular fa-clock"></i>
-                              <span>2-5 working days</span>
+                            <div class="slider-verified">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <span> Verified </span>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide single-slide">
-                        <div class="slider-content-1">
-                          <div class="destination-img">
-                            <a href="#"
-                              ><img
-                                src="assets/img/slider/slider-6.png"
-                                alt="destination-img"
-                            /></a>
-                          </div>
-                          <div class="destination-items">
-                            <div class="destination-title">
-                              <h4>France</h4>
-                              <i class="fa-regular fa-flag-usa"></i>
-                            </div>
-                            <div class="working-time">
-                              <i class="fa-regular fa-clock"></i>
-                              <span>1-2 weeks</span>
-                            </div>
+                          <div class="slider-middle">
+                            <a class="title" href="#"
+                              >Very Quick action for visa processing</a
+                            >
+                            <a class="description" href="#"
+                              >Thanks for pick visa team, They got my transit
+                              visa processed within 2 days. Gre...</a
+                            >
+                            <a class="person" href="#"
+                              >Anar Pirazi,
+                              <span>7 hours ago</span>
+                            </a>
                           </div>
                         </div>
                       </div>
                       <div class="swiper-slide single-slide">
                         <div class="slider-content-1">
-                          <div class="destination-img">
-                            <a href="#"
-                              ><img
-                                src="assets/img/slider/slider-7.png"
-                                alt="destination-img"
-                            /></a>
-                          </div>
-                          <div class="destination-items">
-                            <div class="destination-title">
-                              <h4>Mexico</h4>
-                              <i class="fa-regular fa-flag-usa"></i>
+                          <div class="slider-top">
+                            <div class="slider-star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
                             </div>
-                            <div class="working-time">
-                              <i class="fa-regular fa-clock"></i>
-                              <span>1-2 weeks</span>
+                            <div class="slider-verified">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <span> Verified </span>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide single-slide">
-                        <div class="slider-content-1">
-                          <div class="destination-img">
-                            <a href="#"
-                              ><img
-                                src="assets/img/slider/slider-8.png"
-                                alt="destination-img"
-                            /></a>
-                          </div>
-                          <div class="destination-items">
-                            <div class="destination-title">
-                              <h4>Germany</h4>
-                              <i class="fa-regular fa-flag-usa"></i>
-                            </div>
-                            <div class="working-time">
-                              <i class="fa-regular fa-clock"></i>
-                              <span>1-2 weeks</span>
-                            </div>
+                          <div class="slider-middle">
+                            <a class="title" href="#"
+                              >Very Quick action for visa processing</a
+                            >
+                            <a class="description" href="#"
+                              >Thanks for pick visa team, They got my transit
+                              visa processed within 2 days. Gre...</a
+                            >
+                            <a class="person" href="#"
+                              >Anar Pirazi,
+                              <span>7 hours ago</span>
+                            </a>
                           </div>
                         </div>
                       </div>
                       <div class="swiper-slide single-slide">
                         <div class="slider-content-1">
-                          <div class="destination-img">
-                            <a href="#"
-                              ><img
-                                src="assets/img/slider/slider-9.png"
-                                alt="destination-img"
-                            /></a>
+                          <div class="slider-top">
+                            <div class="slider-star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="slider-verified">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <span> Verified </span>
+                            </div>
                           </div>
-                          <div class="destination-items">
-                            <div class="destination-title">
-                              <h4>Thailand</h4>
-                              <i class="fa-regular fa-flag-usa"></i>
-                            </div>
-                            <div class="working-time">
-                              <i class="fa-regular fa-clock"></i>
-                              <span>1-2 weeks</span>
-                            </div>
+                          <div class="slider-middle">
+                            <a class="title" href="#"
+                              >Very Quick action for visa processing</a
+                            >
+                            <a class="description" href="#"
+                              >Thanks for pick visa team, They got my transit
+                              visa processed within 2 days. Gre...</a
+                            >
+                            <a class="person" href="#"
+                              >Anar Pirazi,
+                              <span>7 hours ago</span>
+                            </a>
                           </div>
                         </div>
                       </div>
                       <div class="swiper-slide single-slide">
                         <div class="slider-content-1">
-                          <div class="destination-img">
-                            <a href="#"
-                              ><img
-                                src="assets/img/slider/slider-10.png"
-                                alt="destination-img"
-                            /></a>
+                          <div class="slider-top">
+                            <div class="slider-star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="slider-verified">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <span> Verified </span>
+                            </div>
                           </div>
-                          <div class="destination-items">
-                            <div class="destination-title">
-                              <h4>Egypt</h4>
-                              <i class="fa-regular fa-flag-usa"></i>
+                          <div class="slider-middle">
+                            <a class="title" href="#"
+                              >Very Quick action for visa processing</a
+                            >
+                            <a class="description" href="#"
+                              >Thanks for pick visa team, They got my transit
+                              visa processed within 2 days. Gre...</a
+                            >
+                            <a class="person" href="#"
+                              >Anar Pirazi,
+                              <span>7 hours ago</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="slider-top">
+                            <div class="slider-star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
                             </div>
-                            <div class="working-time">
-                              <i class="fa-regular fa-clock"></i>
-                              <span>1-2 weeks</span>
+                            <div class="slider-verified">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <span> Verified </span>
                             </div>
+                          </div>
+                          <div class="slider-middle">
+                            <a class="title" href="#"
+                              >Very Quick action for visa processing</a
+                            >
+                            <a class="description" href="#"
+                              >Thanks for pick visa team, They got my transit
+                              visa processed within 2 days. Gre...</a
+                            >
+                            <a class="person" href="#"
+                              >Anar Pirazi,
+                              <span>7 hours ago</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="slider-top">
+                            <div class="slider-star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="slider-verified">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <span> Verified </span>
+                            </div>
+                          </div>
+                          <div class="slider-middle">
+                            <a class="title" href="#"
+                              >Very Quick action for visa processing</a
+                            >
+                            <a class="description" href="#"
+                              >Thanks for pick visa team, They got my transit
+                              visa processed within 2 days. Gre...</a
+                            >
+                            <a class="person" href="#"
+                              >Anar Pirazi,
+                              <span>7 hours ago</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="slider-top">
+                            <div class="slider-star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="slider-verified">
+                              <i class="fa-solid fa-circle-check"></i>
+                              <span> Verified </span>
+                            </div>
+                          </div>
+                          <div class="slider-middle">
+                            <a class="title" href="#"
+                              >Very Quick action for visa processing</a
+                            >
+                            <a class="description" href="#"
+                              >Thanks for pick visa team, They got my transit
+                              visa processed within 2 days. Gre...</a
+                            >
+                            <a class="person" href="#"
+                              >Anar Pirazi,
+                              <span>7 hours ago</span>
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <p class="show-star">Showing our 5 star reviews</p>
               </div>
             </div>
-
-            <!-- destination slider end  -->
           </div>
         </div>
       </section>
 
-      <!-- Destination end -->
+      <!-- Visa Slider end -->
 
-      <!-- Travel and Blogs start  -->
+      <!-- All destination area start -->
 
       <section>
-        <div class="travel-blog-area">
+        <div class="services-all-destination-area pb-80">
           <div class="container">
-            <!-- Travels and Blogs title start  -->
+            <hr />
             <div class="row">
-              <div class="col text-center">
-                <div class="section-title mb-40">
-                  <h2>Travel and Visa Blogs</h2>
-                  <p>
-                    Here you can read blogs about visa requirements, the best
-                    destinations, travel tips and many more.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Travels and Blogs title end -->
-
-            <!-- Blogs wrapper start  -->
-
-            <div class="row">
-              <div class="col-xl-4">
-                <div class="blog-wrap">
-                  <div class="blog-img">
-                    <img src="assets/img/blogs/blog-1.jpg" alt="blog-img" />
-                  </div>
-                  <div class="blog-content">
-                    <div class="blog-title">
-                      <a href="#">5 best boutique hotels in Kenya</a>
-                    </div>
-                    <p class="blog-description">
-                      Who can resist the passion of discovering the endless
-                      Safari and rich biodiversity of Kenya? Probably, everyone
-                      who is interested in nature has a desire to Lorem ipsum
-                      dolor sit amet consectetur adipisicing elit. Cupiditate a
-                      dicta, ipsa hic nihil numquam non? Tempore ut eaque
-                      adipisci cum quia doloremque maiores optio!
-                    </p>
-                    <div class="blog-footer">
-                      <a href="#">Kanan Isazade</a>
-                      <div class="blog-date">
-                        <span>24 December 2021 </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4">
-                <div class="blog-wrap">
-                  <div class="blog-img">
-                    <img src="assets/img/blogs/blog-2.jpg" alt="blog-img" />
-                  </div>
-                  <div class="blog-content">
-                    <div class="blog-title">
-                      <a href="#">How to get Egypt long-term visa?</a>
-                    </div>
-                    <p class="blog-description">
-                      Egypt has always been at the top spot on the list of
-                      countries to visit among international travelers. Egypt is
-                      a Mediterranean country bordered on the northeast Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Autem
-                      fugiat, eum dolorem architecto in omnis sed consequuntur
-                      qui inventore id, sequi animi facere est.
-                    </p>
-                    <div class="blog-footer">
-                      <a href="#">Tural Abbasov</a>
-                      <div class="blog-date">
-                        <span>27 August 2021</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4">
-                <div class="blog-wrap">
-                  <div class="blog-img">
-                    <img src="assets/img/blogs/blog-3.jpg" alt="blog-img" />
-                  </div>
-                  <div class="blog-content">
-                    <div class="blog-title">
-                      <a href="#"
-                        >What is the difference between Vietnam short and long
-                        term visa?</a
+              <div class="col">
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                        style="background: #fff; color: inherit"
                       >
-                    </div>
-                    <p class="blog-description">
-                      Situated in south-east Asia, Vietnam is a great tourist
-                      destination. Vietnam is an interesting choice for travel
-                      seekers with its history, culture, cuisine, landscapes,
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Illo nulla itaque incidunt qui accusantium tenetur
-                      molestiae voluptatem, quos dolor minima consequuntur,
-                      fugit porro modi.
-                    </p>
-                    <div class="blog-footer">
-                      <a href="#">Tamerlan Mehdiyev</a>
-                      <div class="blog-date">
-                        <span>27 August 2021 </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4">
-                <div class="blog-wrap">
-                  <div class="blog-img">
-                    <img src="assets/img/blogs/blog-4.jpg" alt="blog-img" />
-                  </div>
-                  <div class="blog-content">
-                    <div class="blog-title">
-                      <a href="#">Djibouti Visa Types</a>
-                    </div>
-                    <p class="blog-description">
-                      Our readers already know that we always try to cover as
-                      many countries as possible in our articles and today it
-                      will not be an exception as we are travelling to one Lorem
-                      ipsum dolor sit amet consectetur, adipisicing elit.
-                      Deleniti et vitae eaque quo? Porro explicabo sit
-                      blanditiis perferendis libero natus aperiam expedita esse
-                      animi?
-                    </p>
-                    <div class="blog-footer">
-                      <a href="#">Tural Abbasov</a>
-                      <div class="blog-date">
-                        <span>25 August 2021</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4">
-                <div class="blog-wrap">
-                  <div class="blog-img">
-                    <img src="assets/img/blogs/blog-5.jpg" alt="blog-img" />
-                  </div>
-                  <div class="blog-content">
-                    <div class="blog-title">
-                      <a href="#">Pakistan tourist visa details</a>
-                    </div>
-                    <p class="blog-description">
-                      Pakistan isn’t a country of dangerous people. It is a
-                      country of delicious cuisine, diverse nature, and
-                      colourful culture. That is why millions of tourists travel
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Magni autem sint molestiae ipsa eum maiores qui minima.
-                      Laudantium sint facere rerum id atque provident!
-                    </p>
-                    <div class="blog-footer">
-                      <a href="#">Kanan Isazade</a>
-                      <div class="blog-date">
-                        <span>20 August 2021</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4">
-                <div class="blog-wrap">
-                  <div class="blog-img">
-                    <img src="assets/img/blogs/blog-6.jpg" alt="blog-img" />
-                  </div>
-                  <div class="blog-content">
-                    <div class="blog-title">
-                      <a href="#"
-                        >What is the difference between Cote d’Ivoire short and
-                        Long-term Visa?</a
-                      >
-                    </div>
-                    <p class="blog-description">
-                      What is the difference between Cote d’Ivoire visas:
-                      short-term and long-term? It’s a stunner – Cote d’Ivoire,
-                      that is. Lined with palm-tree forests and starfish- Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Optio
-                      praesentium saepe ea quam, cumque rem voluptatibus at?
-                      Nesciunt nam, debitis quas architecto quidem eum.
-                    </p>
-                    <div class="blog-footer">
-                      <a href="#">Priyam Lahon </a>
-                      <div class="blog-date">
-                        <span>19 August 2021</span>
+                        All destinations
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <div class="row">
+                          <div class="col-xl-5">
+                            <div class="search-input-wrap">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                              <input id="searchInput" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                        <div id="test1" class="row"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- Blogs wrapper end -->
-
-            <!-- all blogs button start -->
-
-            <div class="row justify-content-center">
-              <div class="col text-center">
-                <div class="blog-btn">
-                  <a href="#" class="">Read all blogs</a>
-                </div>
-              </div>
-            </div>
-            <!-- all blogs button end -->
+            <hr />
           </div>
         </div>
       </section>
 
-      <!-- Travel and Blogs end -->
-
-      <!-- info section start  -->
-
-      <section>
-        <div class="info-section-area">
-          <div class="container">
-            <div class="row align-items-center justify-content-between">
-              <div class="col-5">
-                <div class="info-wrap">
-                  <div class="info-text">
-                    <h2>Ready to get a visa without wasting time?</h2>
-                  </div>
-                  <div class="info-apply-btn">
-                    <a href="#"> Apply now </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-2 d-none d-lg-block">
-                <div class="arrow-svg">
-                  <img src="assets/img/logo/arrow_vector.svg" alt="svg" />
-                </div>
-              </div>
-              <div class="col-5 text-end">
-                <div class="cta-img">
-                  <img src="assets/img/info/cta.png" alt="cta-img" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- info section end -->
+      <!-- All destination area end -->
     </main>
 
     <!-- Footer Start  -->
@@ -887,6 +949,14 @@
       </div>
     </footer>
 
+    <script>
+      jSuites.dropdown(document.getElementById("dropdown-3"), {
+        data: countries,
+        autocomplete: true,
+        multiple: false,
+        width: "280px",
+      });
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.6.1.min.js"></script>

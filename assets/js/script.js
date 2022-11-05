@@ -37,6 +37,41 @@
     }
 
 
+  /*------------------------------------
+         Visa Slider
+       --------------------------------------*/
+
+    // Slider With Thumbs
+    if (jQuery(".visa-slider-active .swiper-container").length > 0) {
+        let destinationSlider = new Swiper('.visa-slider-active .swiper-container', {
+            // Optional parameters
+            slidesPerView: 5,
+            slidesPerColumn: 1,
+            loop: true,
+
+            autoplay: {
+                delay: 20000,
+            },
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+                1200: {
+                    slidesPerView: 3,
+                },
+            },
+
+            a11y: false
+
+        });
+    }
 
 
 

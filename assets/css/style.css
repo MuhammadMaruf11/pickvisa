@@ -2435,7 +2435,7 @@ Login Page start
   margin-right: 8px;
 }
 
-.g-recaptcha{
+.g-recaptcha {
   margin-bottom: 30px;
 }
 
@@ -2444,6 +2444,314 @@ Login Page start
 /*
 
 Login Page End
+
+*/
+
+/*
+
+visa application Page start
+
+*/
+
+/* visa banner area start  */
+
+.banner-content {
+  margin: 75px 0 -90px;
+}
+
+.banner-title {
+  margin-bottom: 28px;
+}
+.banner-title h1 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.banner-title h1 span {
+  z-index: 1;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+}
+.banner-title h1 span::after {
+  z-index: -1;
+  position: absolute;
+  background-image: url(../img/banner/circle.svg);
+  content: "";
+  width: 106%;
+  height: 74%;
+  background-size: 100% 100%;
+  left: 50%;
+  top: 69%;
+  -webkit-transform: translate(-50%, -60%);
+  transform: translate(-50%, -60%);
+}
+
+/* visa banner area end  */
+
+/* service list area start  */
+
+.service-list-area {
+  background: #fafafa;
+  padding: 58px 0 0;
+}
+
+.service-card {
+  background: #fff;
+  padding: 24px;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  margin-bottom: 80px;
+}
+
+.visa-logo-category {
+  display: flex;
+  align-items: center;
+}
+
+.visa-category {
+  padding: 4px 8px;
+}
+
+.visa-category p {
+  color: #147d64;
+  background: #effcf6;
+  font-size: 12px;
+}
+
+.visa-title {
+  padding: 16px 0 30px;
+}
+.visa-title h4 {
+  font-size: 24px;
+}
+
+.visa-card-select {
+  margin-bottom: 30px;
+}
+.visa-card-select select {
+  -webkit-box-shadow: 0 1px 0 rgba(22, 29, 37, 0.05);
+  box-shadow: 0 1px 0 rgba(22, 29, 37, 0.05);
+  background: linear-gradient(180deg, #fff 0, #f9fafb 100%);
+  border: 1px solid #cbd2d9;
+  display: block;
+  width: 100%;
+  height: 46px;
+  line-height: 160%;
+  letter-spacing: -0.08px;
+  color: #1f2933;
+  padding: 12px 14px;
+  line-height: 160%;
+  letter-spacing: -0.08px;
+  border-radius: 4px;
+}
+
+.bottom-top {
+  padding-bottom: 2px;
+}
+
+.application-fee {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+.application-fee h4 {
+  font-size: 24px;
+  margin-right: 8px;
+}
+.application-fee span {
+  color: #9aa5b1;
+  font-size: 12px;
+}
+
+.bottom-top p {
+  font-size: 12px;
+}
+
+.bottom-down {
+  padding-top: 10px;
+}
+.bottom-down h6 {
+  font-size: 14px;
+}
+
+.processing-duration {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.as-fast-as-items {
+  display: flex;
+  align-items: center;
+}
+
+.as-fast-as-img {
+  margin-right: 10px;
+}
+
+.apply-visa-btn {
+  margin-top: 40px;
+}
+.apply-visa-btn a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #319aaf;
+  color: #fff;
+  padding: 14px 30px;
+  width: 100%;
+  text-align: center;
+}
+
+/* service list area end */
+
+/* Visa Slider area start */
+
+.visa-slider-area {
+  background: #fafafa;
+  padding: 20px 0 60px;
+}
+
+.visa-slider-left {
+  text-align: center;
+}
+
+.slider-left-title {
+  margin-bottom: 12px;
+}
+.slider-left-title h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.slider-left-star {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-star-icon {
+  margin-right: 8px;
+  background: #dcdce6;
+}
+
+.slider-star-icon i {
+  background: #00b67a;
+  text-align: center;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.slider-left-star i.half {
+  clip-path: polygon(0 0, 65% 0, 45% 100%, 0% 100%);
+}
+
+.slider-left-reviews {
+  margin-bottom: 16px;
+}
+
+.slider-left-reviews span {
+  font-size: 13px;
+}
+.slider-left-reviews a {
+  color: #191919;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.slider-left-trustpilot a {
+  font-size: 24px;
+}
+.slider-left-trustpilot a i {
+  color: #00b67a;
+}
+.slider-left-trustpilot a span {
+  color: #191919;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.slider-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.slider-star {
+  margin-right: 8px;
+}
+
+.slider-star i {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background: #00b67a;
+  color: #fff;
+  font-size: 12px;
+}
+
+.slider-middle {
+  padding-bottom: 8px;
+}
+.slider-middle a {
+  margin-bottom: 8px;
+  display: block;
+}
+.slider-middle .title {
+  font-size: 14px;
+  font-weight: 700;
+  height: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  color: #191919;
+}
+.slider-middle .description {
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0 0 8px;
+  max-height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  color: #191919;
+}
+.slider-middle .person {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 8px;
+  max-height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  color: #646464;
+}
+.slider-middle .person span {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.show-star {
+  color: rgb(85, 73, 73);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* Visa Slider area end */
+
+/*
+
+visa application Page End
 
 */
 
