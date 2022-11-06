@@ -2680,10 +2680,13 @@ visa application Page start
   font-weight: 600;
 }
 
+.visa-slider-active {
+  position: relative;
+}
+
 .slider-top {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
 }
 
 .slider-star {
@@ -2698,6 +2701,67 @@ visa application Page start
   background: #00b67a;
   color: #fff;
   font-size: 12px;
+}
+
+.slider-verified {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  position: relative;
+  padding-bottom: 12px;
+  transition: all 0.3s linear;
+}
+.slider-verified:hover .learn-more-wrap {
+  display: block;
+}
+
+.learn-more-wrap {
+  display: none;
+  background: #fff;
+  padding: 13px 7px;
+  position: absolute;
+  top: 100%;
+  left: -103px;
+  box-shadow: 0px 4px 24px rgb(0 0 0 / 15%);
+  border-radius: 8px;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  z-index: 1099;
+}
+
+.learn-more-icon {
+  position: absolute;
+  top: -20px;
+  left: 55%;
+  transform: translateX(-55%);
+}
+.learn-more-icon i {
+  font-size: 32px;
+  color: #fff;
+}
+
+.learn-more-reviews {
+  margin-bottom: 4px;
+}
+
+.learn-more-reviews span {
+  color: #1b1b21;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.learn-more-page a {
+  color: #1a66ff;
+  text-decoration: underline;
+  margin-right: 4px;
+}
+
+.learn-more-page {
+  color: #1b1b21;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 .slider-middle {
@@ -2745,9 +2809,76 @@ visa application Page start
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
+  padding-left: 70px;
+}
+
+.table-content-wrap {
+  position: relative;
 }
 
 /* Visa Slider area end */
+
+/* Visa Types area start */
+
+.visa-types-area {
+  padding: 70px 0;
+}
+
+.table-content-wrap {
+  margin-top: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2rem;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+}
+
+.navbar-brand {
+  margin-bottom: 40px;
+}
+.navbar-brand span {
+  font-size: 16px;
+  color: #1f2933;
+  text-transform: uppercase;
+}
+
+.content-texts {
+  margin-bottom: 30px;
+}
+
+.content-section-title {
+  margin-bottom: 11px;
+}
+.content-section-title h2 {
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -0.004em;
+}
+
+.content-section-list {
+  margin-bottom: 16px;
+}
+
+.content-section-list ol {
+  margin-left: 40px;
+}
+.content-section-list ol li {
+  padding: 12px 0;
+  color: #212529;
+}
+
+
+
+.contact-form-description p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #616e7c;
+}
+
+/* Visa Types area end */
 
 /*
 

@@ -1205,8 +1205,6 @@
       </div>
     </footer>
 
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.6.1.min.js"></script>
@@ -1216,7 +1214,26 @@
     <script src="assets/js/moment.min.js"></script>
     <script src="assets/js/daterangepicker.min.js"></script>
     <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/country-name.js"></script>
     <script src="assets/js/jsuites.js"></script>
-    <script type ="text/javascript" src="assets/js/script.js"></script>
+    <script src="assets/js/jsuites-call.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script>
+      /*------------------------------------
+    select datepicker calender - index.html
+ --------------------------------------*/
+
+      $('input[name="datetimes"]').daterangepicker({
+        timePicker: true,
+
+        startDate: moment().startOf("hour"),
+
+        endDate: moment().startOf("hour").add(32, "hour"),
+
+        locale: {
+          format: "M/DD hh:mm A",
+        },
+      });
+    </script>
   </body>
 </html>

@@ -11,10 +11,10 @@
     />
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/daterangepicker.css" />
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/jsuites.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/stickup.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <style>
@@ -112,6 +112,52 @@
       .accordion-flush .accordion-item .accordion-button,
       .accordion-flush .accordion-item .accordion-button.collapsed {
         font-size: 24px;
+      }
+
+      .swiper-container.swiper-container-initialized.swiper-container-horizontal {
+        width: 85%;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: block;
+        color: #8d8d8d;
+      }
+
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        font-size: 13px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid #8d8d8d;
+        border-radius: 50%;
+        display: block;
+      }
+      .isStuck {
+        left: 119px;
+      }
+      .navbar-collapse {
+        margin-bottom: 16px;
+      }
+
+      li.menuItem {
+        padding: 12px 0;
+      }
+      li.menuItem.active {
+        border-right: 1px solid #1f2933;
+      }
+      li.menuItem a {
+        line-height: 160%;
+        letter-spacing: -0.08px;
+        color: #7b8794;
+      }
+      .collapse:not(.show) {
+        display: block;
+      }
+      .navbar.navbar-inverse.navbar-static-top a:hover {
+        color: #666;
       }
     </style>
     <title>Pick Visa</title>
@@ -492,6 +538,7 @@
               </div>
               <div class="col-md-9">
                 <div class="visa-slider-active">
+                  <div class="swiper-button-prev"></div>
                   <div class="swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
@@ -508,6 +555,20 @@
                             <div class="slider-verified">
                               <i class="fa-solid fa-circle-check"></i>
                               <span> Verified </span>
+                              <div class="learn-more-wrap">
+                                <div class="learn-more-icon">
+                                  <i class="fa-solid fa-caret-up"></i>
+                                </div>
+                                <div class="learn-more-reviews">
+                                  <span>Verified review</span>
+                                </div>
+                                <div class="learn-more-page">
+                                  <span
+                                    ><a href="#">Learn more</a>about review
+                                    types</span
+                                  >
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="slider-middle">
@@ -538,6 +599,20 @@
                             <div class="slider-verified">
                               <i class="fa-solid fa-circle-check"></i>
                               <span> Verified </span>
+                              <div class="learn-more-wrap">
+                                <div class="learn-more-icon">
+                                  <i class="fa-solid fa-caret-up"></i>
+                                </div>
+                                <div class="learn-more-reviews">
+                                  <span>Verified review</span>
+                                </div>
+                                <div class="learn-more-page">
+                                  <span
+                                    ><a href="#">Learn more</a>about review
+                                    types</span
+                                  >
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="slider-middle">
@@ -568,6 +643,20 @@
                             <div class="slider-verified">
                               <i class="fa-solid fa-circle-check"></i>
                               <span> Verified </span>
+                              <div class="learn-more-wrap">
+                                <div class="learn-more-icon">
+                                  <i class="fa-solid fa-caret-up"></i>
+                                </div>
+                                <div class="learn-more-reviews">
+                                  <span>Verified review</span>
+                                </div>
+                                <div class="learn-more-page">
+                                  <span
+                                    ><a href="#">Learn more</a>about review
+                                    types</span
+                                  >
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="slider-middle">
@@ -598,6 +687,20 @@
                             <div class="slider-verified">
                               <i class="fa-solid fa-circle-check"></i>
                               <span> Verified </span>
+                              <div class="learn-more-wrap">
+                                <div class="learn-more-icon">
+                                  <i class="fa-solid fa-caret-up"></i>
+                                </div>
+                                <div class="learn-more-reviews">
+                                  <span>Verified review</span>
+                                </div>
+                                <div class="learn-more-page">
+                                  <span
+                                    ><a href="#">Learn more</a>about review
+                                    types</span
+                                  >
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="slider-middle">
@@ -628,6 +731,20 @@
                             <div class="slider-verified">
                               <i class="fa-solid fa-circle-check"></i>
                               <span> Verified </span>
+                              <div class="learn-more-wrap">
+                                <div class="learn-more-icon">
+                                  <i class="fa-solid fa-caret-up"></i>
+                                </div>
+                                <div class="learn-more-reviews">
+                                  <span>Verified review</span>
+                                </div>
+                                <div class="learn-more-page">
+                                  <span
+                                    ><a href="#">Learn more</a>about review
+                                    types</span
+                                  >
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="slider-middle">
@@ -658,6 +775,20 @@
                             <div class="slider-verified">
                               <i class="fa-solid fa-circle-check"></i>
                               <span> Verified </span>
+                              <div class="learn-more-wrap">
+                                <div class="learn-more-icon">
+                                  <i class="fa-solid fa-caret-up"></i>
+                                </div>
+                                <div class="learn-more-reviews">
+                                  <span>Verified review</span>
+                                </div>
+                                <div class="learn-more-page">
+                                  <span
+                                    ><a href="#">Learn more</a>about review
+                                    types</span
+                                  >
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="slider-middle">
@@ -688,6 +819,20 @@
                             <div class="slider-verified">
                               <i class="fa-solid fa-circle-check"></i>
                               <span> Verified </span>
+                              <div class="learn-more-wrap">
+                                <div class="learn-more-icon">
+                                  <i class="fa-solid fa-caret-up"></i>
+                                </div>
+                                <div class="learn-more-reviews">
+                                  <span>Verified review</span>
+                                </div>
+                                <div class="learn-more-page">
+                                  <span
+                                    ><a href="#">Learn more</a>about review
+                                    types</span
+                                  >
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="slider-middle">
@@ -718,6 +863,20 @@
                             <div class="slider-verified">
                               <i class="fa-solid fa-circle-check"></i>
                               <span> Verified </span>
+                              <div class="learn-more-wrap">
+                                <div class="learn-more-icon">
+                                  <i class="fa-solid fa-caret-up"></i>
+                                </div>
+                                <div class="learn-more-reviews">
+                                  <span>Verified review</span>
+                                </div>
+                                <div class="learn-more-page">
+                                  <span
+                                    ><a href="#">Learn more</a>about review
+                                    types</span
+                                  >
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="slider-middle">
@@ -748,6 +907,20 @@
                             <div class="slider-verified">
                               <i class="fa-solid fa-circle-check"></i>
                               <span> Verified </span>
+                              <div class="learn-more-wrap">
+                                <div class="learn-more-icon">
+                                  <i class="fa-solid fa-caret-up"></i>
+                                </div>
+                                <div class="learn-more-reviews">
+                                  <span>Verified review</span>
+                                </div>
+                                <div class="learn-more-page">
+                                  <span
+                                    ><a href="#">Learn more</a>about review
+                                    types</span
+                                  >
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="slider-middle">
@@ -767,6 +940,7 @@
                       </div>
                     </div>
                   </div>
+                  <div class="swiper-button-next"></div>
                 </div>
                 <p class="show-star">Showing our 5 star reviews</p>
               </div>
@@ -776,6 +950,204 @@
       </section>
 
       <!-- Visa Slider end -->
+
+      <!-- Visa Types area start -->
+
+      <section>
+        <div class="visa-types-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <!-- START THE NAVBAR -->
+                <div class="table-content-wrap">
+                  <div class="navbar-wrapper">
+                    <div class="navwrapper">
+                      <div class="navbar navbar-inverse navbar-static-top">
+                        <div class="navbar-header">
+                          <!-- <button
+                              type="button"
+                              class="navbar-toggle"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                            >
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button> -->
+
+                          <div class="navbar-brand">
+                            <span>TABLE OF CONTENTS</span>
+                          </div>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                          <ul class="nav navbar-nav">
+                            <li class="menuItem active">
+                              <a href="#visa-types"> US Visa Types</a>
+                            </li>
+                            <li class="menuItem">
+                              <a href="#apply-visa">
+                                How do I Apply for a US Visa?</a
+                              >
+                            </li>
+                            <li class="menuItem">
+                              <a href="#get-visa"
+                                >How do I Get a US Work Visa?</a
+                              >
+                            </li>
+                            <li class="menuItem">
+                              <a href="#interview-questions"
+                                >US Visa Interview Questions</a
+                              >
+                            </li>
+                            <li class="menuItem">
+                              <a href="#visa-fees"
+                                >How much are the US Visa Fees?</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Navbar -->
+                  </div>
+                </div>
+                <!-- END NAVBAR -->
+              </div>
+              <div class="col-8 pb-80">
+                <div class="row">
+                  <div id="visa-type" class="content-texts">
+                    <div class="content-section-title">
+                      <h2>&nbsp; US Visa Types</h2>
+                    </div>
+                    <div class="content-section-list">
+                      <p>There are 2 main types of visas in the US:</p>
+                      <ol>
+                        <li>Non-immigrant visa</li>
+                        <li>Immigrant visa</li>
+                      </ol>
+                    </div>
+                    <div class="content-section-description">
+                      <p>
+                        Citizens eligible for the United States Visa Waiver
+                        Program do not have to apply for a visa to travel to the
+                        United States, but they must have an electronic
+                        authorization (ESTA) if arriving by air or sea. Visitors
+                        can stay in the United States for up to 90 days.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div id="apply-visa" class="content-texts">
+                    <div class="content-section-title">
+                      <h2>&nbsp; How do I Apply for a US Visa?</h2>
+                    </div>
+                    <div class="content-section-list">
+                      <p>There are 2 main types of visas in the US:</p>
+                      <ol>
+                        <li>Non-immigrant visa</li>
+                        <li>Immigrant visa</li>
+                      </ol>
+                    </div>
+                    <div class="content-section-description">
+                      <p>
+                        Citizens eligible for the United States Visa Waiver
+                        Program do not have to apply for a visa to travel to the
+                        United States, but they must have an electronic
+                        authorization (ESTA) if arriving by air or sea. Visitors
+                        can stay in the United States for up to 90 days.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div id="get-visa" class="content-texts">
+                    <div class="content-section-title">
+                      <h2>&nbsp; How do I Apply for a US Visa?</h2>
+                    </div>
+                    <div class="content-section-list">
+                      <p>There are 2 main types of visas in the US:</p>
+                      <ol>
+                        <li>Non-immigrant visa</li>
+                        <li>Immigrant visa</li>
+                      </ol>
+                    </div>
+                    <div class="content-section-description">
+                      <p>
+                        Citizens eligible for the United States Visa Waiver
+                        Program do not have to apply for a visa to travel to the
+                        United States, but they must have an electronic
+                        authorization (ESTA) if arriving by air or sea. Visitors
+                        can stay in the United States for up to 90 days.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div id="interview-questions" class="content-texts">
+                    <div class="content-section-title">
+                      <h2>&nbsp;US Visa Interview Questions</h2>
+                    </div>
+                    <div class="content-section-list">
+                      <p>There are 2 main types of visas in the US:</p>
+                      <ol>
+                        <li>Non-immigrant visa</li>
+                        <li>Immigrant visa</li>
+                      </ol>
+                    </div>
+                    <div class="content-section-description">
+                      <p>
+                        Applicants between the ages of 14 and 79 must attend an
+                        interview in person with a consular officer. You must
+                        bring your appointment confirmation letter. The
+                        interview with the consular officer is the last step
+                        which usually only lasts a few minutes. He or she should
+                        collect, enter the details and review the application
+                        before the interview. Your fingerprint will be scanned
+                        electronically. The questions you will be asked during
+                        the interview may relate to your travel plans, the
+                        details of your trip (destination, date of departure,
+                        hotel where you will be staying, etc.), work, family
+                        life, documents, etc., may be relevant to you. There is
+                        no standard form or sequence for these questions. In
+                        short, the consular can ask you any questions they want
+                        about you, your life, and your travels. You may know the
+                        answer about your visa at the end of this interview, but
+                        additional administrative processing may sometimes be
+                        needed.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div id="visa-fees" class="content-texts">
+                    <div class="content-section-title">
+                      <h4>&nbsp;How much are the US Visa Fees?</h4>
+                    </div>
+                    <div class="content-section-list">
+                      <p>There are 2 main types of visas in the US:</p>
+                      <ol>
+                        <li>Non-immigrant visa</li>
+                        <li>Immigrant visa</li>
+                      </ol>
+                    </div>
+                    <div class="content-section-description">
+                      <p>
+                        Citizens eligible for the United States Visa Waiver
+                        Program do not have to apply for a visa to travel to the
+                        United States, but they must have an electronic
+                        authorization (ESTA) if arriving by air or sea. Visitors
+                        can stay in the United States for up to 90 days.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Visa Types area end -->
 
       <!-- All destination area start -->
 
@@ -949,6 +1321,20 @@
       </div>
     </footer>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/country-name.js"></script>
+    <script src="assets/js/jsuites.js"></script>
+    <script src="assets/js/jsuites-call.js"></script>
+    <script src="assets/js/stickup.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+    <!-- internal javascript start  -->
+
     <script>
       jSuites.dropdown(document.getElementById("dropdown-3"), {
         data: countries,
@@ -957,16 +1343,32 @@
         width: "280px",
       });
     </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-3.6.1.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
 
-    <script src="assets/js/moment.min.js"></script>
-    <script src="assets/js/daterangepicker.min.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
-    <script src="assets/js/jsuites.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!-- internal javascript end  -->
+
+    <!-- internal jQuery start  -->
+
+    <script type="text/javascript">
+      //initiating jQuery
+      jQuery(function ($) {
+        $(document).ready(function () {
+          //enabling stickUp on the '.navbar-wrapper' class
+          $(".navbar-wrapper").stickUp({
+            parts: {
+              0: "visa-types",
+              1: "apply-visa",
+              2: "get-visa",
+              3: "interview-questions",
+              4: "visa-fees",
+            },
+            itemClass: "menuItem",
+            itemHover: "active",
+          });
+        });
+      });
+    </script>
+
+    <!-- internal jQuery end  -->
+
   </body>
 </html>
