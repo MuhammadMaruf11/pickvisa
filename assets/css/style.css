@@ -2868,8 +2868,6 @@ visa application Page start
   color: #212529;
 }
 
-
-
 .contact-form-description p {
   font-style: normal;
   font-weight: 400;
@@ -2883,6 +2881,223 @@ visa application Page start
 /*
 
 visa application Page End
+
+*/
+
+/*
+
+About US Page start
+
+*/
+
+/* About us banner area start  */
+
+.aboutus-banner-area {
+  padding: 50px 0;
+}
+
+.about-banner-title {
+  margin-bottom: 24px;
+}
+
+.about-banner-title h1 {
+  font-size: 60px;
+}
+
+.about-banner-description p {
+  font-size: 20px;
+  color: #1f2933;
+}
+
+/* About us banner area end */
+
+/* About our values area start */
+
+.values-area {
+  padding: 60px 0;
+}
+
+.values-wrap {
+  min-height: 800px;
+  position: relative;
+  background: #f5f7fa;
+  border-radius: 20px;
+  padding: 60px;
+}
+
+.values-section-title {
+  margin-bottom: 96px;
+}
+.values-section-title h2 {
+  font-size: 48px;
+}
+
+.our-values-title h3 {
+  font-size: 30px;
+}
+
+.sub-values-content {
+  margin-bottom: 80px;
+}
+
+.sub-values-title {
+  margin-bottom: 8px;
+}
+
+.sub-values-title h4 {
+  font-size: 20px;
+}
+
+.sub-values-description p {
+  font-size: 16px;
+  color: #616e7c;
+}
+
+.values-section-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.values-section-img img {
+  width: 418px;
+}
+
+/* About our values area end */
+
+/* Our team area start */
+
+.our-team-area {
+  padding: 60px 0;
+}
+
+.team-section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.team-section-title h2 {
+  font-size: 48px;
+}
+
+.our-team-members {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  text-align: center;
+}
+
+.member-profile-wrap {
+  margin-bottom: 64px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.member-img img {
+  width: 120px;
+  height: 120px;
+}
+
+.member-title {
+  margin-top: 24px;
+  margin-bottom: 4px;
+}
+
+.member-post p {
+  color: #7b8794;
+}
+
+.member-title h4 {
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.2px;
+}
+
+/* Our team area end */
+
+/* Trusted company area start */
+
+.trusted-company-area {
+  padding: 60px 0;
+  background-color: #e9f9fb;
+}
+
+.trusted-company-description {
+  margin-bottom: 42px;
+}
+.trusted-company-description p {
+  color: #1f2933;
+}
+
+.trusted-company-logo a img {
+  height: 32px;
+}
+
+/* Trusted company area end */
+
+/*
+
+About US Page End
+
+*/
+
+/*
+
+Our Bloggers Page start
+
+*/
+
+/* our blooger area start  */
+
+.blogger-area {
+}
+
+.bloggers-section-title {
+  margin-bottom: 80px;
+}
+.bloggers-section-title h1 {
+  font-size: 48px;
+}
+
+.blogger-details {
+  margin-bottom: 77px;
+  display: flex;
+}
+
+.bloggers-img {
+  margin-right: 32px;
+}
+
+.bloggers-content {
+  padding-right: 32px;
+}
+
+.bloggers-blog{
+  margin-top: 8px;
+}
+
+.bloggers-title{
+  margin-top: 6px;
+}
+
+.bloggers-title a{
+  font-size: 30px;
+}
+.bloggers-title a:hover{
+ text-decoration: underline;
+}
+
+.bloggers-description{
+  margin-top: 16px;
+}
+.bloggers-description p{
+ font-size: 16px;
+}
+
+/* our blooger area end */
+
+/*
+
+Our Bloggers Page End
 
 */
 

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/icons/fevicon.png"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/jsuites.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <title>Pick Visa</title>
+  </head>
+
+  <style>
+    .header-area {
+      background: transparent;
+    }
+    .main-menu ul li a {
+      color: #1f2933;
+    }
+    .icon-items span {
+      color: #1f2933;
+    }
+    .header-right a {
+      color: #1f2933;
+    }
+    .signup-btn {
+      border-color: #1f2933;
+    }
+
+    .content-box {
+      background: rgba(31, 41, 51, 0.1);
+      padding: 10px;
+    }
+
+    .select-box {
+      flex-grow: 0;
+    }
+    .jdropdown-container-header {
+      width: 280px;
+    }
+
+    .jdropdown-container-header input {
+      font-size: 14px;
+    }
+    .jdropdown-container-header input::placeholder {
+      font-size: 14px;
+    }
+
+    .select-box i {
+      font-size: 24px;
+    }
+
+    .apply-btn {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    .services-destination-area {
+      padding: 90px 0;
+    }
+
+    .services-section-title {
+      text-align: left;
+    }
+    .services-section-title h3 {
+      font-size: 24px;
+    }
+
+    .destination-slider-active {
+      margin-top: 30px;
+    }
+
+    .destination-title {
+      margin-top: 16px;
+    }
+
+    .destination-title h4 {
+      font-size: 16px;
+    }
+    .destination-title i {
+      font-size: 16px;
+    }
+    .accordion-flush .accordion-item .accordion-button,
+    .accordion-flush .accordion-item .accordion-button.collapsed {
+      font-size: 24px;
+    }
+
+    .jdropdown-default .jdropdown-container {
+      width: 120px !important;
+    }
+
+    .country-flag {
+      display: flex;
+      margin-bottom: 30px;
+      align-items: center;
+    }
+    .country-flag img {
+      width: 27px;
+      height: 17px;
+      margin-right: 18px;
+    }
+
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+      box-shadow: none;
+    }
+    .info-section-area {
+      margin-top: 0;
+    }
+  </style>
+
+  <body>
+    <!-- Header Start -->
+
+    <header>
+      <div class="header-area">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-3">
+              <div class="header-logo">
+                <a href="index.html">
+                  <img
+                    src="assets/img/logo/logo_black.svg"
+                    alt="logo"
+                    class="logo-img"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="main-menu d-lg-block d-none">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="visapolicy.html">Visa Policy</a></li>
+                    <li>
+                      <a href="javascript:void(0)"
+                        >Solution <i class="fa-light fa-chevron-down"></i
+                      ></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="visa-application-form.html">
+                            <img src="assets/img/icons/icon-1.png" alt="icon" />
+                            Visa Application Form Generator
+                          </a>
+                        </li>
+                        <li>
+                          <a href="visa-chance-calc.html">
+                            <img
+                              src="assets/img/icons/icon-2.png"
+                              alt="icon"
+                            />Visa Chance Calculator</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="assets/img/icons/icon-3.png"
+                              alt="icon"
+                            />Visa Map</a
+                          >
+                        </li>
+                        <li>
+                          <a href="embasis.html">
+                            <img
+                              src="assets/img/icons/icon-4.png"
+                              alt="icon"
+                            />Embassies</a
+                          >
+                        </li>
+                        <li>
+                          <a href="covid19.html">
+                            <img
+                              src="assets/img/icons/icon-5.png"
+                              alt="icon"
+                            />COVID-19 Test Centers</a
+                          >
+                        </li>
+                        <img
+                          src="assets/img//icons/tooltip_arrow.svg"
+                          alt="icon"
+                        />
+                      </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="menu-open d-lg-none text-end">
+                <div class="side-icon">
+                  <a href="#"><i class="far fa-bars"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 text-end">
+              <div class="header-right">
+                <div class="icon-items">
+                  <span>
+                    <i class="fa-light fa-globe"></i>
+                    <ul>
+                      <li><a href="#">Azərbaycanca</a></li>
+                      <li><a href="#">English</a></li>
+                      <li><a href="#">Русский</a></li>
+                      <img
+                        src="assets/img//icons/tooltip_arrow.svg"
+                        alt="icon"
+                      />
+                    </ul>
+                  </span>
+                </div>
+                <div class="login-btn">
+                  <a href="login.html">Log In</a>
+                </div>
+                <div class="signup-btn">
+                  <a href="signup.html">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header End -->
+
+    <main>
+      <!-- About Us banner area start  -->
+
+      <section>
+        <div class="aboutus-banner-area">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-5 col-lg-6">
+                <div class="about-banner-img">
+                  <img
+                    src="assets/img/banner/BrowserPreview_tmp.gif"
+                    alt="gif"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-8 text-center">
+                <div class="about-banner-text">
+                  <div class="about-banner-title">
+                    <h1>About Us</h1>
+                  </div>
+                  <div class="about-banner-description">
+                    <p>
+                      In 2014, I was planning my trip to South Africa. We did
+                      not have the Embassy or Consulate of SAR in my hometown to
+                      apply for the visa. I tried to reach official offices in
+                      neighbor countries. It took me several days and lots of
+                      costs to figure out the visa requirements for my trip.
+                      Back then, I decided to start this journey to help all
+                      international travelers easily obtain visa information and
+                      support in applications in case they need it through a
+                      single website - Pickvisa.com! Baba Aghayev, Founder Our
+                      values are focused on ou
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us banner area end  -->
+
+      <!-- About Our values area start  -->
+
+      <section>
+        <div class="values-area">
+          <div class="container">
+            <div class="values-wrap">
+              <div class="row">
+                <div class="col-lg-10">
+                  <div class="values-section-title">
+                    <h2>
+                      Our values are focused on our customers' happiness and our
+                      team spirit!
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-5">
+                  <div class="our-values-title">
+                    <h3>Our values</h3>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="sub-values-content">
+                        <div class="sub-values-title">
+                          <h4>Honesty</h4>
+                        </div>
+                        <div class="sub-values-description">
+                          <p>Team Members & Customers.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="sub-values-content">
+                        <div class="sub-values-title">
+                          <h4>Honesty</h4>
+                        </div>
+                        <div class="sub-values-description">
+                          <p>Team Members & Customers.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="sub-values-content">
+                        <div class="sub-values-title">
+                          <h4>Honesty</h4>
+                        </div>
+                        <div class="sub-values-description">
+                          <p>Team Members & Customers.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="sub-values-content">
+                        <div class="sub-values-title">
+                          <h4>Honesty</h4>
+                        </div>
+                        <div class="sub-values-description">
+                          <p>Team Members & Customers.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="sub-values-content">
+                        <div class="sub-values-title">
+                          <h4>Honesty</h4>
+                        </div>
+                        <div class="sub-values-description">
+                          <p>Team Members & Customers.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="sub-values-content">
+                        <div class="sub-values-title">
+                          <h4>Honesty</h4>
+                        </div>
+                        <div class="sub-values-description">
+                          <p>Team Members & Customers.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="values-section-img">
+                <img src="assets/img/about-us/our_values.png" alt="value" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Our values area end  -->
+
+      <!-- Our Team area start -->
+
+      <section>
+        <div class="our-team-area">
+          <div class="container">
+            <div class="row">
+              <div class="team-section-title">
+                <h2>
+                  Our Pickvisa team is working to make your visa procedures
+                  easier.
+                </h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="our-team-members">
+                <div class="member-profile-wrap">
+                  <div class="member-img">
+                    <img
+                      src="assets/img/about-us/profile-1.jpg"
+                      alt="profile-img"
+                    />
+                  </div>
+                  <div class="member-title">
+                    <h4>Baba Aghayev</h4>
+                  </div>
+                  <div class="member-post">
+                    <p>Chief Traveller</p>
+                  </div>
+                </div>
+                <div class="member-profile-wrap">
+                  <div class="member-img">
+                    <img
+                      src="assets/img/about-us/profile-1.jpg"
+                      alt="profile-img"
+                    />
+                  </div>
+                  <div class="member-title">
+                    <h4>Baba Aghayev</h4>
+                  </div>
+                  <div class="member-post">
+                    <p>Chief Traveller</p>
+                  </div>
+                </div>
+                <div class="member-profile-wrap">
+                  <div class="member-img">
+                    <img
+                      src="assets/img/about-us/profile-1.jpg"
+                      alt="profile-img"
+                    />
+                  </div>
+                  <div class="member-title">
+                    <h4>Baba Aghayev</h4>
+                  </div>
+                  <div class="member-post">
+                    <p>Chief Traveller</p>
+                  </div>
+                </div>
+                <div class="member-profile-wrap">
+                  <div class="member-img">
+                    <img
+                      src="assets/img/about-us/profile-1.jpg"
+                      alt="profile-img"
+                    />
+                  </div>
+                  <div class="member-title">
+                    <h4>Baba Aghayev</h4>
+                  </div>
+                  <div class="member-post">
+                    <p>Chief Traveller</p>
+                  </div>
+                </div>
+                <div class="member-profile-wrap">
+                  <div class="member-img">
+                    <img
+                      src="assets/img/about-us/profile-1.jpg"
+                      alt="profile-img"
+                    />
+                  </div>
+                  <div class="member-title">
+                    <h4>Baba Aghayev</h4>
+                  </div>
+                  <div class="member-post">
+                    <p>Chief Traveller</p>
+                  </div>
+                </div>
+                <div class="member-profile-wrap">
+                  <div class="member-img">
+                    <img
+                      src="assets/img/about-us/profile-1.jpg"
+                      alt="profile-img"
+                    />
+                  </div>
+                  <div class="member-title">
+                    <h4>Baba Aghayev</h4>
+                  </div>
+                  <div class="member-post">
+                    <p>Chief Traveller</p>
+                  </div>
+                </div>
+                <div class="member-profile-wrap">
+                  <div class="member-img">
+                    <img
+                      src="assets/img/about-us/profile-1.jpg"
+                      alt="profile-img"
+                    />
+                  </div>
+                  <div class="member-title">
+                    <h4>Baba Aghayev</h4>
+                  </div>
+                  <div class="member-post">
+                    <p>Chief Traveller</p>
+                  </div>
+                </div>
+                <div class="member-profile-wrap">
+                  <div class="member-img">
+                    <img
+                      src="assets/img/about-us/profile-1.jpg"
+                      alt="profile-img"
+                    />
+                  </div>
+                  <div class="member-title">
+                    <h4>Baba Aghayev</h4>
+                  </div>
+                  <div class="member-post">
+                    <p>Chief Traveller</p>
+                  </div>
+                </div>
+                <div class="member-profile-wrap">
+                  <div class="member-img">
+                    <img
+                      src="assets/img/about-us/profile-1.jpg"
+                      alt="profile-img"
+                    />
+                  </div>
+                  <div class="member-title">
+                    <h4>Baba Aghayev</h4>
+                  </div>
+                  <div class="member-post">
+                    <p>Chief Traveller</p>
+                  </div>
+                </div>
+                <div class="member-profile-wrap">
+                  <div class="member-img">
+                    <img
+                      src="assets/img/about-us/profile-1.jpg"
+                      alt="profile-img"
+                    />
+                  </div>
+                  <div class="member-title">
+                    <h4>Baba Aghayev</h4>
+                  </div>
+                  <div class="member-post">
+                    <p>Chief Traveller</p>
+                  </div>
+                </div>
+                <div class="member-profile-wrap">
+                  <div class="member-img">
+                    <img
+                      src="assets/img/about-us/profile-1.jpg"
+                      alt="profile-img"
+                    />
+                  </div>
+                  <div class="member-title">
+                    <h4>Baba Aghayev</h4>
+                  </div>
+                  <div class="member-post">
+                    <p>Chief Traveller</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Team area end -->
+
+      <!-- Trusted company area start -->
+
+      <section>
+        <div class="trusted-company-area">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 text-center">
+                <div class="trusted-company-description">
+                  <p>FEATURED IN POPULAR WEBSITES AS A TRUSTED VISA COMPANY</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 text-center">
+                <div class="trusted-company-logo">
+                  <a href="#">
+                    <img
+                      src="assets/img/about-us/artdaily-logo.png"
+                      alt="logo"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 text-center">
+                <div class="trusted-company-logo">
+                  <a href="#">
+                    <img
+                      src="assets/img/about-us/entrepreneur-logo.svg"
+                      alt="logo"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 text-center">
+                <div class="trusted-company-logo">
+                  <a href="#">
+                    <img
+                      src="assets/img/about-us/benzinga-logo.png"
+                      alt="logo"
+                      style="height: 20px"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trusted company area end -->
+
+      <!-- info section start  -->
+
+      <section>
+        <div class="info-section-area">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-5">
+                <div class="info-wrap">
+                  <div class="info-text">
+                    <h2>Ready to get a visa without wasting time?</h2>
+                  </div>
+                  <div class="info-apply-btn">
+                    <a href="services.html"> Apply now </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 d-none d-lg-block">
+                <div class="arrow-svg">
+                  <img src="assets/img/logo/arrow_vector.svg" alt="svg" />
+                </div>
+              </div>
+              <div class="col-5 text-end">
+                <div class="cta-img">
+                  <img src="assets/img/info/cta.png" alt="cta-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- info section end -->
+    </main>
+
+    <!-- Footer Start  -->
+
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <div class="footer-logo">
+                <a href="index.html">
+                  <i class="fa-light fa-globe"></i><span>pickvisa</span>
+                </a>
+              </div>
+              <div class="footer-description">
+                <p>
+                  We support our customers in travel, education and business
+                  visit visas to any country worldwide.
+                </p>
+              </div>
+              <div class="footer-social">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col">
+              <div class="footer-widget">
+                <div class="widget-title">
+                  <h5>OUR SERVICES</h5>
+                </div>
+                <ul>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#"> Visa Policy </a></li>
+                  <li><a href="#">Visa Application Form Generator</a></li>
+                  <li><a href="#">Visa Chance Calculator</a></li>
+                  <li><a href="#">Visa Map</a></li>
+                  <li><a href="#">Embassies</a></li>
+                  <li><a href="#">COVID-19 Test Centers</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-widget">
+                <div class="widget-title">
+                  <h5>ABOUT US</h5>
+                </div>
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="our-bloggers.html">Our Bloggers</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Contact </a></li>
+                  <li><a href="#">Vacancies</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-widget">
+                <div class="widget-title">
+                  <h5>LEGAL</h5>
+                </div>
+                <ul>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">Cookies</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <!-- <hr /> -->
+          <div class="row justify-content-between align-items-center">
+            <div class="col-xl-3">
+              <div class="language-selction">
+                <div class="dropdown-grop">
+                  <i class="fa-light fa-globe"></i>
+                  <span>English</span>
+                </div>
+                <div class="dropdown-menu">
+                  <a href="#">Azərbaycanca</a>
+                  <a href="index.html">English</a>
+                  <a href="#"> Русский</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-9 text-end">
+              <div class="copyright-description">
+                <span>Copyright © pickvisa.com. 2016-2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/country-name.js"></script>
+    <script src="assets/js/jsuites.js"></script>
+    <script src="assets/js/jsuites-call.js"></script>
+    <script src="assets/js/countrymap.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script></script>
+  </body>
+</html>
