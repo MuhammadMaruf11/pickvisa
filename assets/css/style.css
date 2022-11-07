@@ -3105,7 +3105,7 @@ Privacy with Term & Condition Page start
 
 */
 
-.terms-wrap{
+.terms-wrap {
   margin-bottom: 60px;
 }
 
@@ -3121,7 +3121,6 @@ Privacy with Term & Condition Page start
   line-height: 34px;
 }
 
-
 .terms-description p {
   margin-bottom: 10px;
   color: #1d323e80;
@@ -3135,10 +3134,15 @@ Privacy with Term & Condition Page start
   font-size: 15px;
   font-weight: 500;
   line-height: 32px;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
+
 .terms-description p a:hover {
   text-decoration: none;
+}
+
+.terms-description ul {
+  margin-left: 15px;
 }
 
 /*
