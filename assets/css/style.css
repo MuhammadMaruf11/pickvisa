@@ -1342,6 +1342,7 @@ Blog Page Start
   margin-right: 48px;
   font-size: 16px;
   font-weight: 600;
+  background: transparent;
 }
 .search-blog-category button i {
   margin-left: 8px;
@@ -3048,9 +3049,6 @@ Our Bloggers Page start
 
 /* our blooger area start  */
 
-.blogger-area {
-}
-
 .bloggers-section-title {
   margin-bottom: 80px;
 }
@@ -3071,26 +3069,26 @@ Our Bloggers Page start
   padding-right: 32px;
 }
 
-.bloggers-blog{
+.bloggers-blog {
   margin-top: 8px;
 }
 
-.bloggers-title{
+.bloggers-title {
   margin-top: 6px;
 }
 
-.bloggers-title a{
+.bloggers-title a {
   font-size: 30px;
 }
-.bloggers-title a:hover{
- text-decoration: underline;
+.bloggers-title a:hover {
+  text-decoration: underline;
 }
 
-.bloggers-description{
+.bloggers-description {
   margin-top: 16px;
 }
-.bloggers-description p{
- font-size: 16px;
+.bloggers-description p {
+  font-size: 16px;
 }
 
 /* our blooger area end */
@@ -3098,6 +3096,54 @@ Our Bloggers Page start
 /*
 
 Our Bloggers Page End
+
+*/
+
+/*
+
+Privacy with Term & Condition Page start
+
+*/
+
+.terms-wrap{
+  margin-bottom: 60px;
+}
+
+.terms-title {
+  margin-bottom: 8px;
+}
+
+.terms-title h2 {
+  color: #4b5c66;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.44px;
+  line-height: 34px;
+}
+
+
+.terms-description p {
+  margin-bottom: 10px;
+  color: #1d323e80;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.terms-description p a {
+  color: #40c7e0;
+  text-decoration: underline;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 32px;
+  transition: all .3s linear;
+}
+.terms-description p a:hover {
+  text-decoration: none;
+}
+
+/*
+
+Privacy with Term & Condition Page End
 
 */
 
