@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/icons/fevicon.png"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/daterangepicker.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/jsuites.css" />
+    <link rel="stylesheet" href="assets/css/stickup.css" />
+    <link rel="stylesheet" href="assets/css/venobox.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <style>
+      .dropbtn {
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #ddd;
+      }
+      .hero-area {
+        background-image: url(assets/img/banner/single-blog-bg.png);
+      }
+      .hero-title {
+        margin-bottom: 24px;
+      }
+      /* js stick start  */
+
+      .isStuck {
+        left: 119px;
+      }
+      .navbar-collapse {
+        margin-bottom: 16px;
+      }
+
+      li.menuItem {
+        padding: 0;
+        margin-bottom: 16px;
+      }
+      li.menuItem.active {
+        border-right: 1px solid #1f2933;
+      }
+      li.menuItem.active a {
+        color: #1f2933 !important;
+        font-weight: 600 !important;
+      }
+      li.menuItem a {
+        line-height: 160%;
+        letter-spacing: -0.08px;
+        color: #7b8794;
+      }
+      .collapse:not(.show) {
+        display: block;
+      }
+      .navbar.navbar-inverse.navbar-static-top a:hover {
+        color: #666;
+      }
+
+      .navbar-wrapper {
+        margin-top: 0;
+      }
+
+      .navbar {
+        padding: 0;
+      }
+
+      .table-content-wrap {
+        margin-top: 0;
+      }
+
+      .navbar-brand {
+        margin-bottom: 14px;
+      }
+
+      /* js stick end  */
+
+      .content-box {
+        padding: 0;
+        background: transparent;
+      }
+
+      .select-box {
+        background: #f5f7fa;
+        -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        padding: 0;
+        margin: 5px 0;
+        outline: 0;
+        border: 0;
+      }
+
+      .select-box i {
+        font-size: 18px;
+      }
+
+      .select-box i {
+        margin-right: 0;
+      }
+
+      .jdropdown-default .jdropdown-container {
+        width: 100%;
+      }
+      .jdropdown-container-header {
+        width: 100%;
+      }
+
+      .select-box:hover {
+        outline: 0;
+        border: 0;
+      }
+
+      .citizen-text p {
+        margin-bottom: 0;
+      }
+
+      .apply-btn {
+        margin-top: 5px;
+        white-space: nowrap;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #041316;
+        color: #fff;
+        width: 100%;
+      }
+
+      .slider-content-1 {
+        width: 360px;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: block;
+        color: #fff;
+        position: inherit;
+        top: inherit;
+        margin: inherit;
+        height: inherit;
+      }
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        font-size: 13px;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border: 1px solid #1f2933;
+        background: #1f2933;
+        border-radius: 50%;
+        display: block;
+      }
+
+    </style>
+    <title>Pick Visa</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+
+    <header>
+      <div class="header-area">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-3">
+              <div class="header-logo">
+                <a href="index.html">
+                  <img
+                    src="assets/img/logo/logo.svg"
+                    alt="logo"
+                    class="logo-img"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="main-menu d-lg-block d-none">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="visapolicy.html">Visa Policy</a></li>
+                    <li>
+                      <a href="javascript:void(0)"
+                        >Solution <i class="fa-light fa-chevron-down"></i
+                      ></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="visa-application-form.html">
+                            <img src="assets/img/icons/icon-1.png" alt="icon" />
+                            Visa Application Form Generator
+                          </a>
+                        </li>
+                        <li>
+                          <a href="visa-chance-calc.html">
+                            <img
+                              src="assets/img/icons/icon-2.png"
+                              alt="icon"
+                            />Visa Chance Calculator</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="assets/img/icons/icon-3.png"
+                              alt="icon"
+                            />Visa Map</a
+                          >
+                        </li>
+                        <li>
+                          <a href="embasis.html">
+                            <img
+                              src="assets/img/icons/icon-4.png"
+                              alt="icon"
+                            />Embassies</a
+                          >
+                        </li>
+                        <li>
+                          <a href="covid19.html">
+                            <img
+                              src="assets/img/icons/icon-5.png"
+                              alt="icon"
+                            />COVID-19 Test Centers</a
+                          >
+                        </li>
+                        <img
+                          src="assets/img//icons/tooltip_arrow.svg"
+                          alt="icon"
+                        />
+                      </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="menu-open d-lg-none text-end">
+                <div class="side-icon">
+                  <a href="#"><i class="far fa-bars"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 text-end">
+              <div class="header-right">
+                <div class="icon-items">
+                  <span>
+                    <i class="fa-light fa-globe"></i>
+                    <ul>
+                      <li><a href="#">Azərbaycanca</a></li>
+                      <li><a href="#">English</a></li>
+                      <li><a href="#">Русский</a></li>
+                      <img
+                        src="assets/img//icons/tooltip_arrow.svg"
+                        alt="icon"
+                      />
+                    </ul>
+                  </span>
+                </div>
+                <div class="login-btn">
+                  <a href="login.html">Log In</a>
+                </div>
+                <div class="signup-btn">
+                  <a href="signup.html">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header End -->
+
+    <main>
+      <!-- Hero Start -->
+      <section>
+        <div class="hero-area">
+          <div class="banner-overlay">
+            <div class="container pt-125">
+              <div class="row justify-content-center">
+                <div class="col-xl-5 col-lg-8 text-center">
+                  <div class="hero-page-link">
+                    <a href="blog.html">BLOG</a>
+                    <span><i class="fa-regular fa-chevron-right"></i></span>
+                    <a href="food-hotel.html">FOOD, HOTEL, RESTAURANT</a>
+                  </div>
+                  <div class="hero-title">
+                    <h1 class="hero-text">5 best boutique hotels in Kenya</h1>
+                  </div>
+                  <div class="hero-details">
+                    <a href="#">KANAN ISAZADE</a>
+                    <i class="fa-solid fa-circle-small"></i>
+                    <span>24 December 2021</span>
+                    <i class="fa-solid fa-circle-small"></i>
+                    <span>1176 views</span>
+                    <i class="fa-solid fa-circle-small"></i>
+                    <span>5 min. read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hero End -->
+
+      <!-- Blog article area start  -->
+
+      <section>
+        <div class="blog-article-area">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-3">
+                <div class="blog-article-left">
+                  <div class="table-content-wrap">
+                    <div class="navbar-wrapper">
+                      <div class="navwrapper">
+                        <div class="navbar navbar-inverse navbar-static-top">
+                          <div class="navbar-header">
+                            <!-- <button
+                                type="button"
+                                class="navbar-toggle"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                              >
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button> -->
+
+                            <div class="navbar-brand">
+                              <span>
+                                <i class="fa-solid fa-list"></i>
+                                TABLE OF CONTENTS
+                              </span>
+                            </div>
+                          </div>
+                          <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                              <li class="menuItem active">
+                                <a href="#visa-types"> US Visa Types</a>
+                              </li>
+                              <li class="menuItem">
+                                <a href="#apply-visa">
+                                  How do I Apply for a US Visa?</a
+                                >
+                              </li>
+                              <li class="menuItem">
+                                <a href="#get-visa"
+                                  >How do I Get a US Work Visa?</a
+                                >
+                              </li>
+                              <li class="menuItem">
+                                <a href="#interview-questions"
+                                  >US Visa Interview Questions</a
+                                >
+                              </li>
+                              <li class="menuItem">
+                                <a href="#visa-fees"
+                                  >How much are the US Visa Fees?</a
+                                >
+                              </li>
+                              <li class="menuItem">
+                                <a href="#african-resort"
+                                  >African House Resort
+                                </a>
+                              </li>
+                              <li class="menuItem">
+                                <a href="#sankara"> Sankara</a>
+                              </li>
+                              <li class="menuItem">
+                                <a href="#sands-nomad">The Sands at Nomad</a>
+                              </li>
+                            </ul>
+                            <div class="share-on-wrap">
+                              <div class="share-title">
+                                <h6>SHARE ON</h6>
+                              </div>
+                              <div class="share-link-wrap">
+                                <i class="fa-regular fa-link-simple"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Navbar -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="blog-article-wrap">
+                  <div class="article-main-img">
+                    <a class="venobox" href="assets/img/banner/hero-img.jpg">
+                      <img
+                        src="assets/img/banner/hero-img.jpg"
+                        alt="main-img"
+                      />
+                    </a>
+                  </div>
+                  <div class="blog-article-content">
+                    <div class="blog-article-description">
+                      <p>
+                        Who can resist the passion of discovering the endless
+                        Safari and rich biodiversity of Kenya? Probably,
+                        everyone who is interested in nature has a desire to
+                        <strong>travel to Kenya</strong>. That is why millions
+                        of people travel here per year. Of course, Kenya offers
+                        many other features to tourists, such as rich history,
+                        culture, and cuisine. One of the first things that
+                        people must solve before the visit is accommodation.
+                        Considering the importance, in this blog, I will talk
+                        about the best boutique <a href="#">hotels in Kenya</a>.
+                      </p>
+                    </div>
+                    <div class="blog-article-list">
+                      <ul>
+                        <li>How many hotels are there in Kenya?</li>
+                        <li>What are the most expensive hotels in Kenya?</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="blog-article-content">
+                    <div class="blog-article-title">
+                      <h2>Kenya Visa</h2>
+                    </div>
+                    <div class="blog-article-img">
+                      <a class="venobox" href="assets/img/blogs/visa-1.jpg">
+                        <img src="assets/img/blogs/visa-1.jpg" alt="main-img" />
+                      </a>
+                    </div>
+                    <div class="blog-article-description">
+                      <p>
+                        People who want to visit Kenya must undergo some
+                        processes. This part will be easy for people from
+                        <strong>visa-free countries</strong>. They can choose
+                        the date, buy a ticket, plan other details, and travel
+                        to Kenya. On the other hand, other nationalities must
+                        obtain a <a href="#">Kenya visa</a>
+                        to realize their trip. During the application procedure:
+                        they will arrange an appointment, collect documents, pay
+                        the visa charge, and wait for processing time. These
+                        steps may vary depending on the type of visa that person
+                        applied for. Kenya offers visa types:
+                      </p>
+                    </div>
+                    <div class="blog-article-list">
+                      <ul>
+                        <li>
+                          East Africa Tourist Visa. This visa is for people who
+                          want to visit the country for temporary reasons such
+                          as tourism, visiting relatives, etc. It will give you
+                          a chance to visit not only Kenya but also Rwanda and
+                          Uganda. These three countries have a special agreement
+                          related to tourism. Applicants will provide some
+                          documents and pay a 100 USD application fee.
+                        </li>
+                        <li>
+                          Journey Visa. Besides, there is a single tourism visa
+                          that allows visiting only Kenya. It is a short-term
+                          visa such as the East Africa Tourist Visa and lets you
+                          stay in the country for a maximum of 90 days. Journey
+                          Visa has two types: single and multiple-entry. The fee
+                          will vary depending on the type of visa. It is 51 USD
+                          for single and 101 USD for multiple entry.
+                        </li>
+                        <li>
+                          Transit Visa. Even if you transit from the territory
+                          of Kenya, you should have a visa. Foreigners who will
+                          not leave the international area don't need it.
+                          Tourists who need a Transit Visa will pay a 21 USD
+                          fee.
+                        </li>
+                        <li>
+                          Courtesy Visa. Courtesy Visa is for people who have
+                          diplomatic, official, and service passports and visit
+                          the country on official duties or transiting through
+                          Kenya to a third country for official business. Such
+                          as in other types, you will wait for two weeks for
+                          processing time, but you will not pay any charge.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="blog-article-description">
+                      <p>
+                        If you are interested in a visa for Kenya and want to
+                        get more information, you can check the services section
+                        of our website.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-article-content">
+                    <div class="blog-article-title">
+                      <h2>Cheap Hotels (Kenya Hotel Prices)</h2>
+                    </div>
+                    <div class="blog-article-img">
+                      <a class="venobox" href="assets/img/blogs/hotel-1.jpg">
+                        <img src="assets/img/blogs/hotel-1.jpg" alt="hotel" />
+                      </a>
+                    </div>
+                    <div class="blog-article-description">
+                      <p>
+                        People who want to visit Kenya must undergo some
+                        processes. This part will be easy for people from
+                        <strong>visa-free countries</strong>. They can choose
+                        the date, buy a ticket, plan other details, and travel
+                        to Kenya. On the other hand, other nationalities must
+                        obtain a <a href="#">Kenya visa</a>
+                        to realize their trip. During the application procedure:
+                        they will arrange an appointment, collect documents, pay
+                        the visa charge, and wait for processing time. These
+                        steps may vary depending on the type of visa that person
+                        applied for. Kenya offers visa types:
+                      </p>
+                    </div>
+                    <div class="blog-article-list">
+                      <ul>
+                        <li>
+                          East Africa Tourist Visa. This visa is for people who
+                          want to visit the country for temporary reasons such
+                          as tourism, visiting relatives, etc. It will give you
+                          a chance to visit not only Kenya but also Rwanda and
+                          Uganda. These three countries have a special agreement
+                          related to tourism. Applicants will provide some
+                          documents and pay a 100 USD application fee.
+                        </li>
+                        <li>
+                          Journey Visa. Besides, there is a single tourism visa
+                          that allows visiting only Kenya. It is a short-term
+                          visa such as the East Africa Tourist Visa and lets you
+                          stay in the country for a maximum of 90 days. Journey
+                          Visa has two types: single and multiple-entry. The fee
+                          will vary depending on the type of visa. It is 51 USD
+                          for single and 101 USD for multiple entry.
+                        </li>
+                        <li>
+                          Transit Visa. Even if you transit from the territory
+                          of Kenya, you should have a visa. Foreigners who will
+                          not leave the international area don't need it.
+                          Tourists who need a Transit Visa will pay a 21 USD
+                          fee.
+                        </li>
+                        <li>
+                          Courtesy Visa. Courtesy Visa is for people who have
+                          diplomatic, official, and service passports and visit
+                          the country on official duties or transiting through
+                          Kenya to a third country for official business. Such
+                          as in other types, you will wait for two weeks for
+                          processing time, but you will not pay any charge.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="blog-article-description">
+                      <p>
+                        If you are interested in a visa for Kenya and want to
+                        get more information, you can check the services section
+                        of our website.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-article-content">
+                    <div class="blog-article-title">
+                      <h2>Kenya luxury hotels</h2>
+                    </div>
+                    <div class="blog-article-img">
+                      <a class="venobox" href="assets/img/blogs/hotel-2.jpg">
+                        <img
+                          src="assets/img/blogs/hotel-2.jpg"
+                          alt="hotel-img"
+                        />
+                      </a>
+                    </div>
+                    <div class="blog-article-description">
+                      <p>
+                        People who want to visit Kenya must undergo some
+                        processes. This part will be easy for people from
+                        <strong>visa-free countries</strong>. They can choose
+                        the date, buy a ticket, plan other details, and travel
+                        to Kenya. On the other hand, other nationalities must
+                        obtain a <a href="#">Kenya visa</a>
+                        to realize their trip. During the application procedure:
+                        they will arrange an appointment, collect documents, pay
+                        the visa charge, and wait for processing time. These
+                        steps may vary depending on the type of visa that person
+                        applied for. Kenya offers visa types:
+                      </p>
+                    </div>
+                    <div class="blog-article-list">
+                      <ul>
+                        <li>
+                          East Africa Tourist Visa. This visa is for people who
+                          want to visit the country for temporary reasons such
+                          as tourism, visiting relatives, etc. It will give you
+                          a chance to visit not only Kenya but also Rwanda and
+                          Uganda. These three countries have a special agreement
+                          related to tourism. Applicants will provide some
+                          documents and pay a 100 USD application fee.
+                        </li>
+                        <li>
+                          Journey Visa. Besides, there is a single tourism visa
+                          that allows visiting only Kenya. It is a short-term
+                          visa such as the East Africa Tourist Visa and lets you
+                          stay in the country for a maximum of 90 days. Journey
+                          Visa has two types: single and multiple-entry. The fee
+                          will vary depending on the type of visa. It is 51 USD
+                          for single and 101 USD for multiple entry.
+                        </li>
+                        <li>
+                          Transit Visa. Even if you transit from the territory
+                          of Kenya, you should have a visa. Foreigners who will
+                          not leave the international area don't need it.
+                          Tourists who need a Transit Visa will pay a 21 USD
+                          fee.
+                        </li>
+                        <li>
+                          Courtesy Visa. Courtesy Visa is for people who have
+                          diplomatic, official, and service passports and visit
+                          the country on official duties or transiting through
+                          Kenya to a third country for official business. Such
+                          as in other types, you will wait for two weeks for
+                          processing time, but you will not pay any charge.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="blog-article-description">
+                      <p>
+                        If you are interested in a visa for Kenya and want to
+                        get more information, you can check the services section
+                        of our website.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-article-content">
+                    <div class="blog-article-title">
+                      <h2>The Villa Luxury Suites Hotel</h2>
+                    </div>
+                    <div class="blog-article-img">
+                      <a class="venobox" href="assets/img/blogs/hotel-3.jpg">
+                        <img
+                          src="assets/img/blogs/hotel-3.jpg"
+                          alt="hotel-img"
+                        />
+                      </a>
+                    </div>
+                    <div class="blog-article-description">
+                      <p>
+                        People who want to visit Kenya must undergo some
+                        processes. This part will be easy for people from
+                        <strong>visa-free countries</strong>. They can choose
+                        the date, buy a ticket, plan other details, and travel
+                        to Kenya. On the other hand, other nationalities must
+                        obtain a <a href="#">Kenya visa</a>
+                        to realize their trip. During the application procedure:
+                        they will arrange an appointment, collect documents, pay
+                        the visa charge, and wait for processing time. These
+                        steps may vary depending on the type of visa that person
+                        applied for. Kenya offers visa types:
+                      </p>
+                    </div>
+                    <div class="blog-article-list">
+                      <ul>
+                        <li>
+                          East Africa Tourist Visa. This visa is for people who
+                          want to visit the country for temporary reasons such
+                          as tourism, visiting relatives, etc. It will give you
+                          a chance to visit not only Kenya but also Rwanda and
+                          Uganda. These three countries have a special agreement
+                          related to tourism. Applicants will provide some
+                          documents and pay a 100 USD application fee.
+                        </li>
+                        <li>
+                          Journey Visa. Besides, there is a single tourism visa
+                          that allows visiting only Kenya. It is a short-term
+                          visa such as the East Africa Tourist Visa and lets you
+                          stay in the country for a maximum of 90 days. Journey
+                          Visa has two types: single and multiple-entry. The fee
+                          will vary depending on the type of visa. It is 51 USD
+                          for single and 101 USD for multiple entry.
+                        </li>
+                        <li>
+                          Transit Visa. Even if you transit from the territory
+                          of Kenya, you should have a visa. Foreigners who will
+                          not leave the international area don't need it.
+                          Tourists who need a Transit Visa will pay a 21 USD
+                          fee.
+                        </li>
+                        <li>
+                          Courtesy Visa. Courtesy Visa is for people who have
+                          diplomatic, official, and service passports and visit
+                          the country on official duties or transiting through
+                          Kenya to a third country for official business. Such
+                          as in other types, you will wait for two weeks for
+                          processing time, but you will not pay any charge.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="blog-article-description">
+                      <p>
+                        If you are interested in a visa for Kenya and want to
+                        get more information, you can check the services section
+                        of our website.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-article-content">
+                    <div class="blog-article-title">
+                      <h2>Bidwood Suite Hotel</h2>
+                    </div>
+                    <div class="blog-article-img">
+                      <a class="venobox" href="assets/img/blogs/hotel-4.jpg">
+                        <img
+                          src="assets/img/blogs/hotel-4.jpg"
+                          alt="hotel-img"
+                        />
+                      </a>
+                    </div>
+                    <div class="blog-article-description">
+                      <p>
+                        People who want to visit Kenya must undergo some
+                        processes. This part will be easy for people from
+                        <strong>visa-free countries</strong>. They can choose
+                        the date, buy a ticket, plan other details, and travel
+                        to Kenya. On the other hand, other nationalities must
+                        obtain a <a href="#">Kenya visa</a>
+                        to realize their trip. During the application procedure:
+                        they will arrange an appointment, collect documents, pay
+                        the visa charge, and wait for processing time. These
+                        steps may vary depending on the type of visa that person
+                        applied for. Kenya offers visa types:
+                      </p>
+                    </div>
+                    <div class="blog-article-list">
+                      <ul>
+                        <li>
+                          East Africa Tourist Visa. This visa is for people who
+                          want to visit the country for temporary reasons such
+                          as tourism, visiting relatives, etc. It will give you
+                          a chance to visit not only Kenya but also Rwanda and
+                          Uganda. These three countries have a special agreement
+                          related to tourism. Applicants will provide some
+                          documents and pay a 100 USD application fee.
+                        </li>
+                        <li>
+                          Journey Visa. Besides, there is a single tourism visa
+                          that allows visiting only Kenya. It is a short-term
+                          visa such as the East Africa Tourist Visa and lets you
+                          stay in the country for a maximum of 90 days. Journey
+                          Visa has two types: single and multiple-entry. The fee
+                          will vary depending on the type of visa. It is 51 USD
+                          for single and 101 USD for multiple entry.
+                        </li>
+                        <li>
+                          Transit Visa. Even if you transit from the territory
+                          of Kenya, you should have a visa. Foreigners who will
+                          not leave the international area don't need it.
+                          Tourists who need a Transit Visa will pay a 21 USD
+                          fee.
+                        </li>
+                        <li>
+                          Courtesy Visa. Courtesy Visa is for people who have
+                          diplomatic, official, and service passports and visit
+                          the country on official duties or transiting through
+                          Kenya to a third country for official business. Such
+                          as in other types, you will wait for two weeks for
+                          processing time, but you will not pay any charge.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="blog-article-description">
+                      <p>
+                        If you are interested in a visa for Kenya and want to
+                        get more information, you can check the services section
+                        of our website.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-article-content">
+                    <div class="blog-article-title">
+                      <h2>African House Resort</h2>
+                    </div>
+                    <div class="blog-article-img">
+                      <a class="venobox" href="assets/img/blogs/hotel-5.jpg">
+                        <img
+                          src="assets/img/blogs/hotel-5.jpg"
+                          alt="hotel-img"
+                        />
+                      </a>
+                    </div>
+                    <div class="blog-article-description">
+                      <p>
+                        People who want to visit Kenya must undergo some
+                        processes. This part will be easy for people from
+                        <strong>visa-free countries</strong>. They can choose
+                        the date, buy a ticket, plan other details, and travel
+                        to Kenya. On the other hand, other nationalities must
+                        obtain a <a href="#">Kenya visa</a>
+                        to realize their trip. During the application procedure:
+                        they will arrange an appointment, collect documents, pay
+                        the visa charge, and wait for processing time. These
+                        steps may vary depending on the type of visa that person
+                        applied for. Kenya offers visa types:
+                      </p>
+                    </div>
+                    <div class="blog-article-list">
+                      <ul>
+                        <li>
+                          East Africa Tourist Visa. This visa is for people who
+                          want to visit the country for temporary reasons such
+                          as tourism, visiting relatives, etc. It will give you
+                          a chance to visit not only Kenya but also Rwanda and
+                          Uganda. These three countries have a special agreement
+                          related to tourism. Applicants will provide some
+                          documents and pay a 100 USD application fee.
+                        </li>
+                        <li>
+                          Journey Visa. Besides, there is a single tourism visa
+                          that allows visiting only Kenya. It is a short-term
+                          visa such as the East Africa Tourist Visa and lets you
+                          stay in the country for a maximum of 90 days. Journey
+                          Visa has two types: single and multiple-entry. The fee
+                          will vary depending on the type of visa. It is 51 USD
+                          for single and 101 USD for multiple entry.
+                        </li>
+                        <li>
+                          Transit Visa. Even if you transit from the territory
+                          of Kenya, you should have a visa. Foreigners who will
+                          not leave the international area don't need it.
+                          Tourists who need a Transit Visa will pay a 21 USD
+                          fee.
+                        </li>
+                        <li>
+                          Courtesy Visa. Courtesy Visa is for people who have
+                          diplomatic, official, and service passports and visit
+                          the country on official duties or transiting through
+                          Kenya to a third country for official business. Such
+                          as in other types, you will wait for two weeks for
+                          processing time, but you will not pay any charge.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="blog-article-description">
+                      <p>
+                        If you are interested in a visa for Kenya and want to
+                        get more information, you can check the services section
+                        of our website.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="blog-article-right">
+                  <div class="searchbox-wrap">
+                    <div class="searchbox-title">
+                      <h5>Apply for any visa in two clicks!</h5>
+                    </div>
+                    <div class="searchbox-content-box">
+                      <div class="content-box">
+                        <div class="select-box">
+                          <i class="fa-solid fa-id-badge"></i>
+                          <div class="citizen-text">
+                            <p>I am a citizen of</p>
+                            <div id="dropdown" placeholder="Try"></div>
+                          </div>
+                        </div>
+                        <div class="select-box">
+                          <i
+                            class="fa-light fa-plane-departure"
+                            style="font-size: 13px"
+                          ></i>
+                          <div class="citizen-text">
+                            <p>Planning to visit</p>
+                            <div
+                              id="dropdown-2"
+                              style="width: 100%"
+                              placeholder="Try"
+                            ></div>
+                          </div>
+                        </div>
+                        <button class="apply-btn" type="submit">
+                          <span>Apply Now</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topic-list-wrap">
+                    <div class="topic-list-items">
+                      <div id="recentBtn" class="topic-list-title">
+                        <h5>MOST RECENT</h5>
+                        <i class="fa-regular fa-chevron-up"></i>
+                      </div>
+                      <ul class="recent-list">
+                        <li>
+                          <a href="#">Top 10 local foods to try in Australia</a>
+                        </li>
+                        <li>
+                          <a href="#"
+                            >Top 10 local foods to try in Azerbaijan</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            Top 10 local foods to try in Colombia
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="topic-list-items">
+                      <div id="topicBtn" class="topic-list-title">
+                        <h5>TOPICS</h5>
+                        <i class="fa-regular fa-chevron-down"></i>
+                      </div>
+                      <ul class="topic-list">
+                        <li>
+                          <a href="#">Africa</a>
+                        </li>
+                        <li>
+                          <a href="#">Hotel</a>
+                        </li>
+                        <li>
+                          <a href="#">Kenya </a>
+                        </li>
+                        <li>
+                          <a href="#"> Resort </a>
+                        </li>
+                        <li>
+                          <a href="#">Top List</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog article area end -->
+
+      <!-- Get Visa area start  -->
+
+      <section>
+        <div class="get-visa-area">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <div class="blog-article-share-wrap">
+                  <div class="blog-article-share-content">
+                    <div class="share-link-icon">
+                      <a href="#">
+                        <i class="fa-regular fa-link-simple"></i>
+                      </a>
+                    </div>
+                    <div class="share-link-text">
+                      <a href="#">Food, Hotel, Restaurant</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="blog-article-items">
+                  <div class="items-wrap">
+                    <div class="items-title">
+                      <h4>Do you want to get a Kenya visa easily?</h4>
+                    </div>
+                    <div class="items-btn">
+                      <a href="#"> Get your visa now</a>
+                    </div>
+                  </div>
+                  <div class="items-img">
+                    <img src="assets/img/blogs/Kenya.png" alt="kenya" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Get Visa area end -->
+
+      <!-- Related posts start  -->
+
+      <section>
+        <div class="related-posts-area">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <div class="related-top-wrap">
+                  <div class="related-section-title">
+                    <h3>Related posts:</h3>
+                  </div>
+                  <div class="related-slider-pagination">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="related-slider-active">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="blog-wrap">
+                            <div class="blog-img">
+                              <img
+                                src="assets/img/blogs/blog-9.jpg"
+                                alt="blog-img"
+                              />
+                            </div>
+                            <div class="blog-content">
+                              <div class="blog-title">
+                                <a href="#"
+                                  >Top 10 tourist attractions in Munich</a
+                                >
+                              </div>
+                              <p class="blog-description">
+                                Do you know which city was chosen as the most
+                                liveable city in the world by Monocle? The right
+                                answer is Munich. Clean subways and streets,
+                                gardens, beer, Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Illo nulla itaque
+                                incidunt qui accusantium tenetur molestiae
+                                voluptatem, quos dolor minima consequuntur,
+                                fugit porro modi.
+                              </p>
+                              <div class="blog-footer">
+                                <a href="#">Kanan Isazade</a>
+                                <div class="blog-date">
+                                  <span>04 January 2022 </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="blog-wrap">
+                            <div class="blog-img">
+                              <img
+                                src="assets/img/blogs/blog-10.jpg"
+                                alt="blog-img"
+                              />
+                            </div>
+                            <div class="blog-content">
+                              <div class="blog-title">
+                                <a href="#"
+                                  >Top 10 tourist attractions in Munich</a
+                                >
+                              </div>
+                              <p class="blog-description">
+                                Do you know which city was chosen as the most
+                                liveable city in the world by Monocle? The right
+                                answer is Munich. Clean subways and streets,
+                                gardens, beer, Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Illo nulla itaque
+                                incidunt qui accusantium tenetur molestiae
+                                voluptatem, quos dolor minima consequuntur,
+                                fugit porro modi.
+                              </p>
+                              <div class="blog-footer">
+                                <a href="#">Kanan Isazade</a>
+                                <div class="blog-date">
+                                  <span>04 January 2022 </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="blog-wrap">
+                            <div class="blog-img">
+                              <img
+                                src="assets/img/blogs/blog-19.jpg"
+                                alt="blog-img"
+                              />
+                            </div>
+                            <div class="blog-content">
+                              <div class="blog-title">
+                                <a href="#"
+                                  >Top 10 tourist attractions in Munich</a
+                                >
+                              </div>
+                              <p class="blog-description">
+                                Do you know which city was chosen as the most
+                                liveable city in the world by Monocle? The right
+                                answer is Munich. Clean subways and streets,
+                                gardens, beer, Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Illo nulla itaque
+                                incidunt qui accusantium tenetur molestiae
+                                voluptatem, quos dolor minima consequuntur,
+                                fugit porro modi.
+                              </p>
+                              <div class="blog-footer">
+                                <a href="#">Kanan Isazade</a>
+                                <div class="blog-date">
+                                  <span>04 January 2022 </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="blog-wrap">
+                            <div class="blog-img">
+                              <img
+                                src="assets/img/blogs/blog-11.jpg"
+                                alt="blog-img"
+                              />
+                            </div>
+                            <div class="blog-content">
+                              <div class="blog-title">
+                                <a href="#"
+                                  >Top 10 tourist attractions in Munich</a
+                                >
+                              </div>
+                              <p class="blog-description">
+                                Do you know which city was chosen as the most
+                                liveable city in the world by Monocle? The right
+                                answer is Munich. Clean subways and streets,
+                                gardens, beer, Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Illo nulla itaque
+                                incidunt qui accusantium tenetur molestiae
+                                voluptatem, quos dolor minima consequuntur,
+                                fugit porro modi.
+                              </p>
+                              <div class="blog-footer">
+                                <a href="#">Kanan Isazade</a>
+                                <div class="blog-date">
+                                  <span>04 January 2022 </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="blog-wrap">
+                            <div class="blog-img">
+                              <img
+                                src="assets/img/blogs/blog-12.jpg"
+                                alt="blog-img"
+                              />
+                            </div>
+                            <div class="blog-content">
+                              <div class="blog-title">
+                                <a href="#"
+                                  >Top 10 tourist attractions in Munich</a
+                                >
+                              </div>
+                              <p class="blog-description">
+                                Do you know which city was chosen as the most
+                                liveable city in the world by Monocle? The right
+                                answer is Munich. Clean subways and streets,
+                                gardens, beer, Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Illo nulla itaque
+                                incidunt qui accusantium tenetur molestiae
+                                voluptatem, quos dolor minima consequuntur,
+                                fugit porro modi.
+                              </p>
+                              <div class="blog-footer">
+                                <a href="#">Kanan Isazade</a>
+                                <div class="blog-date">
+                                  <span>04 January 2022 </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="blog-wrap">
+                            <div class="blog-img">
+                              <img
+                                src="assets/img/blogs/blog-13.jpg"
+                                alt="blog-img"
+                              />
+                            </div>
+                            <div class="blog-content">
+                              <div class="blog-title">
+                                <a href="#"
+                                  >Top 10 tourist attractions in Munich</a
+                                >
+                              </div>
+                              <p class="blog-description">
+                                Do you know which city was chosen as the most
+                                liveable city in the world by Monocle? The right
+                                answer is Munich. Clean subways and streets,
+                                gardens, beer, Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Illo nulla itaque
+                                incidunt qui accusantium tenetur molestiae
+                                voluptatem, quos dolor minima consequuntur,
+                                fugit porro modi.
+                              </p>
+                              <div class="blog-footer">
+                                <a href="#">Kanan Isazade</a>
+                                <div class="blog-date">
+                                  <span>04 January 2022 </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="blog-wrap">
+                            <div class="blog-img">
+                              <img
+                                src="assets/img/blogs/blog-14.jpg"
+                                alt="blog-img"
+                              />
+                            </div>
+                            <div class="blog-content">
+                              <div class="blog-title">
+                                <a href="#"
+                                  >Top 10 tourist attractions in Munich</a
+                                >
+                              </div>
+                              <p class="blog-description">
+                                Do you know which city was chosen as the most
+                                liveable city in the world by Monocle? The right
+                                answer is Munich. Clean subways and streets,
+                                gardens, beer, Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Illo nulla itaque
+                                incidunt qui accusantium tenetur molestiae
+                                voluptatem, quos dolor minima consequuntur,
+                                fugit porro modi.
+                              </p>
+                              <div class="blog-footer">
+                                <a href="#">Kanan Isazade</a>
+                                <div class="blog-date">
+                                  <span>04 January 2022 </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div class="slider-content-1">
+                          <div class="blog-wrap">
+                            <div class="blog-img">
+                              <img
+                                src="assets/img/blogs/blog-15.jpg"
+                                alt="blog-img"
+                              />
+                            </div>
+                            <div class="blog-content">
+                              <div class="blog-title">
+                                <a href="#"
+                                  >Top 10 tourist attractions in Munich</a
+                                >
+                              </div>
+                              <p class="blog-description">
+                                Do you know which city was chosen as the most
+                                liveable city in the world by Monocle? The right
+                                answer is Munich. Clean subways and streets,
+                                gardens, beer, Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Illo nulla itaque
+                                incidunt qui accusantium tenetur molestiae
+                                voluptatem, quos dolor minima consequuntur,
+                                fugit porro modi.
+                              </p>
+                              <div class="blog-footer">
+                                <a href="#">Kanan Isazade</a>
+                                <div class="blog-date">
+                                  <span>04 January 2022 </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related posts  end -->
+
+      <!-- info section start  -->
+
+      <section></section>
+
+      <!-- info section end -->
+    </main>
+
+    <!-- Footer Start  -->
+
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <div class="footer-logo">
+                <a href="index.html">
+                  <i class="fa-light fa-globe"></i><span>pickvisa</span>
+                </a>
+              </div>
+              <div class="footer-description">
+                <p>
+                  We support our customers in travel, education and business
+                  visit visas to any country worldwide.
+                </p>
+              </div>
+              <div class="footer-social">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col">
+              <div class="footer-widget">
+                <div class="widget-title">
+                  <h5>OUR SERVICES</h5>
+                </div>
+                <ul>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#"> Visa Policy </a></li>
+                  <li><a href="#">Visa Application Form Generator</a></li>
+                  <li><a href="#">Visa Chance Calculator</a></li>
+                  <li><a href="#">Visa Map</a></li>
+                  <li><a href="#">Embassies</a></li>
+                  <li><a href="#">COVID-19 Test Centers</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-widget">
+                <div class="widget-title">
+                  <h5>ABOUT US</h5>
+                </div>
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our Bloggers</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Contact </a></li>
+                  <li><a href="#">Vacancies</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-widget">
+                <div class="widget-title">
+                  <h5>LEGAL</h5>
+                </div>
+                <ul>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">Cookies</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <!-- <hr /> -->
+          <div class="row justify-content-between align-items-center">
+            <div class="col-xl-3">
+              <div class="language-selction">
+                <div class="dropdown-grop">
+                  <i class="fa-light fa-globe"></i>
+                  <span>English</span>
+                </div>
+                <div class="dropdown-menu">
+                  <a href="#">Azərbaycanca</a>
+                  <a href="index.html">English</a>
+                  <a href="#"> Русский</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-9 text-end">
+              <div class="copyright-description">
+                <span>Copyright © pickvisa.com. 2016-2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/country-name.js"></script>
+    <script src="assets/js/jsuites.js"></script>
+    <script src="assets/js/jsuites-call.js"></script>
+    <script src="assets/js/stickup.min.js"></script>
+    <script src="assets/js/venobox.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script>
+      /*------------------------------------
+    select datepicker calender - index.html
+ --------------------------------------*/
+
+      $('input[name="datetimes"]').daterangepicker({
+        timePicker: true,
+
+        startDate: moment().startOf("hour"),
+
+        endDate: moment().startOf("hour").add(32, "hour"),
+
+        locale: {
+          format: "M/DD hh:mm A",
+        },
+      });
+    </script>
+    <script type="text/javascript">
+      //initiating jQuery
+      jQuery(function ($) {
+        $(document).ready(function () {
+          //enabling stickUp on the '.navbar-wrapper' class
+          $(".navbar-wrapper").stickUp({
+            parts: {
+              0: "visa-types",
+              1: "apply-visa",
+              2: "get-visa",
+              3: "interview-questions",
+              4: "visa-fees",
+            },
+            itemClass: "menuItem",
+            itemHover: "active",
+            topMargin: "auto",
+          });
+        });
+
+        /*------------------------------------
+           venobox plugin
+       --------------------------------------*/
+
+        $(".venobox").venobox();
+      });
+    </script>
+  </body>
+</html>

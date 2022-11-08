@@ -2813,10 +2813,6 @@ visa application Page start
   padding-left: 70px;
 }
 
-.table-content-wrap {
-  position: relative;
-}
-
 /* Visa Slider area end */
 
 /* Visa Types area start */
@@ -3148,6 +3144,265 @@ Privacy with Term & Condition Page start
 /*
 
 Privacy with Term & Condition Page End
+
+*/
+
+/*
+
+best hotel & restaurant Page start
+
+*/
+
+/* best hotel & restaurant banner area start  */
+
+.hero-page-link {
+  margin-bottom: 12px;
+}
+.hero-page-link a {
+  color: #cbd2d9;
+}
+.hero-page-link a:hover {
+  color: #fff;
+}
+.hero-page-link span {
+  color: #cbd2d9;
+  margin: 0 4px;
+}
+
+.hero-details {
+  display: flex;
+  align-items: center;
+}
+
+.hero-details a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.hero-details i {
+  font-size: 4px;
+  margin: 0 4px;
+  color: #cbd2d9;
+}
+
+.hero-details span {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* best hotel & restaurant banner area end */
+
+/* blog article area start  */
+
+.blog-article-area {
+  padding: 70px 0;
+}
+
+.blog-article-left {
+  position: sticky;
+  top: 60px;
+  padding-left: 20px;
+}
+.blog-article-right {
+  position: sticky;
+  top: 60px;
+}
+
+.share-on-wrap h6 {
+  font-size: 14px;
+}
+
+.article-main-img {
+  margin-top: -245px;
+}
+.article-main-img a {
+  cursor: zoom-in;
+}
+
+.blog-article-img a{
+  cursor: zoom-in;
+}
+
+.searchbox-wrap {
+  width: 100%;
+  padding: 20px;
+  background: #beeef5;
+  border-radius: 4px;
+}
+
+.searchbox-title {
+  margin-bottom: 16px;
+}
+
+.searchbox-title h5 {
+  font-size: 20px;
+}
+
+.topic-list-items {
+  margin-top: 16px;
+}
+.topic-list-items ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.topic-list-items ul li {
+  margin-bottom: 16px;
+}
+.topic-list-items ul li a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: -0.08px;
+  color: #616e7c;
+}
+
+.topic-list-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.topic-list-title h5 {
+  font-size: 16px;
+}
+
+#recentBtn.rotate i,
+#topicBtn.rotate i {
+  rotate: 180deg;
+}
+
+.topic-list {
+  display: none;
+}
+
+.blog-article-content {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.blog-article-description {
+  margin-bottom: 16px;
+}
+
+.blog-article-description p {
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: -0.2px;
+  color: #52606d;
+}
+
+.blog-article-description p a {
+  color: #00f;
+  font-weight: 600;
+}
+
+.blog-article-list ul li {
+  color: #212529;
+  font-size: 15px;
+}
+.blog-article-list ul {
+  margin-bottom: 16px;
+}
+
+.blog-article-title {
+  margin: 8px 0 32px;
+}
+.blog-article-title h2 {
+  font-size: 30px;
+}
+
+/* blog article area end */
+
+/* Get visa area start  */
+
+.get-visa-area {
+  padding: 20px 0 50px;
+}
+
+.blog-article-share-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  border-top: 1px solid rgba(31, 41, 51, 0.1);
+  margin-bottom: 80px;
+}
+
+.share-link-text a {
+  color: #1f2933;
+}
+.share-link-text a:hover {
+  text-decoration: underline;
+}
+
+.blog-article-items {
+  display: flex;
+  background: #f8f5f2;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.items-wrap {
+  padding: 32px;
+  width: 50%;
+}
+
+.items-title {
+  margin-bottom: 24px;
+}
+.items-title h4 {
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -0.004em;
+  color: #041316;
+}
+
+.items-btn a {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #041316;
+  color: #fff;
+
+  padding: 15px 30px;
+}
+
+.items-img {
+  width: 50%;
+}
+
+/* Get visa area end */
+
+/* Related posts area start */
+
+.related-posts-area {
+  padding: 50px 0 0;
+}
+
+.related-top-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.related-slider-pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Related posts area end */
+
+/*
+
+best hotel & restaurant Page End
 
 */
 
