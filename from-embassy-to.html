@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/icons/fevicon.png"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <title>Pick Visa</title>
+  </head>
+
+  <style>
+    .header-area {
+      background: transparent;
+    }
+    .main-menu ul li a {
+      color: #1f2933;
+    }
+    .main-menu ul li a:hover {
+      color: #40c7e0;
+    }
+    .icon-items span {
+      color: #1f2933;
+    }
+    .header-right a {
+      color: #1f2933;
+    }
+    .signup-btn {
+      border: none;
+    }
+
+    .footer-area {
+      background: #1f2430;
+    }
+    .footer-widget ul li a {
+      color: #7a7d84;
+    }
+
+    .dropdown-grop span {
+      color: #a3abb4;
+    }
+    .dropdown-grop i {
+      color: #a3abb4;
+    }
+
+    .copyright-description span {
+      color: #86939c;
+    }
+
+    .footer-left {
+      margin-right: 80px;
+    }
+
+    .footer-title {
+      margin-bottom: 8px;
+    }
+
+    .footer-title h6 {
+      color: #d1d2d4;
+      font-size: 16px;
+    }
+
+    .footer-address {
+      margin-bottom: 15px;
+    }
+
+    .footer-address p {
+      color: #86939c;
+      font-size: 15px;
+    }
+
+    .footer-contact a {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .footer-contact a span {
+      color: #86939c;
+      font-size: 15px;
+    }
+    .footer-contact a i {
+      color: #cecfd2;
+      margin-right: 12px;
+      font-size: 16px;
+    }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-widget ul li a {
+      font-size: 15px;
+    }
+    .footer-widget ul li a:hover {
+      color: #cecfd2;
+    }
+
+    .footer-social ul li {
+      margin-right: 40px;
+    }
+
+    .footer-social ul li a i {
+      text-align: center;
+      width: 26px;
+      height: 26px;
+      line-height: 26px;
+      color: #a3abb4;
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .visa-chance-select-wrap {
+      margin-bottom: 0;
+    }
+    .visa-chance-select-wrap select {
+      opacity: 1;
+    }
+    .visa-chance-select-wrap label {
+      background-color: #a3abb4;
+    }
+    .visa-chance-select-wrap:hover label {
+      background-color: #56d9ba;
+      transform: scale(1.5) translateX(12px);
+    }
+
+    .embassy-wrap {
+      margin-bottom: 0;
+    }
+  </style>
+
+  <body>
+    <!-- Header Start -->
+
+    <header>
+      <div class="header-area">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-3">
+              <div class="header-left d-flex align-items-center">
+                <div class="header-logo mr-20">
+                  <a href="index.html">
+                    <img
+                      src="assets/img/logo/logo_en.svg"
+                      alt="logo"
+                      class="logo-img"
+                    />
+                  </a>
+                </div>
+                <div class="icon-items">
+                  <span>
+                    <i class="fa-light fa-globe"></i>
+                    EN
+                    <ul>
+                      <li><a href="#">Azərbaycanca</a></li>
+                      <li><a href="#">English</a></li>
+                      <li><a href="#">Русский</a></li>
+                      <img
+                        src="assets/img//icons/tooltip_arrow.svg"
+                        alt="icon"
+                      />
+                    </ul>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="main-menu d-lg-block d-none">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="visapolicy.html">Visa Policy</a></li>
+                    <li>
+                      <a href="javascript:void(0)"
+                        >Solution <i class="fa-light fa-chevron-down"></i
+                      ></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="visa-application-form.html">
+                            <img src="assets/img/icons/icon-1.png" alt="icon" />
+                            Visa Application Form Generator
+                          </a>
+                        </li>
+                        <li>
+                          <a href="visa-chance-calc.html">
+                            <img
+                              src="assets/img/icons/icon-2.png"
+                              alt="icon"
+                            />Visa Chance Calculator</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="assets/img/icons/icon-3.png"
+                              alt="icon"
+                            />Visa Map</a
+                          >
+                        </li>
+                        <li>
+                          <a href="embasis.html">
+                            <img
+                              src="assets/img/icons/icon-4.png"
+                              alt="icon"
+                            />Embassies</a
+                          >
+                        </li>
+                        <li>
+                          <a href="covid19.html">
+                            <img
+                              src="assets/img/icons/icon-5.png"
+                              alt="icon"
+                            />COVID-19 Test Centers</a
+                          >
+                        </li>
+                        <img
+                          src="assets/img//icons/tooltip_arrow.svg"
+                          alt="icon"
+                        />
+                      </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="menu-open d-lg-none text-end">
+                <div class="side-icon">
+                  <a href="#"><i class="far fa-bars"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 text-end">
+              <div class="header-right">
+                <div class="login-btn">
+                  <a href="login.html">Log In</a>
+                </div>
+                <div class="signup-btn">
+                  <a href="signup.html">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header End -->
+
+    <main>
+      <!-- Search Embassy area start  -->
+      <section>
+        <div class="visa-chance-area">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-8 text-center">
+                <div class="faq-section-title">
+                  <h2>EMBASSY INFORMATION AND LOCATION</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <div class="embassy-wrap">
+                  <form action="#">
+                    <div class="embassy-items">
+                      <div class="row">
+                        <div class="col-xl-4">
+                          <div class="visa-chance-select-wrap">
+                            <label for="citizen">Embassy of</label>
+                            <select name="country" id="citizen">
+                              <option value="1">Select Country</option>
+                              <option value="">afganistan</option>
+                              <option value="">australia</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-xl-4">
+                          <div class="visa-chance-select-wrap">
+                            <label for="citizen">Located in</label>
+                            <select name="country" id="citizen">
+                              <option value="1">Select Country</option>
+                              <option value="">afganistan</option>
+                              <option value="">australia</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-xl-4">
+                          <div class="visa-chance-btn">
+                            <button type="submit">Search</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Search Embassy area end  -->
+
+      <!-- show embassy area start  -->
+
+      <section>
+        <div class="show-embassy-area">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-12">
+                <div class="passport-wrapper">
+                  <div class="passport-logo">
+                    <img src="assets/img/logo/logo_black.svg" alt="logo" />
+                  </div>
+                  <div class="passport-content-wrapper">
+                    <div class="passport-content-title">
+                      <div class="passport-line"></div>
+                      <h3>Check the visa requirements</h3>
+                    </div>
+                    <div class="passport-content-btn">
+                      <a href="#">Check visa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-10">
+                <div class="embassis-card">
+                  <div class="embassis-card-border"></div>
+                  <div class="embassis-card-wrap">
+                    <div class="embassis-card-top">
+                      <div class="embassis-card-title">
+                        <h2>Afghanistan Embassy in Canberra</h2>
+                      </div>
+                    </div>
+                    <div class="embassis-card-content">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="embassis-card-info">
+                            <div class="embassis-info-title">
+                              <h6>Address</h6>
+                            </div>
+                            <div class="issue-wrap">
+                              <a href="#"
+                                >4 Beale Cres, Deakin, Australia, ACT 2600</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="embassis-card-info">
+                            <div class="embassis-info-title">
+                              <h6>Phone</h6>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6">
+                                <div class="issue-wrap">
+                                  <span>For general issues:</span>
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <div class="issue-wrap">
+                                  <a href="tel:+610262827377"> +610262827377</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="embassis-card-info">
+                            <div class="embassis-info-title">
+                              <h6>E-mail</h6>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6">
+                                <div class="issue-wrap">
+                                  <span>For general issues:</span>
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <div class="issue-wrap">
+                                  <a href="mailto:info.canberra@mfa.af">
+                                    info.canberra@mfa.af
+                                  </a>
+                                  <a href="mailto:pa.canberra@mfa.af">
+                                    pa.canberra@mfa.af
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="embassis-card-info">
+                            <div class="embassis-info-title">
+                              <h6>Office hours</h6>
+                            </div>
+                            <div class="issue-wrap">
+                              <span>Monday-Friday: 9:30AM-4:30PM</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="embassis-card-bottom">
+                      <a href="https://www.canberra.mfa.af/" target="_blank">
+                        https://www.canberra.mfa.af/
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- show embassy area end -->
+    </main>
+
+    <!-- Footer Start  -->
+
+    <footer class="footer-area">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <div class="footer-left">
+                <div class="footer-title">
+                  <h6>USA Office</h6>
+                </div>
+                <div class="footer-address">
+                  <p>651 N Broad St, Middletown, DE 19709, USA</p>
+                </div>
+                <div class="footer-contact">
+                  <a href="tel:+18888514131"
+                    ><i class="fa-solid fa-phone"></i
+                    ><span>+1 (888) 851-4131 Whatsapp available</span></a
+                  >
+                  <a href="mailto:info@pickvisa.com"
+                    ><i class="fa-solid fa-at"></i
+                    ><span>info@pickvisa.com</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3">
+              <div class="footer-widget">
+                <div class="widget-title"></div>
+                <ul>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#"> Visa Policy </a></li>
+                  <li><a href="#">Visa Application Form Generator</a></li>
+                  <li><a href="#">Visa Chance Calculator</a></li>
+                  <li><a href="#">Visa Map</a></li>
+                  <li><a href="#">Embassies</a></li>
+                  <li><a href="#">COVID-19 Test Centers</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3">
+              <div class="footer-widget">
+                <div class="widget-title"></div>
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our Bloggers</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">Cookies</a></li>
+                  <li><a href="#">Contact </a></li>
+                  <li><a href="#">Vacancies</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3">
+              <div class="footer-widget">
+                <div class="language-selction">
+                  <div class="dropdown-grop">
+                    <i class="fa-light fa-globe"></i>
+                    <span>English</span>
+                  </div>
+                  <div class="dropdown-menu">
+                    <a href="#">Azərbaycanca</a>
+                    <a href="index.html">English</a>
+                    <a href="#"> Русский</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <!-- <hr /> -->
+          <div class="row justify-content-between align-items-center">
+            <div class="col-xl-6">
+              <div class="copyright-description">
+                <span>Copyright © pickvisa.com. 2016-2022</span>
+              </div>
+            </div>
+            <div class="col-xl-6 text-end">
+              <div class="footer-social">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

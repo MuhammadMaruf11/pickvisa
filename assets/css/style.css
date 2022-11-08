@@ -2169,6 +2169,168 @@ Embassy  Page start
 
 /* Embassy information and location area start  */
 
+/* show embassy area start  */
+
+.passport-wrapper {
+  margin-bottom: 40px;
+  background-position-x: 600px;
+  background-repeat: no-repeat;
+  background-color: #beeef5;
+  padding: 0 18px;
+  border-radius: 8px;
+  background-size: 234px;
+  background-position-y: center;
+  background-image: url(../img/logo/passports-widget.png);
+  display: flex;
+  align-items: center;
+}
+
+.passport-logo img {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+.passport-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 14px 0;
+}
+
+.passport-content-title {
+  display: flex;
+  align-items: center;
+}
+.passport-content-title h3 {
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.2px;
+  color: #041316;
+}
+
+.passport-line {
+  background: #1f2933;
+  border-radius: 36px;
+  width: 2px;
+  height: 40px;
+  margin: 0 16px;
+}
+
+.passport-content-btn a {
+  font-weight: 600;
+  padding: 12px 30px;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #041316;
+}
+
+.embassis-card {
+  border-radius: 6px;
+  margin-bottom: 48px;
+}
+.embassis-card-border {
+  height: 8px;
+  border-radius: 6px 6px 0 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #40c7e0),
+    to(#45a8ff)
+  );
+  background-image: linear-gradient(to right, #40c7e0 0, #45a8ff 100%);
+}
+
+.embassis-card-wrap {
+  -webkit-box-shadow: 0 5px 30px rgba(60, 125, 196, 0.15);
+  box-shadow: 0 5px 30px rgba(60, 125, 196, 0.15);
+  background-color: #fff;
+  padding: 0 40px;
+}
+
+.embassis-card-top {
+  padding: 32px 20px;
+  border-bottom: 2px solid #f7f9fa;
+}
+
+.embassis-card-title h2 {
+  color: #4b5c66;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.44px;
+  line-height: 34px;
+}
+
+.embassis-card-content {
+  width: 100%;
+  padding: 32px 20px;
+  border-bottom: 1px solid #eef2f8;
+}
+
+.embassis-card-info {
+  margin-bottom: 20px;
+}
+
+.embassis-info-title {
+  margin-bottom: 8px;
+}
+.embassis-info-title h6 {
+  color: #1e3340cc;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.32px;
+  line-height: 20px;
+}
+
+.issue-wrap span {
+  color: #1e3340cc;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  overflow-wrap: break-word;
+}
+
+.issue-wrap a {
+  word-break: break-all;
+  text-decoration: underline;
+  color: #40c7e0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  transition: all 0.3s linear;
+}
+
+.issue-wrap a:hover {
+  text-decoration: none;
+}
+
+.embassis-card-bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+}
+
+.embassis-card-bottom a {
+  word-break: break-all;
+  color: #1d323e80;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.embassis-card-bottom a:hover {
+  color: #40c7e0;
+}
+
+/* show embassy area end */
+
 /*
 
 Embassy Page End
@@ -3220,7 +3382,7 @@ best hotel & restaurant Page start
   cursor: zoom-in;
 }
 
-.blog-article-img a{
+.blog-article-img a {
   cursor: zoom-in;
 }
 
