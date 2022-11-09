@@ -20,7 +20,7 @@
 
   <style>
     .header-area {
-      background: transparent;
+      background: #fff;
     }
     .main-menu ul li a {
       color: #1f2933;
@@ -125,18 +125,72 @@
       background-color: rgba(255, 255, 255, 0.05);
     }
 
-    .visa-chance-select-wrap {
-      margin-bottom: 0;
+    .vacancies-banner-area {
+      padding: 85px 0;
+      position: relative;
+      background-image: url(assets/img/banner/background-visa-policy.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 500px;
+      z-index: 2;
+      background-attachment: fixed;
     }
+    .banner-body_background {
+      top: 85px;
+      position: absolute;
+      height: 415px;
+      width: 100%;
+      background-color: #000;
+      opacity: 0.6;
+      z-index: -1;
+    }
+
+    .vacancies-section-title h1 {
+      font-size: 28px;
+      color: #fff;
+    }
+    .vacancies-section-img {
+      margin: 34px 0;
+    }
+    .vacancies-section-description h6 {
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .need-visa-wrap {
+      width: 100%;
+      padding: 60px;
+      padding-bottom: 40px;
+      -webkit-box-shadow: -10px 10px 30px rgba(60, 125, 196, 0.05);
+      box-shadow: -10px 10px 30px rgba(60, 125, 196, 0.05);
+      border-radius: 6px;
+      background: rgba(31, 36, 48, 0.3);
+    }
+
     .visa-chance-select-wrap select {
       opacity: 1;
+    }
+
+    .visa-chance-btn button {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .visa-section-title {
+      margin: 30px 0;
+    }
+    .visa-section-title h2 {
+      line-height: 50px;
+      margin-bottom: 0;
+      font-size: 25px;
+      font-weight: 700;
+      color: #fff;
     }
     .visa-chance-select-wrap label {
       background-color: #a3abb4;
     }
-    .visa-chance-select-wrap:hover label {
-      background-color: #56d9ba;
-      transform: scale(1.5) translateX(12px);
+
+    .visa-chance-select-wrap select::part(listbox) {
+      width: 100%;
     }
   </style>
 
@@ -260,6 +314,255 @@
     <!-- Header End -->
 
     <main>
+      <!-- Vacancy banner area start  -->
+      <section>
+        <div class="vacancies-banner-area">
+          <div class="banner-body_background"></div>
+          <div class="container">
+            <div class="row align-items-center" style="height: 415px">
+              <div class="col-12 text-center">
+                <div class="vacancies-section-title">
+                  <h1>Canada Visa Policy</h1>
+                </div>
+                <div class="vacancies-section-img">
+                  <img src="assets/img/banner/line.png" alt="line" />
+                </div>
+                <div class="vacancies-section-description">
+                  <h6>Check the visa policy for Canada to plan your trip</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Vacancy banner area end  -->
+
+      <!-- Visa information area start  -->
+
+      <section>
+        <div class="visa-information-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-12"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visa information area end -->
+      <!-- Visa require area start  -->
+
+      <section>
+        <div class="visa-require-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="visa-require-title">
+                  <h2>Do You Need Visa to Visit Canada?</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visa require area end -->
+
+      <!-- Visa chance area start  -->
+      <section>
+        <div class="need-visa-area">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-8 text-center">
+                <div class="visa-section-title">
+                  <h2>Do You Need Visa to Visit Canada? Check It Out!</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="need-visa-wrap">
+                  <form action="#">
+                    <div class="embassy-items">
+                      <div class="row">
+                        <div class="col-xl-4">
+                          <div class="visa-chance-select-wrap">
+                            <label for="citizen">I'm a citizen of</label>
+                            <select name="country" id="citizen">
+                              <option value="1">Select Country</option>
+                              <option value="">afganistan</option>
+                              <option value="">australia</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-xl-4">
+                          <div class="visa-chance-select-wrap">
+                            <label for="planning">Planning to visit</label>
+                            <select name="country" id="planning">
+                              <option value="1">Select Country</option>
+                              <option value="">afganistan</option>
+                              <option value="">australia</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-xl-4">
+                          <div class="visa-chance-btn">
+                            <button type="submit">Search</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Visa chance area start  -->
+
+      <!-- Visa types area start  -->
+
+      <section>
+        <div class="visa-types-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="visa-types-title">
+                  <h2>Visa Types</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-2">
+                <div class="visa-types-card">
+                  <a href="#" class="visa-types-items">
+                    <div class="visa-types-items-img">
+                      <img src="assets/img/icons/eye.svg" alt="icon" />
+                    </div>
+                    <div class="visa-types-items-title">
+                      <h6>Visa Types & Categories to Apply for Canada</h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="visa-types-card">
+                  <a href="#" class="visa-types-items">
+                    <div class="visa-types-items-img">
+                      <img src="assets/img/icons/eye.svg" alt="icon" />
+                    </div>
+                    <div class="visa-types-items-title">
+                      <h6>Canada Visitor Visa</h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="visa-types-card">
+                  <a href="#" class="visa-types-items">
+                    <div class="visa-types-items-img">
+                      <img src="assets/img/icons/eye.svg" alt="icon" />
+                    </div>
+                    <div class="visa-types-items-title">
+                      <h6>Visa Types & Categories to Apply for Canada</h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="visa-types-card">
+                  <a href="#" class="visa-types-items">
+                    <div class="visa-types-items-img">
+                      <img src="assets/img/icons/eye.svg" alt="icon" />
+                    </div>
+                    <div class="visa-types-items-title">
+                      <h6>Visa Types & Categories to Apply for Canada</h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="visa-types-card">
+                  <a href="#" class="visa-types-items">
+                    <div class="visa-types-items-img">
+                      <img src="assets/img/icons/eye.svg" alt="icon" />
+                    </div>
+                    <div class="visa-types-items-title">
+                      <h6>Visa Types & Categories to Apply for Canada</h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-2">
+                <div class="visa-types-card">
+                  <a href="#" class="visa-types-items">
+                    <div class="visa-types-items-img">
+                      <img src="assets/img/icons/eye.svg" alt="icon" />
+                    </div>
+                    <div class="visa-types-items-title">
+                      <h6>Visa Types & Categories to Apply for Canada</h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="visa-types-card">
+                  <a href="#" class="visa-types-items">
+                    <div class="visa-types-items-img">
+                      <img src="assets/img/icons/eye.svg" alt="icon" />
+                    </div>
+                    <div class="visa-types-items-title">
+                      <h6>Visa Types & Categories to Apply for Canada</h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="visa-types-card">
+                  <a href="#" class="visa-types-items">
+                    <div class="visa-types-items-img">
+                      <img src="assets/img/icons/eye.svg" alt="icon" />
+                    </div>
+                    <div class="visa-types-items-title">
+                      <h6>Visa Types & Categories to Apply for Canada</h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="visa-types-card">
+                  <a href="#" class="visa-types-items">
+                    <div class="visa-types-items-img">
+                      <img src="assets/img/icons/eye.svg" alt="icon" />
+                    </div>
+                    <div class="visa-types-items-title">
+                      <h6>Canada Super Visa (Parents and Grandparents Visa)</h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="visa-types-card">
+                  <a href="#" class="visa-types-items">
+                    <div class="visa-types-items-img">
+                      <img src="assets/img/icons/eye.svg" alt="icon" />
+                    </div>
+                    <div class="visa-types-items-title">
+                      <h6>Visa Types & Categories to Apply for Canada</h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visa types area end -->
+
       <!-- Visa chance area start  -->
       <section>
         <div class="visa-chance-area">
@@ -279,17 +582,17 @@
                       <div class="row">
                         <div class="col-xl-4">
                           <div class="visa-chance-select-wrap">
-                            <label for="citizen">Embassy of</label>
-                            <select name="country" id="citizen">
+                            <label for="embassy">Embassy of</label>
+                            <select name="country" id="embassy">
                               <option value="1">Select Country</option>
-                              <option value="">afganistan</option>
-                              <option value="">australia</option>
+                              <option value="2">afganistan</option>
+                              <option value="3">australia</option>
                             </select>
                           </div>
                         </div>
                         <div class="col-xl-4">
                           <div class="visa-chance-select-wrap">
-                            <label for="citizen">Located in</label>
+                            <label for="located">Located in</label>
                             <select name="country" id="located">
                               <option value="1">Select Country</option>
                               <option value="">afganistan</option>
@@ -443,6 +746,21 @@
         })
         .join("");
 
+      document.getElementById("planning").innerHTML = countries
+        .map((index) => {
+          return `<option value=${index.value}>
+            ${index.text}
+        </option>`;
+        })
+        .join("");
+
+      document.getElementById("embassy").innerHTML = countries
+        .map((index) => {
+          return `<option value=${index.value}>
+            ${index.text}
+        </option>`;
+        })
+        .join("");
 
       document.getElementById("located").innerHTML = countries
         .map((index) => {

@@ -3,9 +3,9 @@ const typedTextSpan = document.querySelector("#dropdown input");
 const textArray = [
     "Try 'Unites Kingdom'",
     "Try 'United States of America'",
-    "Try 'Bangladesh'",
+    "Try 'Bonaire, Sint Eustatius and Saba'",
     "Try 'United Arab Emirate'",
-    "Try 'Afganistan'",
+    "Try 'British Indian Ocean Territory'",
 ];
 const typingDelay = 200;
 const erasingDelay = 100;

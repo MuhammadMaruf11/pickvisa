@@ -791,9 +791,11 @@ button.nav-link {
   font-size: 12px;
   margin-left: 8px;
 }
-
+#dropdown {
+  width: 100%;
+}
 .jdropdown-container-header {
-  width: 470px;
+  width: 100%;
 }
 
 .jdropdown-default .jdropdown-container {
@@ -2093,6 +2095,7 @@ Visa chance calculator  Page start
 .visa-chance-select-wrap select {
   width: 100%;
   padding: 15px;
+  padding-right: 30px;
   opacity: 0.3;
   color: #1e3340;
   font-size: 15px;
@@ -2155,7 +2158,7 @@ Visa chance calculator  Page start
 }
 
 .visa-chance-btn button {
-  background-color: #40c7e0 !important;
+  background: #40c7e0;
   border: none;
   width: 100%;
   border-radius: 3px;
@@ -2166,6 +2169,80 @@ Visa chance calculator  Page start
   letter-spacing: 0.3px;
   white-space: nowrap;
   outline: none;
+}
+
+.visa-require-area {
+  padding: 50px 0;
+}
+
+.visa-require-title {
+  text-align: center;
+}
+.visa-require-title h2 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #1e3340;
+}
+
+.visa-types-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.visa-types-title h2 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #1e3340;
+}
+
+.visa-types-items {
+  padding: 40px 16px 24px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 -1px 24px 0 rgba(173, 201, 208, 0.3);
+  box-shadow: 0 -1px 24px 0 rgba(173, 201, 208, 0.3);
+  background-color: #fff;
+  margin-right: 16px;
+  margin-bottom: 24px;
+  transition: all .3s linear;
+  height: 175px;
+}
+
+.visa-types-items:hover .visa-types-items-img{
+  background: linear-gradient(134deg,#40c7e0 7%,#45a8ff 94%);
+}
+
+.visa-types-items-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  border-radius: 20px;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  background-image: linear-gradient(133deg, #1f2430 0, #757d82 100%);
+}
+.visa-types-items-title {
+  text-align: center;
+}
+.visa-types-items-title h6 {
+  font-weight: 500;
+  font-size: 15px;
+  color: #1e3340;
 }
 
 /* Visa chance calculator area end */
@@ -3697,6 +3774,33 @@ Visa Policy Page start
 /*
 
 Visa Policy Page End
+
+*/
+
+/*
+
+Country Visa  Page start
+
+*/
+
+.visa-information-area {
+  padding: 70px 0;
+}
+
+.need-visa-area {
+  padding: 85px 0;
+  position: relative;
+  background-image: url(../img/banner/background-visa-policy-combination.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  z-index: 2;
+  background-attachment: fixed;
+}
+/*
+
+Country Visa  Page End
 
 */
 
