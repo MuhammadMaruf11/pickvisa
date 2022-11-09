@@ -18,10 +18,6 @@ p {
   font-size: 16px;
 }
 
-.container {
-  min-width: 1140px;
-}
-
 img {
   max-width: 100%;
   -webkit-transition: all 0.3s linear 0s;
@@ -412,7 +408,7 @@ label {
 
 .header-area {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index: 999;
   padding: 12px 0;
   background: linear-gradient(
@@ -450,7 +446,25 @@ label {
   color: #fff;
   text-transform: capitalize;
   font-weight: 600;
+  position: relative;
 }
+
+.main-menu ul li a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+.main-menu ul li a:hover::after {
+  width: 100%;
+}
+.main-menu ul li:nth-child(3) a:hover::after {
+  width: 0;
+}
+
 .main-menu ul li a i {
   margin-left: 5px;
 }
@@ -532,6 +546,23 @@ label {
 
 .header-right a {
   color: #fff;
+  position: relative;
+}
+.login-btn a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+.login-btn a:hover::after {
+  width: 100%;
+}
+.signup-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .icon-items {
@@ -891,6 +922,7 @@ button.nav-link {
 }
 .citizen-text p {
   padding-left: 12px;
+  margin-bottom: 0;
 }
 
 .track-btn {
@@ -3565,6 +3597,106 @@ best hotel & restaurant Page start
 /*
 
 best hotel & restaurant Page End
+
+*/
+
+/*
+
+Visa Policy Page start
+
+*/
+
+/* visa policy area start  */
+
+.visa-policy-area {
+  padding: 80px 0;
+}
+
+.visa-policy-section-title {
+  margin-top: 68px;
+  margin-bottom: 65px;
+  text-align: center;
+}
+.visa-policy-section-title h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1e3340;
+}
+
+.country-flag-wrap {
+  text-align: center;
+}
+
+.country-flag-img {
+  margin-bottom: 16px;
+}
+
+.country-visa-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.country-visa-title h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e3340;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+.country-visa-title h4:hover {
+  color: #40c7e0;
+}
+
+/* visa policy area end  */
+
+/* visa country list area start  */
+
+.visa-countrylist-area {
+  padding: 0 0 40px;
+}
+
+.countrylist-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.countrylist-wrap a {
+  text-transform: uppercase;
+  margin-top: 4.5px;
+  margin-right: 4.5px;
+  font-size: 15px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1f2430;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: #f7f9fa;
+  transition: all 0.3s linear;
+}
+
+.countrylist-wrap a:hover {
+  background-color: #40c7e0;
+  color: #fff;
+}
+
+/* visa country list area end */
+
+/*
+
+Visa Policy Page End
 
 */
 

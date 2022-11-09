@@ -49,6 +49,12 @@
       .dropdown a:hover {
         background-color: #ddd;
       }
+
+      .typed-text input::placeholder{
+        font-size: 18px;
+        color: #9aa5b1;
+        font-weight: 600;
+      }
     </style>
     <title>Pick Visa</title>
   </head>
@@ -248,18 +254,14 @@
                           <i class="fa-solid fa-id-badge"></i>
                           <div class="citizen-text">
                             <p>I am a citizen of</p>
-                            <div id="dropdown" placeholder="Try"></div>
+                            <div id="dropdown" class="typed-text"></div>
                           </div>
                         </div>
                         <div class="select-box">
                           <i class="fa-light fa-plane-departure"></i>
                           <div class="citizen-text">
                             <p>Planning to visit</p>
-                            <div
-                              id="dropdown-2"
-                              style="width: 100%"
-                              placeholder="Try"
-                            ></div>
+                            <div id="dropdown-2" class="typed-text"></div>
                           </div>
                         </div>
                         <button class="apply-btn" type="submit">
@@ -878,7 +880,9 @@
                   </div>
                   <div class="blog-content">
                     <div class="blog-title">
-                      <a href="5-best-hotel.html">5 best boutique hotels in Kenya</a>
+                      <a href="5-best-hotel.html"
+                        >5 best boutique hotels in Kenya</a
+                      >
                     </div>
                     <p class="blog-description">
                       Who can resist the passion of discovering the endless
@@ -1217,6 +1221,7 @@
     <script src="assets/js/country-name.js"></script>
     <script src="assets/js/jsuites.js"></script>
     <script src="assets/js/jsuites-call.js"></script>
+    <script src="assets/js/type-animation.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script>
       /*------------------------------------
@@ -1235,5 +1240,7 @@
         },
       });
     </script>
+
+   
   </body>
 </html>

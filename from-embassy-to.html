@@ -290,7 +290,7 @@
                         <div class="col-xl-4">
                           <div class="visa-chance-select-wrap">
                             <label for="citizen">Located in</label>
-                            <select name="country" id="citizen">
+                            <select name="country" id="located">
                               <option value="1">Select Country</option>
                               <option value="">afganistan</option>
                               <option value="">australia</option>
@@ -550,6 +550,26 @@
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/country-name.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <script>
+      document.getElementById("citizen").innerHTML = countries
+        .map((index) => {
+          return `<option value=${index.value}>
+            ${index.text}
+        </option>`;
+        })
+        .join("");
+
+
+      document.getElementById("located").innerHTML = countries
+        .map((index) => {
+          return `<option value=${index.value}>
+            ${index.text}
+        </option>`;
+        })
+        .join("");
+    </script>
   </body>
 </html>
