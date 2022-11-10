@@ -2213,12 +2213,12 @@ Visa chance calculator  Page start
   background-color: #fff;
   margin-right: 16px;
   margin-bottom: 24px;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   height: 175px;
 }
 
-.visa-types-items:hover .visa-types-items-img{
-  background: linear-gradient(134deg,#40c7e0 7%,#45a8ff 94%);
+.visa-types-items:hover .visa-types-items-img {
+  background: linear-gradient(134deg, #40c7e0 7%, #45a8ff 94%);
 }
 
 .visa-types-items-img {
@@ -3783,6 +3783,8 @@ Country Visa  Page start
 
 */
 
+/* visa infromation area start  */
+
 .visa-information-area {
   padding: 70px 0;
 }
@@ -3798,6 +3800,323 @@ Country Visa  Page start
   z-index: 2;
   background-attachment: fixed;
 }
+
+/* visa infromation area end  */
+
+/* visa type & category area start  */
+
+.visa-typeCategory-wrap {
+  margin-top: 23px;
+  position: relative;
+  padding: 30px;
+  border-radius: 6px;
+  -webkit-box-shadow: -2px 0 35px 2px rgba(229, 239, 255, 0.6);
+  box-shadow: -2px 0 35px 2px rgba(229, 239, 255, 0.6);
+  background-color: #fff;
+}
+
+.visa-typeCategory-top {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 30px;
+  margin-bottom: 20px;
+  z-index: 99999;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+
+.visa-typeCategory-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  border-radius: 20px;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  background-image: linear-gradient(133deg, #1f2430 0, #757d82 100%);
+}
+.visa-typeCategory-img img {
+  transform: scale(1.9);
+}
+
+.visa-typeCategory-title {
+  margin-left: 20px;
+  margin-bottom: 6px;
+}
+.visa-typeCategory-title h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e3340;
+}
+
+.visa-typeCategory-description {
+  margin: 10px 0;
+}
+.visa-typeCategory-description p {
+  color: #1d323e;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.visa-typeCategory-border-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  border-radius: 0 0 6px 6px;
+  background: -o-linear-gradient(174deg, #40c7e0 -8237%, #45a8ff 97%);
+  background-image: linear-gradient(174deg, #40c7e0 -8237%, #45a8ff 97%);
+}
+
+.visa-typeCategory-text {
+  margin-bottom: 50px;
+}
+
+.visa-typeCategory-heading {
+  margin-bottom: 8px;
+}
+.visa-typeCategory-heading h6 {
+  font-size: 16px;
+}
+
+.visa-typeCategory-list {
+  margin-left: 30px;
+  padding-left: 40px;
+}
+
+.visa-typeCategory-list ul li {
+  color: #1d323e;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.visa-typeCategory-orderList ol {
+  margin-left: 30px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+.visa-typeCategory-orderList ol li p {
+  font-weight: 700;
+  margin: 10px 0;
+  color: #1d323e;
+}
+
+.visa-typeCategory-orderList ol li .visa-typeCategory-list ul li {
+  color: #1d323e;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.visa-typeCategory-orderList ol li .visa-typeCategory-list ul {
+  list-style: disc;
+  margin-left: 30px;
+  padding-left: 40px;
+  margin-bottom: 16px;
+}
+
+.visa-typeCategory-orderList
+  ol
+  li
+  .visa-typeCategory-list
+  ul
+  li
+  .visa-typeCategory-unorderList
+  ul {
+  list-style: circle;
+  margin-bottom: 16px;
+}
+
+.country-nam-title {
+  margin: 10px 0;
+}
+.country-nam-title h6 {
+  font-size: 15px;
+}
+/* visa type & category area end */
+
+/* Country faq area start  */
+
+.country-faq-area {
+  padding: 70px 0;
+}
+
+.country-faq-wrap {
+  background-image: url(../img/icons/faq_visapolicy_bg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  padding: 32px 55px 31px 50px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 30px 0 rgba(173, 201, 208, 0.3);
+  box-shadow: 0 0 30px 0 rgba(173, 201, 208, 0.3);
+  background-color: #fff;
+}
+
+.country-faq-top {
+  display: flex;
+  align-items: center;
+}
+
+.country-faq-title {
+  margin-left: 15px;
+}
+
+.country-faq-title h5 {
+  font-size: 15px;
+  color: #4b5c66;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.country-faq-description {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.country-faq-description p {
+  font-size: 15px;
+  line-height: 1.87;
+  color: #1d323e80;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.country-faq-list {
+  margin-left: 30px;
+  padding-left: 40px;
+}
+
+.country-faq-list ul li {
+  color: #1d323e80;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+/* Country faq area end */
+
+/* Country blog area start  */
+
+.country-blog-area {
+  padding: 40px 0;
+}
+
+.country-blog-card {
+  border-radius: 6px;
+  padding: 50px;
+  margin-bottom: 20px;
+  transition: all .3s linear;
+}
+.country-blog-card:hover {
+  -webkit-box-shadow: -10px 10px 30px rgba(60, 125, 196, 0.15);
+  box-shadow: -10px 10px 30px rgba(60, 125, 196, 0.15);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.country-blog-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.country-blog-profile-img {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #40c7e0),
+    to(#45a8ff)
+  );
+  background-image: linear-gradient(180deg, #40c7e0 0, #45a8ff 100%);
+}
+.country-blog-profile-img img {
+  border-radius: 50%;
+}
+
+.country-blog-profile-title a {
+  font-size: 15px;
+  color: #00000080;
+  transition: all 0.3s linear;
+}
+
+.country-blog-profile-title a:hover {
+  font-size: 15px;
+  color: #40c7e0;
+}
+
+.country-blog-profile-dot {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: -5px;
+}
+
+.country-blog-profile-dot i {
+  opacity: 0.5;
+  font-size: 4px;
+  color: #000;
+}
+
+.country-blog-profile-date span {
+  font-size: 15px;
+  color: #00000080;
+}
+
+.country-blog-heading {
+  margin-bottom: 10px;
+}
+.country-blog-heading h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.country-blog-heading a {
+  color: #1e3340cc;
+  transition: all 0.3s linear;
+}
+.country-blog-heading a:hover {
+  color: #40c7e0;
+}
+
+.country-blog-description {
+  width: 65%;
+}
+.country-blog-description p {
+  color: #1e334080;
+}
+
+/* Country blog area end */
+
 /*
 
 Country Visa  Page End

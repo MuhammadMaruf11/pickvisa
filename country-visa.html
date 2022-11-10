@@ -192,6 +192,82 @@
     .visa-chance-select-wrap select::part(listbox) {
       width: 100%;
     }
+
+    /* accordion css start  */
+
+    .accordion-flush .accordion-item {
+      border: 0;
+      outline: 0;
+      position: relative;
+      padding-left: 22px;
+    }
+
+    .accordion-flush .accordion-item::before {
+      content: "";
+      position: absolute;
+      left: -16px;
+      border-left: 1px dashed #d8d8d8;
+      height: 100%;
+      width: 1px;
+      top: 4px;
+    }
+
+    .accordion-flush .accordion-item::after {
+      content: url(assets/img/icons/list-style.svg);
+      position: absolute;
+      left: -26px;
+      top: 6px;
+    }
+
+    .accordion-button {
+      padding: 4px 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: #307496;
+    }
+
+    .accordion-flush .accordion-item .accordion-button,
+    .accordion-flush .accordion-item .accordion-button.collapsed {
+      background: none;
+      box-shadow: none;
+    }
+
+    button.accordion-button::after {
+      display: none;
+    }
+    .accordion-button:focus {
+      background: none;
+      color: #307496;
+      box-shadow: none;
+    }
+
+    .accordion-body {
+      padding: 0;
+    }
+
+    .information-list {
+      margin-left: 18px;
+    }
+    .information-list ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      flex-direction: column;
+      display: flex;
+    }
+    .information-list ul li a {
+      font-size: 18px;
+      color: #2c5e7f;
+      text-decoration: none;
+      line-height: 2;
+    }
+    .information-list ul li a:hover {
+      color: #43b9ef;
+      text-decoration: none;
+      transition: all 0.3s linear;
+    }
+
+    /* accordion css end */
   </style>
 
   <body>
@@ -315,6 +391,7 @@
 
     <main>
       <!-- Vacancy banner area start  -->
+
       <section>
         <div class="vacancies-banner-area">
           <div class="banner-body_background"></div>
@@ -335,6 +412,7 @@
           </div>
         </div>
       </section>
+
       <!-- Vacancy banner area end  -->
 
       <!-- Visa information area start  -->
@@ -342,14 +420,247 @@
       <section>
         <div class="visa-information-area">
           <div class="container">
-            <div class="row">
-              <div class="col-12"></div>
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <div class="visa-information-wrap">
+                  <div
+                    class="accordion accordion-flush"
+                    id="accordionFlushExample"
+                  >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseOne"
+                        >
+                          Do You Need Visa to Visit Canada?
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="information-list">
+                            <ul>
+                              <li><a href="#">Visa is required</a></li>
+                              <li><a href="#">e-Visa</a></li>
+                              <li><a href="#">Visa is free </a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTwo"
+                        >
+                          Visa Types
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="information-list">
+                            <ul>
+                              <li>
+                                <a href="#">
+                                  Visa Types & Categories to Apply for Canada</a
+                                >
+                              </li>
+                              <li><a href="#"> Canada Visitor Visa</a></li>
+                              <li><a href="#"> Canada Transit Visa</a></li>
+                              <li>
+                                <a href="#"> Canada Business Visitor Visa</a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Canada Electronic Travel Authorization
+                                  (eTA)</a
+                                >
+                              </li>
+                              <li><a href="#"> Canada Study Permit</a></li>
+                              <li><a href="#"> Canada Work Permit</a></li>
+                              <li>
+                                <a href="#"> Canada Self-Employed Visa</a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Canada Super Visa (Parents and Grandparents
+                                  Visa)</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#"> Canada Skilled Worker Visa</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseThree"
+                        >
+                          FAQ
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="information-list">
+                            <ul>
+                              <li>
+                                <a href="#">
+                                  - How long can I stay in Canada as a
+                                  visitor?</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#">
+                                  - Do I need to apply for both a visitor visa
+                                  and an eTA?</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#">
+                                  - How do I get help if my visa application is
+                                  refused?</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#">
+                                  - I will transit by air through Canada. Do I
+                                  need an eTA?</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#">
+                                  - Does a business visitor need a special visa
+                                  to enter Canada?</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#">
+                                  - My minor child is applying for a visitor
+                                  visa and will travel alone to Canada. What
+                                  documents must he/she present with the
+                                  application?</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#">
+                                  - How can I extend my stay as a visitor?</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#">
+                                  - I do not need a visa, but I want to stay in
+                                  Canada as a visitor for longer than six
+                                  months. What do I need to do?</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#">
+                                  - Can I study in Canada with a Temporary
+                                  Visa?</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#">
+                                  - Can I work in Canada with a Temporary
+                                  Visa?</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#">
+                                  - How does the parent and grandparent super
+                                  visa differ from a multiple entry visa?</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingFour">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseFour"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseFour"
+                        >
+                          Blogs About Canada That Might Inspire You to Visit
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="information-list">
+                            <ul>
+                              <li>
+                                <a href="#">
+                                  Top 10 local foods to try in Canada</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#">
+                                  5 best boutique hotels in Canada</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#">
+                                  How to get tourist visa to Canada?</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Visa information area end -->
+
       <!-- Visa require area start  -->
 
       <section>
@@ -563,7 +874,725 @@
 
       <!-- Visa types area end -->
 
+      <!-- Country Visa types & category area start -->
+
+      <section>
+        <div class="country-visa-typeCategory-area">
+          <div class="container">
+            <div class="visa-typeCategory-wrap">
+              <div class="row">
+                <div class="col-12">
+                  <div class="visa-typeCategory-content">
+                    <div class="visa-typeCategory-top">
+                      <div class="visa-typeCategory-img">
+                        <img src="assets/img/icons/eye.svg" alt="icon" />
+                      </div>
+                      <div class="visa-typeCategory-title">
+                        <h3>Visa Types & Categories to Apply for Canada</h3>
+                      </div>
+                    </div>
+                    <div class="visa-typeCategory-bottom">
+                      <div class="visa-typeCategory-text">
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            There are some specific visa types in Canada. These
+                            visas can be short-term (Visitor visa, Business
+                            Visitor visa, Transit visa, Electronic Travel
+                            Authorization) or long-term (Study permit, Work
+                            permit, Self-employed visa, Super visa, Skilled
+                            Worker visa) visas and permits.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="visa-typeCategory-border-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Country Visa types & category area end -->
+
+      <!-- Country visitor visa area start -->
+
+      <section>
+        <div class="country-visa-typeCategory-area">
+          <div class="container">
+            <div class="visa-typeCategory-wrap">
+              <div class="row">
+                <div class="col-12">
+                  <div class="visa-typeCategory-content">
+                    <div class="visa-typeCategory-top">
+                      <div class="visa-typeCategory-img">
+                        <img src="assets/img/icons/eye.svg" alt="icon" />
+                      </div>
+                      <div class="visa-typeCategory-title">
+                        <h3>Canada Visitor Visa</h3>
+                      </div>
+                    </div>
+                    <div class="visa-typeCategory-bottom">
+                      <div class="visa-typeCategory-text">
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            A Temporary Resident Visa (TRV), also referred to as
+                            a Visitor Visa or Canada Tourist Visa, is an
+                            official document provided by a Canadian Visa Office
+                            inserted in your passport to indicate that you have
+                            fulfilled the conditions for temporary resident
+                            entry to Canada.
+                          </p>
+                        </div>
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            For travel to Canada, most travelers need a visa for
+                            tourists. You may also need one if you're transiting
+                            to your final destination via a Canadian airport.
+                          </p>
+                        </div>
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            A visitor visa may be issued online or on paper.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="visa-typeCategory-text">
+                        <div class="visa-typeCategory-heading">
+                          <h6>How Long You Can Stay in Canada?</h6>
+                        </div>
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            Most visitors can stay for up to <b>6 months</b> in
+                            Canada
+                          </p>
+                        </div>
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            The Border Services officer may authorize you to
+                            stay for less than or longer than 6 months at the
+                            port of entry. If they do, they will put in your
+                            passport the date you need to leave by. They could
+                            also give you a document called a visitor record,
+                            showing the date you need to leave by.
+                          </p>
+                        </div>
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            If you don't get a stamp on your passport, you can
+                            stay for 6 months from the day you entered Canada or
+                            until your passport expires, whichever comes first.
+                            If you need a stamp, you can ask a border services
+                            officer for one. If you arrive at an airport that
+                            uses primary inspection kiosks, ask the border
+                            officer after you finish at the kiosk.
+                          </p>
+                        </div>
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            Make sure you need a visitor visa before you apply
+                          </p>
+                        </div>
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            You may need a visitor visa or an Electronic Travel
+                            Authorization. The entry document you need depends
+                            on:
+                          </p>
+                        </div>
+                        <div class="visa-typeCategory-list">
+                          <ul>
+                            <li>
+                              The type of travel document you plan to travel
+                              with
+                            </li>
+                            <li>
+                              The country that issued your travel document
+                            </li>
+                            <li>Your nationality</li>
+                            <li>
+                              Your method of travel to Canada for this trip
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="visa-typeCategory-text">
+                        <div class="visa-typeCategory-heading">
+                          <h5>How to Apply for Canada Visitor Visa?</h5>
+                        </div>
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            You can apply for a visitor visa online or on paper,
+                            it depends on your choice. Processing time and
+                            required documents are the same in both procedures.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="visa-typeCategory-text">
+                        <div class="visa-typeCategory-heading">
+                          <h5>Required Documents for Canada Visitor Visa</h5>
+                        </div>
+                      </div>
+                      <div class="visa-typeCategory-text">
+                        <div class="visa-typeCategory-orderList">
+                          <ol>
+                            <li>
+                              <span>Application Form</span>
+                              <div class="visa-typeCategory-list">
+                                <ul>
+                                  <li>
+                                    Completed and signed by the principal
+                                    applicant
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <p>Family Information Form</p>
+                              <div class="visa-typeCategory-list">
+                                <ul>
+                                  <li>
+                                    Completed and signed by the principal
+                                    applicant
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <p>Schedule-1</p>
+                              <div class="visa-typeCategory-list">
+                                <ul>
+                                  <li>
+                                    The type of travel document you plan to
+                                    travel with
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <p>Document Checklist</p>
+                              <div class="visa-typeCategory-list">
+                                <ul>
+                                  <li>
+                                    The type of travel document you plan to
+                                    travel with
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <p>Original Passport</p>
+                              <div class="visa-typeCategory-list">
+                                <ul>
+                                  <li>At least two free “visa pages”</li>
+                                  <li>
+                                    The type of travel document you plan to
+                                    travel with
+                                  </li>
+                                  <li>Signed by bearer</li>
+
+                                  <li>
+                                    The type of travel document you plan to
+                                    travel with
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <p>Photocopy of Your Passport's Data Page</p>
+                            </li>
+                            <li>
+                              <p>Two Recent Photos</p>
+                              <div class="visa-typeCategory-list">
+                                <ul>
+                                  <li>
+                                    The type of travel document you plan to
+                                    travel with
+                                  </li>
+                                  <li>
+                                    NEW! Should not be older than 6 months.
+                                  </li>
+                                  <li>
+                                    The type of travel document you plan to
+                                    travel with
+                                  </li>
+                                  <li>
+                                    NEW! Should not be older than 6 months.
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <p>Proof of Financial Supports</p>
+                              <div class="visa-typeCategory-list">
+                                <ul>
+                                  <li>
+                                    The type of travel document you plan to
+                                    travel with
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <p>Photocopy of Your Marriage License</p>
+                            </li>
+                            <li>
+                              <p>
+                                Photocopy of Your Current Immigration Status
+                              </p>
+                              <div class="visa-typeCategory-list">
+                                <ul>
+                                  <li>
+                                    The type of travel document you plan to
+                                    travel with
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <span>
+                                Photocopies of Flight Ticket Reservations and
+                                Hotel Bookings</span
+                              >
+                            </li>
+                            <li>
+                              <p>NOC Letter from Your Employer</p>
+                              <div class="visa-typeCategory-list">
+                                <ul>
+                                  <li>
+                                    The letter must include:
+                                    <div class="visa-typeCategory-unorderList">
+                                      <ul>
+                                        <li>
+                                          Name, postal address, and telephone
+                                          number of sponsor/company
+                                        </li>
+                                        <li>
+                                          Details regarding the applicant’s
+                                          working position, starting date of the
+                                          employment, and salary
+                                        </li>
+                                        <li>
+                                          The timeframe of work leave (expected
+                                          date to resume duties) and purpose of
+                                          travel
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    The type of travel document you plan to
+                                    travel with
+                                  </li>
+                                  <li>
+                                    The type of travel document you plan to
+                                    travel with
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            <strong>
+                              *Additional documents may be required by the
+                              visa-issuing authorities.
+                            </strong>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="visa-typeCategory-text">
+                        <div class="visa-typeCategory-heading">
+                          <h5>Processing Time for Canada Visitor Visa</h5>
+                        </div>
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            The average processing time for a Canada Visitor
+                            Visa is 10-60 calendar days. It depends on your visa
+                            application country.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="visa-typeCategory-text">
+                        <div class="visa-typeCategory-heading">
+                          <h5>Canada Visitor Visa Fee</h5>
+                        </div>
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            Canada Visitor visa fee is 100 CAD for all
+                            nationalities. You may be required to pay an
+                            additional amount at the visa application center for
+                            taking your biometric data while applying for a
+                            visa. The average Visa Application Centre fee for
+                            taking biometric data is 80-120 CAD depending on
+                            your country.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="visa-typeCategory-text">
+                        <div class="visa-typeCategory-heading">
+                          <h5>Where to Apply for Canada Visitor Visa?</h5>
+                        </div>
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            While applying online for a Visitor visa, you should
+                            choose a center for giving your biometrics data
+                            after completing your application online. It will be
+                            the Canada Visa Application Centre in your country.
+                          </p>
+                        </div>
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            While applying on paper for a Visitor visa, you will
+                            need to find a Canada visa application center,
+                            <a href="#">embassy</a>, or consulate, whichever
+                            accepts visa applications, in your country of
+                            residence.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="visa-typeCategory-border-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Country visitor visa area end -->
+
+      <!-- Country Electronic Travel Authorization  area start -->
+
+      <section>
+        <div class="country-visa-typeCategory-area">
+          <div class="container">
+            <div class="visa-typeCategory-wrap">
+              <div class="row">
+                <div class="col-12">
+                  <div class="visa-typeCategory-content">
+                    <div class="visa-typeCategory-top">
+                      <div class="visa-typeCategory-img">
+                        <img src="assets/img/icons/eye.svg" alt="icon" />
+                      </div>
+                      <div class="visa-typeCategory-title">
+                        <h3>Canada Electronic Travel Authorization (eTA)</h3>
+                      </div>
+                    </div>
+                    <div class="visa-typeCategory-bottom">
+                      <div class="visa-typeCategory-text">
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            An Electronic Travel Authorization (eTA) is an entry
+                            requirement for visa-exempt foreign nationals
+                            traveling to Canada by air. An eTA is electronically
+                            linked to a traveler’s passport. It is valid for up
+                            to five years or until the passport expires,
+                            whichever comes first.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="visa-typeCategory-text">
+                        <div class="visa-typeCategory-description">
+                          <p>
+                            <strong>
+                              Canada eTA is Required for the Following
+                              Countries:
+                            </strong>
+                          </p>
+                        </div>
+                        <div class="country-name-list">
+                          <div class="row">
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-4">
+                              <div class="country-nam-title">
+                                <h6>Australia</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="visa-typeCategory-border-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Country Electronic Travel Authorization  area end -->
+
       <!-- Visa chance area start  -->
+
       <section>
         <div class="visa-chance-area">
           <div class="container">
@@ -614,7 +1643,525 @@
           </div>
         </div>
       </section>
+      
       <!-- Visa chance area start  -->
+
+      <!-- Country FAQ area start  -->
+
+      <section>
+        <div class="country-faq-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="visa-types-title">
+                  <h2>FAQ</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="country-faq-wrap">
+                  <div class="country-faq-top">
+                    <div class="country-faq-icon">
+                      <img src="assets/img/icons/question.svg" alt="icon" />
+                    </div>
+                    <div class="country-faq-title">
+                      <h5>How long can I stay in Canada as a visitor?</h5>
+                    </div>
+                  </div>
+                  <div class="country-faq-content">
+                    <div class="country-faq-description">
+                      <p>
+                        Most visitors can stay for up to 6 months in Canada.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        The Border Services officer may authorize you to stay
+                        for less than or longer than 6 months at the port of
+                        entry. If they do, they will put in your passport the
+                        date you need to leave by. Also, they might give you a
+                        document.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        If you don’t get a stamp in your passport, you can stay
+                        for 6 months from the day you entered Canada or until
+                        your passport expires, whichever comes first.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="country-faq-wrap">
+                  <div class="country-faq-top">
+                    <div class="country-faq-icon">
+                      <img src="assets/img/icons/question.svg" alt="icon" />
+                    </div>
+                    <div class="country-faq-title">
+                      <h5>How long can I stay in Canada as a visitor?</h5>
+                    </div>
+                  </div>
+                  <div class="country-faq-content">
+                    <div class="country-faq-description">
+                      <p>
+                        Most visitors can stay for up to 6 months in Canada.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        The Border Services officer may authorize you to stay
+                        for less than or longer than 6 months at the port of
+                        entry. If they do, they will put in your passport the
+                        date you need to leave by. Also, they might give you a
+                        document.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        If you don’t get a stamp in your passport, you can stay
+                        for 6 months from the day you entered Canada or until
+                        your passport expires, whichever comes first.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="country-faq-wrap">
+                  <div class="country-faq-top">
+                    <div class="country-faq-icon">
+                      <img src="assets/img/icons/question.svg" alt="icon" />
+                    </div>
+                    <div class="country-faq-title">
+                      <h5>How long can I stay in Canada as a visitor?</h5>
+                    </div>
+                  </div>
+                  <div class="country-faq-content">
+                    <div class="country-faq-description">
+                      <p>
+                        Most visitors can stay for up to 6 months in Canada.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        The Border Services officer may authorize you to stay
+                        for less than or longer than 6 months at the port of
+                        entry. If they do, they will put in your passport the
+                        date you need to leave by. Also, they might give you a
+                        document.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        If you don’t get a stamp in your passport, you can stay
+                        for 6 months from the day you entered Canada or until
+                        your passport expires, whichever comes first.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="country-faq-wrap">
+                  <div class="country-faq-top">
+                    <div class="country-faq-icon">
+                      <img src="assets/img/icons/question.svg" alt="icon" />
+                    </div>
+                    <div class="country-faq-title">
+                      <h5>How long can I stay in Canada as a visitor?</h5>
+                    </div>
+                  </div>
+                  <div class="country-faq-content">
+                    <div class="country-faq-description">
+                      <p>
+                        Most visitors can stay for up to 6 months in Canada.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        The Border Services officer may authorize you to stay
+                        for less than or longer than 6 months at the port of
+                        entry. If they do, they will put in your passport the
+                        date you need to leave by. Also, they might give you a
+                        document.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        If you don’t get a stamp in your passport, you can stay
+                        for 6 months from the day you entered Canada or until
+                        your passport expires, whichever comes first.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="country-faq-wrap">
+                  <div class="country-faq-top">
+                    <div class="country-faq-icon">
+                      <img src="assets/img/icons/question.svg" alt="icon" />
+                    </div>
+                    <div class="country-faq-title">
+                      <h5>How long can I stay in Canada as a visitor?</h5>
+                    </div>
+                  </div>
+                  <div class="country-faq-content">
+                    <div class="country-faq-description">
+                      <p>
+                        Most visitors can stay for up to 6 months in Canada.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        The Border Services officer may authorize you to stay
+                        for less than or longer than 6 months at the port of
+                        entry. If they do, they will put in your passport the
+                        date you need to leave by. Also, they might give you a
+                        document.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        If you don’t get a stamp in your passport, you can stay
+                        for 6 months from the day you entered Canada or until
+                        your passport expires, whichever comes first.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="country-faq-wrap">
+                  <div class="country-faq-top">
+                    <div class="country-faq-icon">
+                      <img src="assets/img/icons/question.svg" alt="icon" />
+                    </div>
+                    <div class="country-faq-title">
+                      <h5>How long can I stay in Canada as a visitor?</h5>
+                    </div>
+                  </div>
+                  <div class="country-faq-content">
+                    <div class="country-faq-description">
+                      <p>
+                        Most visitors can stay for up to 6 months in Canada.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        The Border Services officer may authorize you to stay
+                        for less than or longer than 6 months at the port of
+                        entry. If they do, they will put in your passport the
+                        date you need to leave by. Also, they might give you a
+                        document.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        If you don’t get a stamp in your passport, you can stay
+                        for 6 months from the day you entered Canada or until
+                        your passport expires, whichever comes first.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="country-faq-wrap">
+                  <div class="country-faq-top">
+                    <div class="country-faq-icon">
+                      <img src="assets/img/icons/question.svg" alt="icon" />
+                    </div>
+                    <div class="country-faq-title">
+                      <h5>
+                        My minor child is applying for a visitor visa and will
+                        travel alone to Canada. What documents must he/she
+                        present with the application?
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="country-faq-content">
+                    <div class="country-faq-description">
+                      <p>
+                        In addition to the required documents for a visitor
+                        visa, you must include the following documents:
+                      </p>
+                    </div>
+                    <div class="country-faq-list">
+                      <ul>
+                        <li>A copy of the child’s birth certificate</li>
+                        <li>
+                          A letter of authorization, preferably in English or
+                          French, signed by their parent(s) or legal guardian.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>The letter of authorization should include:</p>
+                    </div>
+                    <div class="country-faq-list">
+                      <ul>
+                        <li>A copy of the child’s birth certificate</li>
+                        <li>
+                          A letter of authorization, preferably in English or
+                          French, signed by their parent(s) or legal guardian.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        If you don’t get a stamp in your passport, you can stay
+                        for 6 months from the day you entered Canada or until
+                        your passport expires, whichever comes first.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="country-faq-wrap">
+                  <div class="country-faq-top">
+                    <div class="country-faq-icon">
+                      <img src="assets/img/icons/question.svg" alt="icon" />
+                    </div>
+                    <div class="country-faq-title">
+                      <h5>How long can I stay in Canada as a visitor?</h5>
+                    </div>
+                  </div>
+                  <div class="country-faq-content">
+                    <div class="country-faq-description">
+                      <p>
+                        Most visitors can stay for up to 6 months in Canada.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="country-faq-wrap">
+                  <div class="country-faq-top">
+                    <div class="country-faq-icon">
+                      <img src="assets/img/icons/question.svg" alt="icon" />
+                    </div>
+                    <div class="country-faq-title">
+                      <h5>How long can I stay in Canada as a visitor?</h5>
+                    </div>
+                  </div>
+                  <div class="country-faq-content">
+                    <div class="country-faq-description">
+                      <p>
+                        Most visitors can stay for up to 6 months in Canada.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        The Border Services officer may authorize you to stay
+                        for less than or longer than 6 months at the port of
+                        entry. If they do, they will put in your passport the
+                        date you need to leave by. Also, they might give you a
+                        document.
+                      </p>
+                    </div>
+                    <div class="country-faq-description">
+                      <p>
+                        If you don’t get a stamp in your passport, you can stay
+                        for 6 months from the day you entered Canada or until
+                        your passport expires, whichever comes first.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Country FAQ area end -->
+
+      <!-- Blogs about country area start  -->
+
+      <section>
+        <div class="country-blog-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="visa-types-title">
+                  <h2>Blogs About Canada That Might Inspire You to Visit</h2>
+                </div>
+              </div>
+            </div>
+            <div class="country-blog-card">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="country-blog-img">
+                    <a href="#">
+                      <img src="assets/img/blogs/blog-28.jpg" alt="blog-img" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="country-blog-wrap">
+                    <div class="country-blog-top">
+                      <div class="country-blog-profile-img">
+                        <img
+                          src="assets/img/blogs/Kanan-Isazade.png"
+                          alt="profile-img"
+                        />
+                      </div>
+                      <div class="country-blog-profile-title">
+                        <a href="#" title="Kanan Isazade">Kanan Isazade</a>
+                      </div>
+                      <div class="country-blog-profile-dot">
+                        <i class="fa-solid fa-circle-small"></i>
+                      </div>
+                      <div class="country-blog-profile-date">
+                        <span>29 January 2022</span>
+                      </div>
+                    </div>
+                    <div class="country-blog-content">
+                      <div class="country-blog-heading">
+                        <h3>
+                          <a href="#"> Top 10 local foods to try in Canada </a>
+                        </h3>
+                      </div>
+                      <div class="country-blog-description">
+                        <p>
+                          Living in Canada or visiting for once is the childhood
+                          dream of millions. Every year millions of people
+                          realize their dreams about Canada. We can’t say what
+                          attracts them because the country is full of gems.
+                          When we visit a new country, there are several
+                          features that we want to know, and local food is […]
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="country-blog-card">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="country-blog-img">
+                    <a href="#">
+                      <img src="assets/img/blogs/blog-28.jpg" alt="blog-img" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="country-blog-wrap">
+                    <div class="country-blog-top">
+                      <div class="country-blog-profile-img">
+                        <img
+                          src="assets/img/blogs/Kanan-Isazade.png"
+                          alt="profile-img"
+                        />
+                      </div>
+                      <div class="country-blog-profile-title">
+                        <a href="#" title="Kanan Isazade">Kanan Isazade</a>
+                      </div>
+                      <div class="country-blog-profile-dot">
+                        <i class="fa-solid fa-circle-small"></i>
+                      </div>
+                      <div class="country-blog-profile-date">
+                        <span>29 January 2022</span>
+                      </div>
+                    </div>
+                    <div class="country-blog-content">
+                      <div class="country-blog-heading">
+                        <h3>
+                          <a href="#"> Top 10 local foods to try in Canada </a>
+                        </h3>
+                      </div>
+                      <div class="country-blog-description">
+                        <p>
+                          Living in Canada or visiting for once is the childhood
+                          dream of millions. Every year millions of people
+                          realize their dreams about Canada. We can’t say what
+                          attracts them because the country is full of gems.
+                          When we visit a new country, there are several
+                          features that we want to know, and local food is […]
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="country-blog-card">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="country-blog-img">
+                    <a href="#">
+                      <img src="assets/img/blogs/blog-28.jpg" alt="blog-img" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="country-blog-wrap">
+                    <div class="country-blog-top">
+                      <div class="country-blog-profile-img">
+                        <img
+                          src="assets/img/blogs/Kanan-Isazade.png"
+                          alt="profile-img"
+                        />
+                      </div>
+                      <div class="country-blog-profile-title">
+                        <a href="#" title="Kanan Isazade">Kanan Isazade</a>
+                      </div>
+                      <div class="country-blog-profile-dot">
+                        <i class="fa-solid fa-circle-small"></i>
+                      </div>
+                      <div class="country-blog-profile-date">
+                        <span>29 January 2022</span>
+                      </div>
+                    </div>
+                    <div class="country-blog-content">
+                      <div class="country-blog-heading">
+                        <h3>
+                          <a href="#"> Top 10 local foods to try in Canada </a>
+                        </h3>
+                      </div>
+                      <div class="country-blog-description">
+                        <p>
+                          Living in Canada or visiting for once is the childhood
+                          dream of millions. Every year millions of people
+                          realize their dreams about Canada. We can’t say what
+                          attracts them because the country is full of gems.
+                          When we visit a new country, there are several
+                          features that we want to know, and local food is […]
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blogs about country area end -->
     </main>
 
     <!-- Footer Start  -->
