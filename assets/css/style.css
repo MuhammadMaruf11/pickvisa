@@ -2884,6 +2884,110 @@ visa application Page start
 
 /* service list area end */
 
+/* unavailable area start  */
+
+.unavailable-area {
+  padding: 50px 0;
+  background: #fafafa;
+}
+
+.unavailable-section-wrap {
+  margin-bottom: 24px;
+}
+
+.unavailable-section-img {
+  margin-bottom: 16px;
+}
+
+.unavailable-section-title {
+  margin-bottom: 10px;
+}
+.unavailable-section-title h4 {
+  font-size: 20px;
+}
+
+.unavailable-section-description {
+  margin-bottom: 24px;
+}
+.unavailable-section-description p {
+  font-size: 14px;
+}
+
+.service-unavailable-wrap {
+  padding: 40px 66px;
+  border: 1px solid #cbd2d9;
+  border-radius: 16px;
+}
+
+.unavailable-policy-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 180px;
+}
+
+.unavailable-policy-icon,
+.unavailable-policy-icon-2 {
+  margin-bottom: 10px;
+}
+.unavailable-policy-icon i {
+  font-size: 24px;
+  color: #784def;
+  background: #ebe8f7;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+.unavailable-policy-icon-2 i {
+  font-size: 24px;
+  color: #0d84fd;
+  background: #d6edf9;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.unavailable-policy-description {
+  margin-bottom: 24px;
+}
+
+.unavailable-policy-description p {
+  font-size: 14px;
+  color: #52606d;
+}
+
+.unavailable-policy-btn a {
+  outline: 0;
+  display: inline-block;
+  padding: 8px 20px;
+  border: 1px solid #9aa5b1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: -0.08px;
+  color: #1f2933;
+}
+.unavailable-policy-btn a:hover {
+  border: 1px solid #1f2933;
+}
+
+/* unavailable area end  */
+
 /* Visa Slider area start */
 
 .visa-slider-area {
@@ -3801,6 +3905,17 @@ Country Visa  Page start
   background-attachment: fixed;
 }
 
+.visa-section-title {
+  margin: 30px 0;
+}
+.visa-section-title h2 {
+  line-height: 50px;
+  margin-bottom: 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+
 /* visa infromation area end  */
 
 /* visa type & category area start  */
@@ -4031,7 +4146,7 @@ Country Visa  Page start
   border-radius: 6px;
   padding: 50px;
   margin-bottom: 20px;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 .country-blog-card:hover {
   -webkit-box-shadow: -10px 10px 30px rgba(60, 125, 196, 0.15);
@@ -4120,6 +4235,153 @@ Country Visa  Page start
 /*
 
 Country Visa  Page End
+
+*/
+
+/*
+
+covid19 test center  Page start
+
+*/
+
+.clinic-card-area {
+  padding: 50px 0 20px;
+}
+
+.clinic-card-wrap {
+  position: relative;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 25px 0 rgba(213, 213, 213, 0.5);
+  box-shadow: 0 0 25px 0 rgba(213, 213, 213, 0.5);
+  margin-bottom: 24px;
+}
+
+.card-border-top {
+  background: linear-gradient(91deg, #40c7e0 0, #45a8ff 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+
+.clinic-card-top {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clinic-city-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 15px;
+  border-radius: 2px;
+  background-color: #000;
+}
+
+.clinic-city-name span {
+  color: #fff;
+  font-size: 10px;
+}
+
+.clinic-name {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+.clinic-name h4 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.19px;
+  color: #43b8ef;
+}
+
+.clinic-location a {
+  text-decoration: underline;
+  font-size: 13px;
+  letter-spacing: 0.16px;
+  color: #1e3340;
+}
+.clinic-location a:hover {
+  color: #40c7e0;
+  text-decoration: none !important;
+}
+
+.clinic-content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 40px;
+}
+
+.clinic-content-location {
+  display: flex;
+  align-items: start;
+  margin-bottom: 8px;
+}
+
+.content-location-icon {
+  margin-right: 8px;
+}
+.content-location-icon i {
+  text-align: center;
+  color: #1e3340;
+}
+
+.content-locaiton-title h6 {
+  font-size: 14px;
+  letter-spacing: 0.17px;
+  color: #1e3340;
+}
+.content-locaiton-title a {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.17px;
+  color: #1e3340;
+  display: block;
+}
+.content-locaiton-title a:hover {
+  color: #40c7e0;
+}
+
+.clinic-card-bottom {
+  margin-top: 22px;
+  padding: 22px 30px;
+  border-top: solid 1px #ededed;
+}
+
+.clinic-work-duration {
+  margin-bottom: 8px;
+  text-align: center;
+}
+.clinic-work-duration span {
+  font-size: 11px;
+  line-height: 1.55;
+  letter-spacing: 0.13px;
+  color: #b2b2b2;
+}
+
+.clinic-work-time {
+  margin-bottom: 6px;
+}
+.clinic-work-time h6 {
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.17px;
+  text-align: center;
+  color: #000;
+}
+
+/*
+
+covid19 test center  Page End
 
 */
 
